@@ -10,6 +10,8 @@ public class Main : MonoBehaviour
     List<Patient> patients = new();
     int patientIndex = 0;
 
+    const float AIL_RADIUS = 1;
+
     void Awake()
     {
         NewPatient().AddAilments(
@@ -35,7 +37,10 @@ public class Main : MonoBehaviour
                 LoadNextPatient();
             }
         }
-        
+
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.value);
+        bool mousePressed = Mouse.current.leftButton.value == 1;
+
         Patient patient = patients[patientIndex];
         if (!patient.finished)
         {
@@ -47,7 +52,14 @@ public class Main : MonoBehaviour
             foreach (Ailment ail in patient.currentAilments)
             {
                 ail.DecrementTime();
+                GLGizmos.SetColor(ail.done ? Color.red : Color.white);
                 GLGizmos.DrawText(ail.displayTime.ToString(), ail.location, null, 10);
+                GLGizmos.DrawOpenCircle(ail.location, AIL_RADIUS);
+
+                if (!ail.done && mousePressed && Vector2.Distance(mousePos, ail.location) <= AIL_RADIUS)
+                {
+                    ail.done = true;
+                }
             }
         }
     }
