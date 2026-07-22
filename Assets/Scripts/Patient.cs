@@ -28,7 +28,7 @@ public class Patient
 
         foreach (Ailment ail in currentAilments)
         {
-            if (!ail.done)
+            if (!ail.complete)
             {
                 allAilmentsDone = false;
                 break;

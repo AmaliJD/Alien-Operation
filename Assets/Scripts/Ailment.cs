@@ -8,8 +8,10 @@ public class Ailment
     public int displayTime;
     public bool atZero;
     public Vector2 location;
-    public bool done;
     public bool loadNext;
+
+    public AilmentState state;
+    public bool complete => state != AilmentState.CountDown;
 
     public Ailment(int timeLimit, float timerSpeed, bool loadNext, float x = 0, float y = 0)
     {

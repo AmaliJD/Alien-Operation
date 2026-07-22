@@ -60,13 +60,20 @@ public class Main : MonoBehaviour
             {
                 bool cursorOnAil = Vector2.Distance(mousePos, ail.location) <= AIL_RADIUS;
                 ail.DecrementTime();
-                GLGizmos.SetColor(ail.done ? Color.red : (cursorOnAil ? Color.yellow : Color.white));
+                GLGizmos.SetColor(ail.complete ? Color.red : (cursorOnAil ? Color.yellow : Color.white));
                 GLGizmos.DrawText(ail.displayTime.ToString(), ail.location, null, 10);
                 GLGizmos.DrawOpenCircle(ail.location, AIL_RADIUS);
 
-                if (!ail.done && mousePressed && cursorOnAil && readMouseDown)
+                if (ail.displayTime < 0)
                 {
-                    ail.done = true;
+                    ail.state = AilmentState.Fail;
+                }
+                if (!ail.complete && mousePressed && cursorOnAil && readMouseDown)
+                {
+                    if (ail.displayTime == 0)
+                        ail.state = AilmentState.Success;
+                    else
+                        ail.state = AilmentState.Fail;
                 }
             }
         }
