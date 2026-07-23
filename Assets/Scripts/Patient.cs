@@ -40,6 +40,9 @@ public class Patient
 
     public void LoadNextAilments()
     {
+        //foreach (Ailment ail in currentAilments)
+        //    ail.ailmentGameObject.SetActive(false);
+
         currentAilments.Clear();
 
         for (int i = ailmentIndex; i < ailments.Count; i++)
@@ -49,6 +52,7 @@ public class Patient
                 return;
 
             currentAilments.Add(ailments[ailmentIndex]);
+            ailments[ailmentIndex].InitGameObject();
 
             if (!ailments[ailmentIndex].loadNext)
                 break;

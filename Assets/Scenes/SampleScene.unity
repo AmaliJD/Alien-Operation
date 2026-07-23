@@ -399,6 +399,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7057876013c70de4abc4ef066be30557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  ref_activeFont: {fileID: 11400000, guid: 1efc9094ea1cbc04396dd57daa2bd464, type: 2}
+  ref_fadedFont: {fileID: 11400000, guid: ddaec915d32e1844d8f1b8749ef7d2b5, type: 2}
+  ref_successFont: {fileID: 11400000, guid: 026c9f39951c4c14aa43b823dafbf418, type: 2}
+  ref_ailmentGameObject: {fileID: 2867710513331435373, guid: 0c1fd8b5f7cc1b948bdd8b39c216a291, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a1d4e0b6c3f24c4f9b0e1a2d3c4b5e60
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 68480
+  packageName: 'More Effective Coroutines [PRO]'
+  packageVersion: 3.16.0
+  assetPath: Assets/Plugins/Digital Dust/DigitalDust.asmdef
+  uploadId: 936524

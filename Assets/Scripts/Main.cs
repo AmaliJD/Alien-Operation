@@ -1,9 +1,9 @@
+using GLDebug;
+using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System;
-using GLDebug;
 
 public class Main : MonoBehaviour
 {
@@ -13,13 +13,23 @@ public class Main : MonoBehaviour
     const float AIL_RADIUS = 1;
     bool readMouseDown;
 
+    public TMP_FontAsset ref_activeFont;
+    public TMP_FontAsset ref_fadedFont;
+    public TMP_FontAsset ref_successFont;
+    public GameObject ref_ailmentGameObject;
+
     void Awake()
     {
+        Fonts.activeFont = ref_activeFont;
+        Fonts.fadedFont = ref_fadedFont;
+        Fonts.successFont = ref_successFont;
+        Ref.ailmentGameObject = ref_ailmentGameObject;
+
         NewPatient().AddAilments(
-            new Ailment(5, 1, false, -3),
-            new Ailment(8, 2, false, 3),
-            new Ailment(5, 2, true, -3),
-            new Ailment(12, 3, false, 3)
+            new Ailment(5, 1, false, -1, -3),
+            new Ailment(8, 1.2f, false, 2, 3),
+            new Ailment(5, 1.2f, true, 1, -3, 3),
+            new Ailment(12, 1.5f, false, 1, 3, 3)
         );
     }
 
@@ -59,22 +69,34 @@ public class Main : MonoBehaviour
             foreach (Ailment ail in patient.currentAilments)
             {
                 bool cursorOnAil = Vector2.Distance(mousePos, ail.location) <= AIL_RADIUS;
-                ail.DecrementTime();
-                GLGizmos.SetColor(ail.complete ? Color.red : (cursorOnAil ? Color.yellow : Color.white));
-                GLGizmos.DrawText(ail.displayTime.ToString(), ail.location, null, 10);
-                GLGizmos.DrawOpenCircle(ail.location, AIL_RADIUS);
 
+                if (ail.complete)
+                    return;
+
+                ail.DecrementTime();
+                //ail.UpdateDisplayText();
+                //GLGizmos.SetColor(ail.complete ? Color.red : (cursorOnAil ? Color.yellow : Color.white));
+                //GLGizmos.DrawText(ail.displayTime.ToString(), ail.location, null, 10);
+                //GLGizmos.DrawOpenCircle(ail.location, AIL_RADIUS);
+
+                if (ail.AtFadeTime() && ail.state == AilmentState.CountDown)
+                {
+                    ail.state = AilmentState.Faded;
+                    ail.fadedDisplayTime = ail.displayTime;
+                }
                 if (ail.displayTime < 0)
                 {
-                    ail.state = AilmentState.Fail;
+                    ail.state = AilmentState.Fail_Late;
                 }
-                if (!ail.complete && mousePressed && cursorOnAil && readMouseDown)
+                else if (mousePressed && cursorOnAil && readMouseDown)
                 {
                     if (ail.displayTime == 0)
                         ail.state = AilmentState.Success;
                     else
-                        ail.state = AilmentState.Fail;
+                        ail.state = AilmentState.Fail_Early;
                 }
+
+                ail.UpdateDisplayText();
             }
         }
     }
