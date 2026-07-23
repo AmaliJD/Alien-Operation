@@ -16,6 +16,7 @@ public class Patient
         foreach (Ailment ail in ailments)
         {
             this.ailments.Add(ail);
+            ail.patient = this;
         }
     }
 

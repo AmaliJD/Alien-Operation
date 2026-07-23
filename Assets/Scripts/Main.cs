@@ -4,19 +4,21 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using MEC;
 
 public class Main : MonoBehaviour
 {
     List<Patient> patients = new();
     int patientIndex = 0;
 
-    const float AIL_RADIUS = 1;
+    const float AIL_RADIUS = 1.15f;
     bool readMouseDown;
 
     public TMP_FontAsset ref_activeFont;
     public TMP_FontAsset ref_fadedFont;
     public TMP_FontAsset ref_successFont;
     public GameObject ref_ailmentGameObject;
+    public GameObject ref_patientGameObject;
 
     void Awake()
     {
@@ -26,10 +28,10 @@ public class Main : MonoBehaviour
         Ref.ailmentGameObject = ref_ailmentGameObject;
 
         NewPatient().AddAilments(
-            new Ailment(5, 1, false, -1, -3),
-            new Ailment(8, 1.2f, false, 2, 3),
-            new Ailment(5, 1.2f, true, 1, -3, 3),
-            new Ailment(12, 1.5f, false, 1, 3, 3)
+            new Ailment(5, .8f, false, -2, new Vector2(-3, 0)),//, AIL_RADIUS * 1.6f, -45),
+            new Ailment(8, 2f, false, 2, new Vector2(3, 0)),
+            new Ailment(5, 1.2f, true, 1, new Vector2(-3, 3)),
+            new Ailment(12, 2f, false, 1, new Vector2(3, 3))
         );
     }
 
@@ -73,30 +75,55 @@ public class Main : MonoBehaviour
                 if (ail.complete)
                     return;
 
+                AilmentState currentAilstate = ail.state;
+
                 ail.DecrementTime();
-                //ail.UpdateDisplayText();
-                //GLGizmos.SetColor(ail.complete ? Color.red : (cursorOnAil ? Color.yellow : Color.white));
-                //GLGizmos.DrawText(ail.displayTime.ToString(), ail.location, null, 10);
-                //GLGizmos.DrawOpenCircle(ail.location, AIL_RADIUS);
+
+                Color gizmoColor = ail.state switch
+                {
+                    AilmentState.CountDown => (cursorOnAil ? new Color(1, .5f, 0) : Color.red),
+                    AilmentState.Faded => (cursorOnAil ? new Color(1, .5f, 0) : Color.red),
+                    AilmentState.Success => new Color(.2f, 1, 0),
+                    _ => Color.red
+                };
+                gizmoColor.a = .2f;
+
+                GLGizmos.SetColor(gizmoColor);
+                GLGizmos.DrawWeightedCircle(ail.location, AIL_RADIUS, .1f, BorderType.Inside, -2);
+
+                GLGizmos.DrawSolidCircle(ail.location, AIL_RADIUS - .2f, -2)
+                    .SetColor(new Color(gizmoColor.r, gizmoColor.g, gizmoColor.b, cursorOnAil ? .05f : .01f));
 
                 if (ail.AtFadeTime() && ail.state == AilmentState.CountDown)
                 {
                     ail.state = AilmentState.Faded;
                     ail.fadedDisplayTime = ail.displayTime;
+                    Timing.KillCoroutines(ail.couroutineLayer);
+                    Timing.RunCoroutine(ail._FadeOut(2f), ail.couroutineLayer);
                 }
                 if (ail.displayTime < 0)
                 {
                     ail.state = AilmentState.Fail_Late;
+                    Timing.KillCoroutines(ail.couroutineLayer);
+                    Timing.RunCoroutine(ail._FlashHoldFadeOut(.1f, Color.white, Color.red, .5f, 1f), ail.couroutineLayer);
                 }
                 else if (mousePressed && cursorOnAil && readMouseDown)
                 {
                     if (ail.displayTime == 0)
+                    {
                         ail.state = AilmentState.Success;
+                        Timing.KillCoroutines(ail.couroutineLayer);
+                        Timing.RunCoroutine(ail._HoldFadeOut(.8f, .2f), ail.couroutineLayer);
+                    }
                     else
+                    {
                         ail.state = AilmentState.Fail_Early;
+                        Timing.KillCoroutines(ail.couroutineLayer);
+                        Timing.RunCoroutine(ail._FlashHoldFadeOut(.1f, Color.white, Color.red, .5f, 1f), ail.couroutineLayer);
+                    }
                 }
 
-                ail.UpdateDisplayText();
+                ail.UpdateDisplayText(currentAilstate != ail.state);
             }
         }
     }

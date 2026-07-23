@@ -20,4 +20,5 @@ public static class Fonts
 public static class Ref
 {
     public static GameObject ailmentGameObject;
+    public static GameObject patientGameObject;
 }

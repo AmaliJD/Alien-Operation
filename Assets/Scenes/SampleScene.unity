@@ -201,7 +201,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -403,6 +403,7 @@ MonoBehaviour:
   ref_fadedFont: {fileID: 11400000, guid: ddaec915d32e1844d8f1b8749ef7d2b5, type: 2}
   ref_successFont: {fileID: 11400000, guid: 026c9f39951c4c14aa43b823dafbf418, type: 2}
   ref_ailmentGameObject: {fileID: 2867710513331435373, guid: 0c1fd8b5f7cc1b948bdd8b39c216a291, type: 3}
+  ref_patientGameObject: {fileID: 520904887566224475, guid: 1691a1e81e6f7084eb7c646ac3ae6e63, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
