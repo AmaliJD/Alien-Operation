@@ -11,6 +11,8 @@ public class Patient
     public bool healed;
     public bool finished;
 
+    public GameObject patientGameObject;
+
     public void AddAilments(params Ailment[] ailments)
     {
         foreach (Ailment ail in ailments)
@@ -58,5 +60,10 @@ public class Patient
             if (!ailments[ailmentIndex].loadNext)
                 break;
         }
+    }
+
+    public void Load()
+    {
+        patientGameObject = GameObject.Instantiate(Ref.patientGameObject);
     }
 }

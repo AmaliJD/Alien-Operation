@@ -88,10 +88,10 @@ public class Ailment
 
     public void InitGameObject()
     {
-        ailmentGameObject = GameObject.Instantiate(Ref.ailmentGameObject);
+        ailmentGameObject = GameObject.Instantiate(Ref.ailmentGameObject, patient.patientGameObject.transform);
         ailmentDisplayText = ailmentGameObject.transform.GetChild(0).GetComponent<TextMeshPro>();
 
-        ailmentGameObject.transform.position = textOffset;
+        ailmentGameObject.transform.localPosition = textOffset;
         ailmentDisplayText.text = timeLimit.ToString();
     }
 
