@@ -66,7 +66,7 @@ public class Ailment
                 SetDisplayTextParams(fadedDisplayTime.ToString(), Fonts.fadedFont, Color.white, newState);
                 break;
             case AilmentState.Success:
-                SetDisplayTextParams(displayTime.ToString(), Fonts.successFont, Color.white, newState);
+                SetDisplayTextParams(displayTime.ToString(), Fonts.successFont, new Color(.5f, 1, 0), newState);
                 break;
             case AilmentState.Fail_Early:
                 SetDisplayTextParams(displayTime.ToString(), Fonts.activeFont, Color.red, newState);

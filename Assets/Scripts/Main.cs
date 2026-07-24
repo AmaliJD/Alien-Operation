@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using MEC;
+using PrimeTween;
 
 public class Main : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class Main : MonoBehaviour
     public GameObject ref_ailmentGameObject;
     public GameObject ref_patientGameObject;
 
+    [Header("Patient Sprites")]
+    public List<PatientSprites> patientSprites;
+
     void Awake()
     {
         Fonts.activeFont = ref_activeFont;
@@ -29,10 +33,12 @@ public class Main : MonoBehaviour
         Ref.patientGameObject = ref_patientGameObject;
 
         NewPatient().AddAilments(
-            new Ailment(5, .8f, false, -2, new Vector2(-3, 0)),//, AIL_RADIUS * 1.6f, -45),
-            new Ailment(8, 2f, false, 2, new Vector2(3, 0)),
-            new Ailment(5, 1.2f, true, 1, new Vector2(-3, 3)),
-            new Ailment(12, 2f, false, 1, new Vector2(3, 3))
+            new Ailment(5, .8f, false, -2, new Vector2(-3, 0))
+        );
+
+        NewPatient().AddAilments(
+            new Ailment(5, 1f, true, 4, new Vector2(-3, 0)),
+            new Ailment(10, 1f, false, 4, new Vector2(3, 0))
         );
     }
 
@@ -118,7 +124,7 @@ public class Main : MonoBehaviour
                     {
                         ail.state = AilmentState.Success;
                         Timing.KillCoroutines(ail.couroutineLayer);
-                        Timing.RunCoroutine(ail._HoldFadeOut(.8f, .2f), ail.couroutineLayer);
+                        Timing.RunCoroutine(ail._FlashHoldFadeOut(.1f, new Color(.5f, 1, 0), new Color(.9f, 1, .75f), 1f, .25f), ail.couroutineLayer);
                     }
                     else
                     {
@@ -135,7 +141,16 @@ public class Main : MonoBehaviour
 
     void LoadNextPatient()
     {
+        if (patientIndex >= 0)
+        {
+            GameObject go = patients[patientIndex].patientGameObject;
+            Tween.PositionX(go.transform, endValue: -20, duration: .25f, ease: Ease.InCirc)
+                .OnComplete(() => Destroy(go));
+        }
+
         patientIndex++;
-        patients[patientIndex].Load();
+        patients[patientIndex].Load(patientSprites[patientIndex]);
+
+        Tween.PositionX(patients[patientIndex].patientGameObject.transform, endValue: 0, duration: .75f, ease: Ease.OutBack, startDelay: .25f);
     }
 }

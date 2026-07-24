@@ -62,8 +62,9 @@ public class Patient
         }
     }
 
-    public void Load()
+    public void Load(PatientSprites sprites)
     {
-        patientGameObject = GameObject.Instantiate(Ref.patientGameObject);
+        patientGameObject = GameObject.Instantiate(Ref.patientGameObject, new Vector2(20, 0), Quaternion.identity);
+        patientGameObject.transform.GetChild(0).GetChild(0).GetComponent<SpriteRenderer>().sprite = sprites.body;
     }
 }

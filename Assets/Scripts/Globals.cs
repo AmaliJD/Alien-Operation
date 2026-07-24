@@ -1,5 +1,7 @@
-using UnityEngine;
+using System;
+using System.Collections.Generic;
 using TMPro;
+using UnityEngine;
 
 public enum AilmentState
 {
@@ -8,6 +10,13 @@ public enum AilmentState
     Success,
     Fail_Early,
     Fail_Late,
+}
+
+[Serializable]
+public struct PatientSprites
+{
+    public Sprite body;
+    public List<Sprite> faces;
 }
 
 public static class Fonts
