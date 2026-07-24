@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 127
+  controlID: 16
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -355,13 +355,13 @@ MonoBehaviour:
   currentStatusEntriesHasUpdate: 0
   repositoryProgressHasUpdate: 0
   appManagerProgressHasUpdate: 0
-  changeTab: 5
-  activeTab: 5
+  changeTab: 3
+  activeTab: 3
   initProjectView:
     hasCompletedInitialCheck: 0
     isUserDataPresent: 0
     lastCheckUserChangedEvent:
-      updatedTimeString: 2026-07-23T20:43:08.602-04:00
+      updatedTimeString: 2026-07-23T20:52:17.346-04:00
       cacheType: 8
   branchesView:
     treeLocals:
@@ -443,26 +443,212 @@ MonoBehaviour:
     currentStatusEntriesHasUpdate: 0
     currentLocksHasUpdate: 0
     commitBody: 
-    commitMessage: 
-    currentBranch: '[unknown]'
+    commitMessage: FIX BUG - selection gizmo not positioned with transform
+    currentBranch: master
     treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
-        keys: []
-        values: []
+        keys:
+        - 00000000000000001000000000000000
+        - 6a7b672c91faa6f47adc90779b26532a
+        - 7057876013c70de4abc4ef066be30557
+        values:
+        - path: Assets
+          label: Assets
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Scripts
+          label: Scripts
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Scripts\Main.cs
+          label: Main.cs
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scripts\Main.cs
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Main.cs
+            projectPath: Assets\Scripts\Main.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
       folders:
-        keys: []
-        values: []
+        keys:
+        - Assets
+        - Assets\Scripts
+        values:
+        - path: Assets
+          label: Assets
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Scripts
+          label: Scripts
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
       checkedFileNodes:
-        keys: []
-        values: []
+        keys:
+        - Assets\Scripts\Main.cs
+        values:
+        - path: Assets\Scripts\Main.cs
+          label: Main.cs
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scripts\Main.cs
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Main.cs
+            projectPath: Assets\Scripts\Main.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
       title: 
-      pathSeparator: /
+      pathSeparator: \
       displayRootNode: 0
       isSelectable: 1
       isCheckable: 1
       isUsingGlobalSelection: 1
-      nodes: []
+      nodes:
+      - path: 
+        label: 
+        level: -1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets
+        label: Assets
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Scripts
+        label: Scripts
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Scripts\Main.cs
+        label: Main.cs
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Scripts\Main.cs
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Main.cs
+          projectPath: Assets\Scripts\Main.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
       selectedNode:
         path: 
         label: 
@@ -482,21 +668,244 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-    gitStatusEntries: []
-    changedFilesText: No changed files
+    gitStatusEntries:
+    - path: Assets\Scripts\Main.cs
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Main.cs
+      projectPath: Assets\Scripts\Main.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    changedFilesText: 1 changed file
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      cacheType: 7
   historyView:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
+    - commitID: d7e5fc03fa50941862cbe0b3635cfcb5107987b8
+      mergeA: 
+      mergeB: 
+      authorName: AmaliJD
+      authorEmail: amali.jdelauney@gmail.com
+      commitEmail: amali.jdelauney@gmail.com
+      commitName: AmaliJD
+      summary: setup remote iorigin
+      description: 
+      timeString: 2026-07-23T20:52:41.000-04:00
+      commitTimeString: 2026-07-23T20:52:41.000-04:00
+      changes:
+      - path: Assets\Images\test.png
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\test.png
+        projectPath: Assets\Images\test.png
+        originalPath: Assets\Images\patient_0.png
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Images\test.png.meta
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\test.png.meta
+        projectPath: Assets\Images\test.png.meta
+        originalPath: Assets\Images\patient_0.png.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Patient.prefab
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Patient.prefab
+        projectPath: Assets\Prefabs\Patient.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-6000.dwlt
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\UserSettings\Layouts\default-6000.dwlt
+        projectPath: UserSettings\Layouts\default-6000.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 5ed7e49c52944a28c6e4e4e95a83d9b030e6162d
+      mergeA: 
+      mergeB: 
+      authorName: AmaliJD
+      authorEmail: amali.jdelauney@gmail.com
+      commitEmail: amali.jdelauney@gmail.com
+      commitName: AmaliJD
+      summary: patient gameobject attached with ailments
+      description: 
+      timeString: 2026-07-23T20:43:05.000-04:00
+      commitTimeString: 2026-07-23T20:43:05.000-04:00
+      changes:
+      - path: Assets\Scripts\Ailment.cs
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Ailment.cs
+        projectPath: Assets\Scripts\Ailment.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Main.cs
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Main.cs
+        projectPath: Assets\Scripts\Main.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Patient.cs
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Patient.cs
+        projectPath: Assets\Scripts\Patient.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 2f0eb979722c1297458dad4001a3f9b337c813bf
+      mergeA: 
+      mergeB: 
+      authorName: AmaliJD
+      authorEmail: amali.jdelauney@gmail.com
+      commitEmail: amali.jdelauney@gmail.com
+      commitName: AmaliJD
+      summary: ailment display coroutines
+      description: 
+      timeString: 2026-07-23T15:27:21.000-04:00
+      commitTimeString: 2026-07-23T15:27:21.000-04:00
+      changes:
+      - path: Assets\AudioMixer.mixer
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\AudioMixer.mixer
+        projectPath: Assets\AudioMixer.mixer
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\AudioMixer.mixer.meta
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\AudioMixer.mixer.meta
+        projectPath: Assets\AudioMixer.mixer.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\EX.meta
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX.meta
+        projectPath: Assets\EX.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\EX\Extensions.cs
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX\Extensions.cs
+        projectPath: Assets\EX\Extensions.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\EX\Extensions.cs.meta
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX\Extensions.cs.meta
+        projectPath: Assets\EX\Extensions.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\EX\LICENSE.txt
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX\LICENSE.txt
+        projectPath: Assets\EX\LICENSE.txt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\EX\LICENSE.txt.meta
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX\LICENSE.txt.meta
+        projectPath: Assets\EX\LICENSE.txt.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\EX\MathEX.cs
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX\MathEX.cs
+        projectPath: Assets\EX\MathEX.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\EX\MathEX.cs.meta
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX\MathEX.cs.meta
+        projectPath: Assets\EX\MathEX.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\EX\README.md
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX\README.md
+        projectPath: Assets\EX\README.md
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\EX\README.md.meta
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX\README.md.meta
+        projectPath: Assets\EX\README.md.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Fonts\super_bouncer\Super Bouncer SDF.asset
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
+          Bouncer SDF.asset
+        projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Images.meta
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images.meta
+        projectPath: Assets\Images.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Images\patient_0.png
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\patient_0.png
+        projectPath: Assets\Images\patient_0.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Images\patient_0.png.meta
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\patient_0.png.meta
+        projectPath: Assets\Images\patient_0.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Ailment.prefab
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Ailment.prefab
+        projectPath: Assets\Prefabs\Ailment.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Patient.prefab
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Patient.prefab
+        projectPath: Assets\Prefabs\Patient.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Prefabs\Patient.prefab.meta
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Patient.prefab.meta
+        projectPath: Assets\Prefabs\Patient.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Ailment.cs
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Ailment.cs
+        projectPath: Assets\Scripts\Ailment.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Globals.cs
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Globals.cs
+        projectPath: Assets\Scripts\Globals.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Main.cs
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Main.cs
+        projectPath: Assets\Scripts\Main.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Patient.cs
+        fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Patient.cs
+        projectPath: Assets\Scripts\Patient.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
     - commitID: 4f6bcd19a95402c39036402131f570553b5e2fd1
       mergeA: 
       mergeB: 
@@ -4176,6 +4585,223 @@ MonoBehaviour:
     historyControl:
       scroll: {x: 0, y: 0}
       entries:
+      - commitID: d7e5fc03fa50941862cbe0b3635cfcb5107987b8
+        mergeA: 
+        mergeB: 
+        authorName: AmaliJD
+        authorEmail: amali.jdelauney@gmail.com
+        commitEmail: amali.jdelauney@gmail.com
+        commitName: AmaliJD
+        summary: setup remote iorigin
+        description: 
+        timeString: 2026-07-23T20:52:41.000-04:00
+        commitTimeString: 2026-07-23T20:52:41.000-04:00
+        changes:
+        - path: Assets\Images\test.png
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\test.png
+          projectPath: Assets\Images\test.png
+          originalPath: Assets\Images\patient_0.png
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Images\test.png.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\test.png.meta
+          projectPath: Assets\Images\test.png.meta
+          originalPath: Assets\Images\patient_0.png.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Patient.prefab
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Patient.prefab
+          projectPath: Assets\Prefabs\Patient.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-6000.dwlt
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\UserSettings\Layouts\default-6000.dwlt
+          projectPath: UserSettings\Layouts\default-6000.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 5ed7e49c52944a28c6e4e4e95a83d9b030e6162d
+        mergeA: 
+        mergeB: 
+        authorName: AmaliJD
+        authorEmail: amali.jdelauney@gmail.com
+        commitEmail: amali.jdelauney@gmail.com
+        commitName: AmaliJD
+        summary: patient gameobject attached with ailments
+        description: 
+        timeString: 2026-07-23T20:43:05.000-04:00
+        commitTimeString: 2026-07-23T20:43:05.000-04:00
+        changes:
+        - path: Assets\Scripts\Ailment.cs
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Ailment.cs
+          projectPath: Assets\Scripts\Ailment.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Main.cs
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Main.cs
+          projectPath: Assets\Scripts\Main.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Patient.cs
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Patient.cs
+          projectPath: Assets\Scripts\Patient.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 2f0eb979722c1297458dad4001a3f9b337c813bf
+        mergeA: 
+        mergeB: 
+        authorName: AmaliJD
+        authorEmail: amali.jdelauney@gmail.com
+        commitEmail: amali.jdelauney@gmail.com
+        commitName: AmaliJD
+        summary: ailment display coroutines
+        description: 
+        timeString: 2026-07-23T15:27:21.000-04:00
+        commitTimeString: 2026-07-23T15:27:21.000-04:00
+        changes:
+        - path: Assets\AudioMixer.mixer
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\AudioMixer.mixer
+          projectPath: Assets\AudioMixer.mixer
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\AudioMixer.mixer.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\AudioMixer.mixer.meta
+          projectPath: Assets\AudioMixer.mixer.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\EX.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX.meta
+          projectPath: Assets\EX.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\EX\Extensions.cs
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX\Extensions.cs
+          projectPath: Assets\EX\Extensions.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\EX\Extensions.cs.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX\Extensions.cs.meta
+          projectPath: Assets\EX\Extensions.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\EX\LICENSE.txt
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX\LICENSE.txt
+          projectPath: Assets\EX\LICENSE.txt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\EX\LICENSE.txt.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX\LICENSE.txt.meta
+          projectPath: Assets\EX\LICENSE.txt.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\EX\MathEX.cs
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX\MathEX.cs
+          projectPath: Assets\EX\MathEX.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\EX\MathEX.cs.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX\MathEX.cs.meta
+          projectPath: Assets\EX\MathEX.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\EX\README.md
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX\README.md
+          projectPath: Assets\EX\README.md
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\EX\README.md.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\EX\README.md.meta
+          projectPath: Assets\EX\README.md.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Fonts\super_bouncer\Super Bouncer SDF.asset
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
+            Bouncer SDF.asset
+          projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Images.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images.meta
+          projectPath: Assets\Images.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Images\patient_0.png
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\patient_0.png
+          projectPath: Assets\Images\patient_0.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Images\patient_0.png.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\patient_0.png.meta
+          projectPath: Assets\Images\patient_0.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Ailment.prefab
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Ailment.prefab
+          projectPath: Assets\Prefabs\Ailment.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Patient.prefab
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Patient.prefab
+          projectPath: Assets\Prefabs\Patient.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Prefabs\Patient.prefab.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Patient.prefab.meta
+          projectPath: Assets\Prefabs\Patient.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Ailment.cs
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Ailment.cs
+          projectPath: Assets\Scripts\Ailment.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Globals.cs
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Globals.cs
+          projectPath: Assets\Scripts\Globals.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Main.cs
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Main.cs
+          projectPath: Assets\Scripts\Main.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Patient.cs
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Patient.cs
+          projectPath: Assets\Scripts\Patient.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
       - commitID: 4f6bcd19a95402c39036402131f570553b5e2fd1
         mergeA: 
         mergeB: 
@@ -7923,8 +8549,8 @@ MonoBehaviour:
     detailsScroll: {x: 0, y: 0}
   settingsView:
     gitPathView:
-      gitPath: C:\Users\jioje\AppData\Local\GitForUnity\git\cmd\git.exe
-      gitLfsPath: C:\Users\jioje\AppData\Local\GitForUnity\git\mingw64\libexec\git-core\git-lfs.exe
+      gitPath: 
+      gitLfsPath: 
       errorMessage: 
       resetToBundled: 0
       resetToSystem: 0
@@ -7932,21 +8558,21 @@ MonoBehaviour:
       installSettingsHidden: 0
     hasRemote: 0
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
-      cacheType: 1
+      updatedTimeString: 
+      cacheType: 0
     newRepositoryRemoteUrl: 
-    repositoryRemoteName: origin
+    repositoryRemoteName: 
     repositoryRemoteUrl: 
     scroll: {x: 0, y: 0}
     userSettingsView:
-      gitName: AmaliJD
-      gitEmail: amali.jdelauney@gmail.com
-      newGitName: AmaliJD
-      newGitEmail: amali.jdelauney@gmail.com
+      gitName: 
+      gitEmail: 
+      newGitName: 
+      newGitEmail: 
       needsSaving: 0
       lastCheckUserChangedEvent:
-        updatedTimeString: 0001-01-01T00:00:00.000+00:00
-        cacheType: 8
+        updatedTimeString: 
+        cacheType: 0
       configSettingsHidden: 0
     repositorySettingsHidden: 0
     generalSettingsHidden: 0
@@ -7999,33 +8625,33 @@ MonoBehaviour:
       m_Image: {fileID: 0}
       m_Tooltip: 
       m_TextWithWhitespace: "Release Lock (forced)\u200B"
-  hasRemote: 0
-  currentRemoteName: 
+  hasRemote: 1
+  currentRemoteName: origin
   currentBranch: master
-  currentRemoteUrl: No remote configured
+  currentRemoteUrl: https://github.com/AmaliJD/Alien-Operation.git
   statusAhead: 0
   statusBehind: 0
-  hasItemsToCommit: 0
-  isTrackingRemoteBranch: 0
+  hasItemsToCommit: 1
+  isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: master
     m_Image: {fileID: 0}
     m_Tooltip: Active branch
     m_TextWithWhitespace: "master\u200B"
   currentRemoteUrlContent:
-    m_Text: No remote configured
+    m_Text: https://github.com/AmaliJD/Alien-Operation.git
     m_Image: {fileID: 0}
-    m_Tooltip: Add a remote in the Settings tab
-    m_TextWithWhitespace: "No remote configured\u200B"
+    m_Tooltip: Url of the origin remote
+    m_TextWithWhitespace: "https://github.com/AmaliJD/Alien-Operation.git\u200B"
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2026-07-23T20:27:27.134-04:00
+    updatedTimeString: 0001-01-01T00:00:00.000+00:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
     updatedTimeString: 0001-01-01T00:00:00.000+00:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 
-    cacheType: 0
+    updatedTimeString: 0001-01-01T00:00:00.000+00:00
+    cacheType: 6
   pullButtonContent:
     m_Text: Pull
     m_Image: {fileID: 0}
@@ -9486,10 +10112,6 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -96988
-      - m_Data: -83134
-      - m_Data: -9354
-      - m_Data: -5872
       - m_Data: -1358
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -9587,11 +10209,11 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51646
     - m_Data: 51648
     - m_Data: 51650
     - m_Data: 51652
     - m_Data: 51654
+    - m_Data: 51656
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -9624,11 +10246,11 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51646
     - m_Data: 51648
     - m_Data: 51650
     - m_Data: 51652
     - m_Data: 51654
+    - m_Data: 51656
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
