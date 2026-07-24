@@ -3,8 +3,8 @@ guid: 5370ab1a4a55c42439484365975e462b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -915802640389525210
-    second: patient_0_0
+      213: -5623194428626525839
+    second: test_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -53,7 +53,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 17
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: patient_0_0
+      name: test_0
       rect:
         serializedVersion: 2
         x: 21
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 621b737c95a6a43f0800000000000000
-      internalID: -915802640389525210
+      spriteID: 171a2cac57666f1b0800000000000000
+      internalID: -5623194428626525839
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      patient_0_0: -915802640389525210
+      test_0: -5623194428626525839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
