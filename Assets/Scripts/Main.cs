@@ -74,7 +74,7 @@ public class Main : MonoBehaviour
 
             foreach (Ailment ail in patient.currentAilments)
             {
-                Vector2 ail_location = ail.location + (Vector2)ail.patient.patientGameObject.transform.position;
+                Vector2 ail_location = ail.ailmentGameObject.transform.position;//.location + (Vector2)ail.patient.patientGameObject.transform.position;
                 bool cursorOnAil = Vector2.Distance(mousePos, ail_location) <= AIL_RADIUS;
 
                 if (ail.complete)
