@@ -146,6 +146,9 @@ public class Main : MonoBehaviour
                     ail.state = AilmentState.Fail_Late;
                     Timing.KillCoroutines(ail.couroutineLayer);
                     Timing.RunCoroutine(ail._FlashHoldFadeOut(.1f, Color.white, Color.red, .5f, 1f), ail.couroutineLayer);
+
+                    Timing.KillCoroutines(patient.gameObject);
+                    Timing.RunCoroutine(patient._SwapFaces(1), patient.gameObject);
                 }
                 else if (mousePressed && cursorOnAil && readMouseDown)
                 {
@@ -154,6 +157,8 @@ public class Main : MonoBehaviour
                         ail.state = AilmentState.Success;
                         Timing.KillCoroutines(ail.couroutineLayer);
                         Timing.RunCoroutine(ail._FlashHoldFadeOut(.1f, new Color(.5f, 1, 0), new Color(.9f, 1, .75f), 1f, .25f), ail.couroutineLayer);
+
+                        Timing.KillCoroutines(patient.gameObject);
                     }
                     else
                     {
@@ -161,6 +166,16 @@ public class Main : MonoBehaviour
                         Timing.KillCoroutines(ail.couroutineLayer);
                         Timing.RunCoroutine(ail._FlashHoldFadeOut(.1f, Color.white, Color.red, .5f, 1f), ail.couroutineLayer);
                         AudioPlayer.ap.PlaySfx(failSfx, 1);
+
+                        Timing.KillCoroutines(patient.gameObject);
+                        Timing.RunCoroutine(patient._SwapFaces(1), patient.gameObject);
+
+                        patient.body_hit.color = Color.red;
+                        patient.face_hit.color = Color.red;
+                        Sequence.Create()
+                            .Group(Tween.Alpha(patient.body_hit, endValue: 0, duration: .6f))
+                            .Group(Tween.Alpha(patient.face_hit, endValue: 0, duration: .6f))
+                            .Group(Tween.ShakeLocalPosition(patient.gameObject.transform, strength: Vector2.one * .1f, duration: 1f));
                     }
                 }
 
@@ -173,6 +188,7 @@ public class Main : MonoBehaviour
     {
         if (patientIndex >= 0)
         {
+            Timing.KillCoroutines(patients[patientIndex].gameObject);
             GameObject go = patients[patientIndex].gameObject;
             Tween.PositionX(go.transform, endValue: -20, duration: .25f, ease: Ease.InCirc)
                 .OnComplete(() => Destroy(go));
