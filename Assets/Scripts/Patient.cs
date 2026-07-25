@@ -11,7 +11,7 @@ public class Patient
     public bool healed;
     public bool finished;
 
-    public GameObject patientGameObject;
+    public GameObject gameObject;
 
     public void AddAilments(params Ailment[] ailments)
     {
@@ -64,7 +64,7 @@ public class Patient
 
     public void Load(PatientSprites sprites)
     {
-        patientGameObject = GameObject.Instantiate(Ref.patientGameObject, new Vector2(20, 0), Quaternion.identity);
-        patientGameObject.transform.GetChild(0).GetChild(0).GetComponent<SpriteRenderer>().sprite = sprites.body;
+        gameObject = GameObject.Instantiate(Ref.patientGameObject, new Vector2(20, 0), Quaternion.identity);
+        gameObject.transform.GetChild(0).GetChild(0).GetComponent<SpriteRenderer>().sprite = sprites.body;
     }
 }

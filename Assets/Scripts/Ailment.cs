@@ -19,10 +19,12 @@ public class Ailment
     public bool loadNext;
 
     public AilmentState state;
-    public bool complete => state != AilmentState.CountDown && state != AilmentState.Faded;
+    public bool complete => state != AilmentState.CountDown && state != AilmentState.Faded && state != AilmentState.Initializing && state != AilmentState.Ready;
+    public bool initializing;
 
-    public GameObject ailmentGameObject;
-    public TextMeshPro ailmentDisplayText;
+    public GameObject gameObject;
+    public TextMeshPro displayText;
+    public SpriteRenderer sprite;
 
     public Patient patient;
 
@@ -36,13 +38,18 @@ public class Ailment
         this.timerSpeed = timerSpeed;
         this.loadNext = loadNext;
         this.location = location;
-        this.textOffset = location + (Vector2.up.Rotate(offsetAngle) * offsetDistance);
+        this.textOffset = location + (Vector2.up.Rotate(-offsetAngle) * offsetDistance);
 
         this.fadeTime = fadeTime;
         couroutineLayerCounter++;
         this.couroutineLayer = couroutineLayerCounter;
 
         timer = timeLimit;
+        //displayTime = Mathf.CeilToInt(timer);
+    }
+
+    public void SetDisplayTime()
+    {
         displayTime = Mathf.CeilToInt(timer);
     }
 
@@ -59,7 +66,11 @@ public class Ailment
     {
         switch (state)
         {
+            case AilmentState.Initializing:
+                SetDisplayTextParams("--", null, Color.clear, true);
+                break;
             case AilmentState.CountDown:
+            case AilmentState.Ready:
                 SetDisplayTextParams(displayTime.ToString(), Fonts.activeFont, Color.red, newState);
                 break;
             case AilmentState.Faded:
@@ -79,20 +90,22 @@ public class Ailment
 
     void SetDisplayTextParams(string text, TMP_FontAsset font, Color color, bool newState)
     {
-        ailmentDisplayText.text = text;
-        ailmentDisplayText.font = font;
+        displayText.text = text;
+        displayText.font = font;
 
         if (newState)
-            ailmentDisplayText.color = color;
+            displayText.color = color;
     }
 
     public void InitGameObject()
     {
-        ailmentGameObject = GameObject.Instantiate(Ref.ailmentGameObject, patient.patientGameObject.transform);
-        ailmentDisplayText = ailmentGameObject.transform.GetChild(0).GetComponent<TextMeshPro>();
+        gameObject = GameObject.Instantiate(Ref.ailmentGameObject, patient.gameObject.transform);
+        displayText = gameObject.transform.GetChild(0).GetComponent<TextMeshPro>();
+        sprite = gameObject.transform.GetChild(1).GetComponent<SpriteRenderer>();
 
-        ailmentGameObject.transform.localPosition = textOffset;
-        ailmentDisplayText.text = timeLimit.ToString();
+        gameObject.transform.localPosition = location;
+        displayText.transform.localPosition = textOffset - location;
+        displayText.text = timeLimit.ToString();
     }
 
     public bool AtFadeTime()
@@ -112,7 +125,7 @@ public class Ailment
         while (time > 0)
         {
             alpha = time / fadeDuration;
-            ailmentDisplayText.color = new Color(ailmentDisplayText.color.r, ailmentDisplayText.color.g, ailmentDisplayText.color.b, alpha);
+            displayText.color = new Color(displayText.color.r, displayText.color.g, displayText.color.b, alpha);
 
             yield return Timing.WaitForOneFrame;
             time -= Time.deltaTime;
@@ -126,7 +139,7 @@ public class Ailment
         while (time > 0)
         {
             alpha = Mathf.Clamp01(time / fadeDuration);
-            ailmentDisplayText.color = new Color(ailmentDisplayText.color.r, ailmentDisplayText.color.g, ailmentDisplayText.color.b, alpha);
+            displayText.color = new Color(displayText.color.r, displayText.color.g, displayText.color.b, alpha);
 
             yield return Timing.WaitForOneFrame;
             time -= Time.deltaTime;
@@ -150,11 +163,11 @@ public class Ailment
             alpha = Mathf.Clamp01(time / fadeDuration);
             if (!colortoggle)
             {
-                ailmentDisplayText.color = new Color(color1.r, color1.g, color1.b, alpha);
+                displayText.color = new Color(color1.r, color1.g, color1.b, alpha);
             }
             else
             {
-                ailmentDisplayText.color = new Color(color2.r, color2.g, color2.b, alpha);
+                displayText.color = new Color(color2.r, color2.g, color2.b, alpha);
             }
 
             yield return Timing.WaitForOneFrame;

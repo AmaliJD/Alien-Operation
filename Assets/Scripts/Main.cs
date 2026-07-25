@@ -15,6 +15,7 @@ public class Main : MonoBehaviour
     const float AIL_RADIUS = 1.15f;
     bool readMouseDown;
 
+    [Header("Globals")]
     public TMP_FontAsset ref_activeFont;
     public TMP_FontAsset ref_fadedFont;
     public TMP_FontAsset ref_successFont;
@@ -23,6 +24,9 @@ public class Main : MonoBehaviour
 
     [Header("Patient Sprites")]
     public List<PatientSprites> patientSprites;
+
+    [Header("UI")]
+    public Transform ui_title;
 
     void Awake()
     {
@@ -33,12 +37,13 @@ public class Main : MonoBehaviour
         Ref.patientGameObject = ref_patientGameObject;
 
         NewPatient().AddAilments(
-            new Ailment(5, .8f, false, -2, new Vector2(-3, 0))
+            new Ailment(5, .8f, false, -2, new Vector2(-3, 0), AIL_RADIUS * 1.4f, 45),
+            new Ailment(5, 1f, false, -4, new Vector2(0, 0))
         );
 
         NewPatient().AddAilments(
             new Ailment(5, 1f, true, 4, new Vector2(-3, 0)),
-            new Ailment(10, 1f, false, 4, new Vector2(3, 0))
+            new Ailment(10, 2f, false, 4, new Vector2(3, 0))
         );
     }
 
@@ -80,13 +85,34 @@ public class Main : MonoBehaviour
 
             foreach (Ailment ail in patient.currentAilments)
             {
-                Vector2 ail_location = ail.ailmentGameObject.transform.position;//.location + (Vector2)ail.patient.patientGameObject.transform.position;
+                Vector2 ail_location = ail.gameObject.transform.position;
                 bool cursorOnAil = Vector2.Distance(mousePos, ail_location) <= AIL_RADIUS;
+
+                if (ail.state == AilmentState.Initializing)
+                {
+                    if (!ail.initializing)
+                    {
+                        ail.initializing = true;
+                        Sequence.Create()
+                            .Group(Tween.Scale(ail.displayText.transform, endValue: Vector2.one, duration: .25f, ease: Ease.OutBack, startDelay: 1f))
+                            .Group(Tween.Scale(ail.sprite.transform, endValue: Vector2.one, duration: .25f, ease: Ease.OutBack, startDelay: 1f))
+                            //.ChainDelay(.25f)
+                            .OnComplete(() =>
+                            {
+                                ail.state = AilmentState.Ready;
+                                ail.SetDisplayTime();
+                            });
+                        continue;
+                    }
+                    continue;
+                }
 
                 if (ail.complete)
                     continue;
 
                 AilmentState currentAilstate = ail.state;
+                if (ail.state == AilmentState.Ready)
+                    ail.state = AilmentState.CountDown;
 
                 ail.DecrementTime();
 
@@ -143,7 +169,7 @@ public class Main : MonoBehaviour
     {
         if (patientIndex >= 0)
         {
-            GameObject go = patients[patientIndex].patientGameObject;
+            GameObject go = patients[patientIndex].gameObject;
             Tween.PositionX(go.transform, endValue: -20, duration: .25f, ease: Ease.InCirc)
                 .OnComplete(() => Destroy(go));
         }
@@ -151,6 +177,10 @@ public class Main : MonoBehaviour
         patientIndex++;
         patients[patientIndex].Load(patientSprites[patientIndex]);
 
-        Tween.PositionX(patients[patientIndex].patientGameObject.transform, endValue: 0, duration: .75f, ease: Ease.OutBack, startDelay: .25f);
+        if (patientIndex == 0)
+        {
+            Tween.Scale(ui_title, endValue: Vector2.zero, duration: .5f, ease: Ease.InBack);
+        }
+        Tween.PositionX(patients[patientIndex].gameObject.transform, endValue: 0, duration: .75f, ease: Ease.OutBack, startDelay: patientIndex > 0 ? .25f : .75f);
     }
 }

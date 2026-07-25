@@ -5,6 +5,8 @@ using UnityEngine;
 
 public enum AilmentState
 {
+    Initializing,
+    Ready,
     CountDown,
     Faded,
     Success,
