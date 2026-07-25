@@ -1,8 +1,10 @@
-using UnityEngine;
-using TMPro;
-using MEC;
-using System.Collections.Generic;
 using EX;
+using MEC;
+using PrimeTween;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.InputSystem.LowLevel;
 
 public class Ailment
 {
@@ -24,13 +26,15 @@ public class Ailment
 
     public GameObject gameObject;
     public TextMeshPro displayText;
-    public SpriteRenderer sprite;
+    public SpriteRenderer sprite_head;
+    public SpriteRenderer sprite_back;
+    public SpriteRenderer sprite_broken;
 
     public Patient patient;
 
     CoroutineHandle colorChangeMEC;
-    public int couroutineLayer;
-    static int couroutineLayerCounter;
+    public int coroutineLayer;
+    static int coroutineLayerCounter;
 
     public Ailment(int timeLimit, float timerSpeed, bool loadNext, float fadeTime, Vector2 location, float offsetDistance = 0, float offsetAngle = 0)
     {
@@ -41,11 +45,27 @@ public class Ailment
         this.textOffset = location + (Vector2.up.Rotate(-offsetAngle) * offsetDistance);
 
         this.fadeTime = fadeTime;
-        couroutineLayerCounter++;
-        this.couroutineLayer = couroutineLayerCounter;
+        coroutineLayerCounter++;
+        this.coroutineLayer = coroutineLayerCounter;
 
         timer = timeLimit;
         //displayTime = Mathf.CeilToInt(timer);
+    }
+
+    public void Reset()
+    {
+        state = AilmentState.Initializing;
+        initializing = false;
+        atZero = false;
+        internalTimer = 0;
+        timer = timeLimit;
+        SetDisplayTime();
+        //Timing.KillCoroutines(coroutineLayer);
+        //SetDisplayTextParams(displayTime.ToString(), Fonts.activeFont, Color.red, true);
+
+        //sprite_head.gameObject.SetActive(true);
+        //sprite_broken.gameObject.SetActive(false);
+        //sprite_broken.transform.localScale = Vector2.one;
     }
 
     public void SetDisplayTime()
@@ -57,6 +77,7 @@ public class Ailment
     {
         timer -= Time.deltaTime * timerSpeed;
         displayTime = Mathf.CeilToInt(timer);
+        displayText.text = timeLimit.ToString();
         atZero = timer <= 0 && timer > -1;
 
         internalTimer += Time.deltaTime;
@@ -81,11 +102,20 @@ public class Ailment
                 break;
             case AilmentState.Fail_Early:
                 SetDisplayTextParams(displayTime.ToString(), Fonts.activeFont, Color.red, newState);
+                Break();
                 break;
             case AilmentState.Fail_Late:
                 SetDisplayTextParams("x", Fonts.activeFont, Color.red, newState);
+                Break();
                 break;
         }
+    }
+
+    void Break()
+    {
+        sprite_head.gameObject.SetActive(false);
+        sprite_broken.gameObject.SetActive(true);
+        Tween.Scale(sprite_broken.transform, endValue: Vector2.one * .8f, duration: .25f, ease: Ease.OutBack);
     }
 
     void SetDisplayTextParams(string text, TMP_FontAsset font, Color color, bool newState)
@@ -101,7 +131,9 @@ public class Ailment
     {
         gameObject = GameObject.Instantiate(Ref.ailmentGameObject, patient.gameObject.transform);
         displayText = gameObject.transform.GetChild(0).GetComponent<TextMeshPro>();
-        sprite = gameObject.transform.GetChild(1).GetComponent<SpriteRenderer>();
+        sprite_head = gameObject.transform.GetChild(1).GetComponent<SpriteRenderer>();
+        sprite_back = gameObject.transform.GetChild(2).GetComponent<SpriteRenderer>();
+        sprite_broken = gameObject.transform.GetChild(3).GetComponent<SpriteRenderer>();
 
         gameObject.transform.localPosition = location;
         displayText.transform.localPosition = textOffset - location;

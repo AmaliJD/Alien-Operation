@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 820.8
   m_ShowMode: 4
-  m_Title: Git for Unity
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -73,7 +73,7 @@ MonoBehaviour:
     height: 36
   m_MinSize: {x: 50, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 18}
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 793.6
+    width: 852.8
     height: 764.8
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
@@ -165,16 +165,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 793.6
-    height: 538.4
+    width: 852.8
+    height: 656
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 17}
-  - {fileID: 16}
+  - {fileID: 20}
+  - {fileID: 19}
+  - {fileID: 15}
+  - {fileID: 14}
+  - {fileID: 13}
   m_Selected: 1
-  m_LastSelected: 1
+  m_LastSelected: 0
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,17 +194,17 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 538.4
-    width: 793.6
-    height: 226.39996
+    y: 656
+    width: 852.8
+    height: 108.79999
   m_MinSize: {x: 101, y: 126}
   m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 21}
   m_Panes:
-  - {fileID: 18}
-  - {fileID: 14}
-  - {fileID: 19}
-  - {fileID: 20}
+  - {fileID: 21}
+  - {fileID: 17}
+  - {fileID: 22}
+  - {fileID: 23}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &9
@@ -221,9 +224,9 @@ MonoBehaviour:
   - {fileID: 11}
   m_Position:
     serializedVersion: 2
-    x: 793.6
+    x: 852.8
     y: 0
-    width: 340.80005
+    width: 281.60004
     height: 764.8
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
@@ -247,13 +250,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 340.80005
+    width: 281.60004
     height: 417.6
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 24}
   m_Panes:
-  - {fileID: 21}
+  - {fileID: 24}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &11
@@ -273,13 +276,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 417.6
-    width: 340.80005
+    width: 281.60004
     height: 347.19998
   m_MinSize: {x: 232, y: 276}
   m_MaxSize: {x: 10002, y: 10026}
-  m_ActualView: {fileID: 22}
+  m_ActualView: {fileID: 25}
   m_Panes:
-  - {fileID: 22}
+  - {fileID: 25}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &12
@@ -292,7 +295,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Window
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -301,15 +304,806 @@ MonoBehaviour:
     y: 0
     width: 401.59998
     height: 764.8
-  m_MinSize: {x: 51, y: 76}
+  m_MinSize: {x: 276, y: 76}
   m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 26}
   m_Panes:
-  - {fileID: 23}
-  - {fileID: 13}
-  m_Selected: 1
-  m_LastSelected: 0
+  - {fileID: 26}
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924ffcbe75518854f97b48776d0f1939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.ShaderGraph.Editor::UnityEditor.ShaderGraph.Drawing.MaterialGraphEditWindow
+  m_MinSize: {x: 50, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: White
+    m_Image: {fileID: 2800000, guid: 7129268cf102b2f45809905bcb27ce8b, type: 3}
+    m_Tooltip: 
+    m_TextWithWhitespace: "White\u200B"
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 79.200005
+    width: 792.6
+    height: 504.40002
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_ContainerData: []
+    m_DynamicPanelContainerData: []
+    m_OverlaysVisible: 1
+    m_DynamicPanelBehavior: 0
+  m_Selected: d5879c22d53c6054787ac4367de931a9
+  m_GraphObject: {fileID: 0}
+  m_LastSerializedFileContents: "{\n    \"m_SGVersion\": 3,\n    \"m_Type\": \"UnityEditor.ShaderGraph.GraphData\",\n   
+    \"m_ObjectId\": \"6eafa56d7f8641c2910a1e86431b057e\",\n    \"m_Properties\":
+    [\n        {\n            \"m_Id\": \"787e155d2ff1490aa9d2107fef027560\"\n       
+    }\n    ],\n    \"m_Keywords\": [],\n    \"m_Dropdowns\": [],\n    \"m_CategoryData\":
+    [\n        {\n            \"m_Id\": \"d568d4675ca54e6ca1accd37a2c94446\"\n       
+    }\n    ],\n    \"m_Nodes\": [\n        {\n            \"m_Id\": \"489cf47be68044aba86f2b6459648080\"\n       
+    },\n        {\n            \"m_Id\": \"d4b4676d761e4883bdc0e10733ee0c33\"\n       
+    },\n        {\n            \"m_Id\": \"c220407c7d114c0d979dd3c7c1e6da67\"\n       
+    },\n        {\n            \"m_Id\": \"c5f8520ea9874598b1c3d58f60a22732\"\n       
+    },\n        {\n            \"m_Id\": \"b9f4a41fc4864dc08873daa6ef0834f4\"\n       
+    },\n        {\n            \"m_Id\": \"ab742c9fd2b245d1841dab7251d3cc1d\"\n       
+    },\n        {\n            \"m_Id\": \"1f9ae24756544a5aab1a2c2a455d6b80\"\n       
+    }\n    ],\n    \"m_GroupDatas\": [],\n    \"m_StickyNoteDatas\": [],\n    \"m_Edges\":
+    [\n        {\n            \"m_OutputSlot\": {\n                \"m_Node\": {\n                   
+    \"m_Id\": \"1f9ae24756544a5aab1a2c2a455d6b80\"\n                },\n               
+    \"m_SlotId\": 7\n            },\n            \"m_InputSlot\": {\n               
+    \"m_Node\": {\n                    \"m_Id\": \"b9f4a41fc4864dc08873daa6ef0834f4\"\n               
+    },\n                \"m_SlotId\": 0\n            }\n        },\n        {\n           
+    \"m_OutputSlot\": {\n                \"m_Node\": {\n                    \"m_Id\":
+    \"ab742c9fd2b245d1841dab7251d3cc1d\"\n                },\n                \"m_SlotId\":
+    0\n            },\n            \"m_InputSlot\": {\n                \"m_Node\":
+    {\n                    \"m_Id\": \"1f9ae24756544a5aab1a2c2a455d6b80\"\n               
+    },\n                \"m_SlotId\": 1\n            }\n        }\n    ],\n    \"m_VertexContext\":
+    {\n        \"m_Position\": {\n            \"x\": 0.0,\n            \"y\": 0.0\n       
+    },\n        \"m_Blocks\": [\n            {\n                \"m_Id\": \"489cf47be68044aba86f2b6459648080\"\n           
+    },\n            {\n                \"m_Id\": \"d4b4676d761e4883bdc0e10733ee0c33\"\n           
+    },\n            {\n                \"m_Id\": \"c220407c7d114c0d979dd3c7c1e6da67\"\n           
+    }\n        ]\n    },\n    \"m_FragmentContext\": {\n        \"m_Position\": {\n           
+    \"x\": 0.0,\n            \"y\": 200.0\n        },\n        \"m_Blocks\": [\n           
+    {\n                \"m_Id\": \"c5f8520ea9874598b1c3d58f60a22732\"\n           
+    },\n            {\n                \"m_Id\": \"b9f4a41fc4864dc08873daa6ef0834f4\"\n           
+    }\n        ]\n    },\n    \"m_PreviewData\": {\n        \"serializedMesh\": {\n           
+    \"m_SerializedMesh\": \"{\\\"mesh\\\":{\\\"instanceID\\\":0}}\",\n           
+    \"m_Guid\": \"\"\n        },\n        \"preventRotation\": false\n    },\n   
+    \"m_Path\": \"Shader Graphs\",\n    \"m_GraphPrecision\": 1,\n    \"m_PreviewMode\":
+    2,\n    \"m_OutputNode\": {\n        \"m_Id\": \"\"\n    },\n    \"m_SubDatas\":
+    [],\n    \"m_ActiveTargets\": [\n        {\n            \"m_Id\": \"0d3088c458c44dcaa69c188d7c2bbde4\"\n       
+    }\n    ]\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.ColorRGBMaterialSlot\",\n   
+    \"m_ObjectId\": \"0322e0689a9a4a1283685e5534ff41c9\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Base Color\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\":
+    false,\n    \"m_ShaderOutputName\": \"BaseColor\",\n    \"m_StageCapability\":
+    2,\n    \"m_Value\": {\n        \"x\": 1.0,\n        \"y\": 1.0,\n        \"z\":
+    1.0\n    },\n    \"m_DefaultValue\": {\n        \"x\": 0.5,\n        \"y\": 0.5,\n       
+    \"z\": 0.5\n    },\n    \"m_Labels\": [],\n    \"m_ColorMode\": 0,\n    \"m_DefaultColor\":
+    {\n        \"r\": 0.5,\n        \"g\": 0.5,\n        \"b\": 0.5,\n        \"a\":
+    1.0\n    }\n}\n\n{\n    \"m_SGVersion\": 1,\n    \"m_Type\": \"UnityEditor.Rendering.Universal.ShaderGraph.UniversalTarget\",\n   
+    \"m_ObjectId\": \"0d3088c458c44dcaa69c188d7c2bbde4\",\n    \"m_Datas\": [],\n   
+    \"m_ActiveSubTarget\": {\n        \"m_Id\": \"1caeb99e0cfb4e828c5c6abcae49034a\"\n   
+    },\n    \"m_AllowMaterialOverride\": false,\n    \"m_SurfaceType\": 0,\n    \"m_ZTestMode\":
+    4,\n    \"m_ZWriteControl\": 0,\n    \"m_AlphaMode\": 0,\n    \"m_RenderFace\":
+    2,\n    \"m_AlphaClip\": false,\n    \"m_CastShadows\": true,\n    \"m_ReceiveShadows\":
+    true,\n    \"m_DisableTint\": false,\n    \"m_Sort3DAs2DCompatible\": false,\n   
+    \"m_AdditionalMotionVectorMode\": 0,\n    \"m_AlembicMotionVectors\": false,\n   
+    \"m_SupportsLODCrossFade\": false,\n    \"m_CustomEditorGUI\": \"\",\n    \"m_SupportVFX\":
+    false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.Rendering.Universal.ShaderGraph.UniversalSpriteUnlitSubTarget\",\n   
+    \"m_ObjectId\": \"1caeb99e0cfb4e828c5c6abcae49034a\"\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.SampleTexture2DNode\",\n    \"m_ObjectId\":
+    \"1f9ae24756544a5aab1a2c2a455d6b80\",\n    \"m_Group\": {\n        \"m_Id\":
+    \"\"\n    },\n    \"m_Name\": \"Sample Texture 2D\",\n    \"m_DrawState\": {\n       
+    \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": -397.5999450683594,\n            \"y\": 73.5999755859375,\n           
+    \"width\": 208.0,\n            \"height\": 430.3999938964844\n        }\n   
+    },\n    \"m_Slots\": [\n        {\n            \"m_Id\": \"65d5475221dd4d7bbb7897dd3748b13d\"\n       
+    },\n        {\n            \"m_Id\": \"76c69eb44d1849319b465c36a398b9b7\"\n       
+    },\n        {\n            \"m_Id\": \"53790cd7a76e40a9b9fe5a12e8abdae7\"\n       
+    },\n        {\n            \"m_Id\": \"8f1f33c0f4ea4790a6d887de6ec63e6a\"\n       
+    },\n        {\n            \"m_Id\": \"915bb9f1dcc94cddadb72e09098e08aa\"\n       
+    },\n        {\n            \"m_Id\": \"c5be685f6fff413c935178323c966146\"\n       
+    },\n        {\n            \"m_Id\": \"494b0b1cec0c462d8405b360e5c7b59c\"\n       
+    },\n        {\n            \"m_Id\": \"d021677295364fef978e1778b8f77e56\"\n       
+    }\n    ],\n    \"synonyms\": [\n        \"tex2d\"\n    ],\n    \"m_Precision\":
+    0,\n    \"m_PreviewExpanded\": true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\":
+    0,\n    \"m_CustomColors\": {\n        \"m_SerializableColors\": []\n    },\n   
+    \"m_TextureType\": 0,\n    \"m_NormalMapSpace\": 0,\n    \"m_EnableGlobalMipBias\":
+    true,\n    \"m_MipSamplingMode\": 0\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.PositionMaterialSlot\",\n    \"m_ObjectId\": \"47a7389a0c834fe38997c315632af75b\",\n   
+    \"m_Id\": 0,\n    \"m_DisplayName\": \"Position\",\n    \"m_SlotType\": 0,\n   
+    \"m_Hidden\": false,\n    \"m_ShaderOutputName\": \"Position\",\n    \"m_StageCapability\":
+    1,\n    \"m_Value\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\":
+    0.0\n    },\n    \"m_DefaultValue\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n       
+    \"z\": 0.0\n    },\n    \"m_Labels\": [],\n    \"m_Space\": 0\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\":
+    \"489cf47be68044aba86f2b6459648080\",\n    \"m_Group\": {\n        \"m_Id\":
+    \"\"\n    },\n    \"m_Name\": \"VertexDescription.Position\",\n    \"m_DrawState\":
+    {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n            \"width\":
+    0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\": [\n       
+    {\n            \"m_Id\": \"47a7389a0c834fe38997c315632af75b\"\n        }\n   
+    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"VertexDescription.Position\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.UVMaterialSlot\",\n    \"m_ObjectId\": \"494b0b1cec0c462d8405b360e5c7b59c\",\n   
+    \"m_Id\": 2,\n    \"m_DisplayName\": \"UV\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\":
+    false,\n    \"m_ShaderOutputName\": \"UV\",\n    \"m_StageCapability\": 3,\n   
+    \"m_Value\": {\n        \"x\": 0.0,\n        \"y\": 0.0\n    },\n    \"m_DefaultValue\":
+    {\n        \"x\": 0.0,\n        \"y\": 0.0\n    },\n    \"m_Labels\": [],\n   
+    \"m_Channel\": 0\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.TangentMaterialSlot\",\n   
+    \"m_ObjectId\": \"4b80490f57e845df942dcf06a4658895\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Tangent\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false,\n   
+    \"m_ShaderOutputName\": \"Tangent\",\n    \"m_StageCapability\": 1,\n    \"m_Value\":
+    {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\": 0.0\n    },\n   
+    \"m_DefaultValue\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\":
+    0.0\n    },\n    \"m_Labels\": [],\n    \"m_Space\": 0\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\":
+    \"53790cd7a76e40a9b9fe5a12e8abdae7\",\n    \"m_Id\": 5,\n    \"m_DisplayName\":
+    \"G\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"G\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": 0.0,\n    \"m_DefaultValue\":
+    0.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector4MaterialSlot\",\n    \"m_ObjectId\":
+    \"65d5475221dd4d7bbb7897dd3748b13d\",\n    \"m_Id\": 0,\n    \"m_DisplayName\":
+    \"RGBA\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"RGBA\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": {\n        \"x\":
+    0.0,\n        \"y\": 0.0,\n        \"z\": 0.0,\n        \"w\": 0.0\n    },\n   
+    \"m_DefaultValue\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\":
+    0.0,\n        \"w\": 0.0\n    },\n    \"m_Labels\": []\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\":
+    \"76c69eb44d1849319b465c36a398b9b7\",\n    \"m_Id\": 4,\n    \"m_DisplayName\":
+    \"R\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"R\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": 0.0,\n    \"m_DefaultValue\":
+    0.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty\",\n   
+    \"m_ObjectId\": \"787e155d2ff1490aa9d2107fef027560\",\n    \"m_Guid\": {\n       
+    \"m_GuidSerialized\": \"215ea361-97f4-4249-acbb-0e4c17d12540\"\n    },\n    \"promotedFromAssetID\":
+    \"\",\n    \"promotedFromCategoryName\": \"\",\n    \"promotedOrdering\": -1,\n   
+    \"m_Name\": \"_MainTex\",\n    \"m_DefaultRefNameVersion\": 1,\n    \"m_RefNameGeneratedByDisplayName\":
+    \"_MainTex\",\n    \"m_DefaultReferenceName\": \"_MainTex\",\n    \"m_OverrideReferenceName\":
+    \"\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_UseCustomSlotLabel\":
+    false,\n    \"m_CustomSlotLabel\": \"\",\n    \"m_DismissedVersion\": 0,\n   
+    \"m_Precision\": 0,\n    \"overrideHLSLDeclaration\": false,\n    \"hlslDeclarationOverride\":
+    0,\n    \"m_Hidden\": false,\n    \"m_PerRendererData\": false,\n    \"m_customAttributes\":
+    [],\n    \"m_Value\": {\n        \"m_SerializedTexture\": \"\",\n        \"m_Guid\":
+    \"\"\n    },\n    \"isMainTexture\": false,\n    \"useTilingAndOffset\": false,\n   
+    \"useTexelSize\": true,\n    \"isHDR\": false,\n    \"m_Modifiable\": true,\n   
+    \"m_DefaultType\": 0\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Texture2DMaterialSlot\",\n   
+    \"m_ObjectId\": \"8b0a68b9390b451aa60c381c195f55c2\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"_MainTex\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n   
+    \"m_ShaderOutputName\": \"Out\",\n    \"m_StageCapability\": 3,\n    \"m_BareResource\":
+    false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.NormalMaterialSlot\",\n   
+    \"m_ObjectId\": \"8cb3471a5d1e454a8f2cd286b3a6bd69\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Normal\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false,\n   
+    \"m_ShaderOutputName\": \"Normal\",\n    \"m_StageCapability\": 1,\n    \"m_Value\":
+    {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\": 0.0\n    },\n   
+    \"m_DefaultValue\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\":
+    0.0\n    },\n    \"m_Labels\": [],\n    \"m_Space\": 0\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\":
+    \"8f1f33c0f4ea4790a6d887de6ec63e6a\",\n    \"m_Id\": 6,\n    \"m_DisplayName\":
+    \"B\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"B\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": 0.0,\n    \"m_DefaultValue\":
+    0.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\":
+    \"915bb9f1dcc94cddadb72e09098e08aa\",\n    \"m_Id\": 7,\n    \"m_DisplayName\":
+    \"A\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"A\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": 0.0,\n    \"m_DefaultValue\":
+    0.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\":
+    \"985cb47291eb44c4affb5ae76d94f41f\",\n    \"m_Id\": 0,\n    \"m_DisplayName\":
+    \"Alpha\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"Alpha\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": 1.0,\n    \"m_DefaultValue\":
+    1.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.PropertyNode\",\n    \"m_ObjectId\":
+    \"ab742c9fd2b245d1841dab7251d3cc1d\",\n    \"m_Group\": {\n        \"m_Id\":
+    \"\"\n    },\n    \"m_Name\": \"Property\",\n    \"m_DrawState\": {\n       
+    \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": -587.5771484375,\n            \"y\": 113.52667236328125,\n           
+    \"width\": 0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"8b0a68b9390b451aa60c381c195f55c2\"\n       
+    }\n    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_Property\": {\n       
+    \"m_Id\": \"787e155d2ff1490aa9d2107fef027560\"\n    }\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\":
+    \"b9f4a41fc4864dc08873daa6ef0834f4\",\n    \"m_Group\": {\n        \"m_Id\":
+    \"\"\n    },\n    \"m_Name\": \"SurfaceDescription.Alpha\",\n    \"m_DrawState\":
+    {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n            \"width\":
+    0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\": [\n       
+    {\n            \"m_Id\": \"985cb47291eb44c4affb5ae76d94f41f\"\n        }\n   
+    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.Alpha\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\": \"c220407c7d114c0d979dd3c7c1e6da67\",\n   
+    \"m_Group\": {\n        \"m_Id\": \"\"\n    },\n    \"m_Name\": \"VertexDescription.Tangent\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n           
+    \"width\": 0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"4b80490f57e845df942dcf06a4658895\"\n       
+    }\n    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"VertexDescription.Tangent\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.Texture2DInputMaterialSlot\",\n    \"m_ObjectId\":
+    \"c5be685f6fff413c935178323c966146\",\n    \"m_Id\": 1,\n    \"m_DisplayName\":
+    \"Texture\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"Texture\",\n    \"m_StageCapability\": 3,\n    \"m_BareResource\": false,\n   
+    \"m_Texture\": {\n        \"m_SerializedTexture\": \"\",\n        \"m_Guid\":
+    \"\"\n    },\n    \"m_DefaultType\": 0\n}\n\n{\n    \"m_SGVersion\": 0,\n   
+    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\": \"c5f8520ea9874598b1c3d58f60a22732\",\n   
+    \"m_Group\": {\n        \"m_Id\": \"\"\n    },\n    \"m_Name\": \"SurfaceDescription.BaseColor\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n           
+    \"width\": 0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"0322e0689a9a4a1283685e5534ff41c9\"\n       
+    }\n    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.BaseColor\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.SamplerStateMaterialSlot\",\n    \"m_ObjectId\": \"d021677295364fef978e1778b8f77e56\",\n   
+    \"m_Id\": 3,\n    \"m_DisplayName\": \"Sampler\",\n    \"m_SlotType\": 0,\n   
+    \"m_Hidden\": false,\n    \"m_ShaderOutputName\": \"Sampler\",\n    \"m_StageCapability\":
+    3,\n    \"m_BareResource\": false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\": \"d4b4676d761e4883bdc0e10733ee0c33\",\n   
+    \"m_Group\": {\n        \"m_Id\": \"\"\n    },\n    \"m_Name\": \"VertexDescription.Normal\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n           
+    \"width\": 0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"8cb3471a5d1e454a8f2cd286b3a6bd69\"\n       
+    }\n    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"VertexDescription.Normal\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.CategoryData\",\n    \"m_ObjectId\": \"d568d4675ca54e6ca1accd37a2c94446\",\n   
+    \"m_Name\": \"\",\n    \"m_ChildObjectList\": [\n        {\n            \"m_Id\":
+    \"787e155d2ff1490aa9d2107fef027560\"\n        }\n    ]\n}\n\n"
+  m_AssetMaybeChangedOnDisk: 0
+  m_AssetMaybeDeleted: 0
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924ffcbe75518854f97b48776d0f1939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.ShaderGraph.Editor::UnityEditor.ShaderGraph.Drawing.MaterialGraphEditWindow
+  m_MinSize: {x: 50, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Gray UI
+    m_Image: {fileID: 2800000, guid: 7129268cf102b2f45809905bcb27ce8b, type: 3}
+    m_Tooltip: 
+    m_TextWithWhitespace: "Gray UI\u200B"
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 79.200005
+    width: 792.6
+    height: 512.4
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_ContainerData: []
+    m_DynamicPanelContainerData: []
+    m_OverlaysVisible: 1
+    m_DynamicPanelBehavior: 0
+  m_Selected: 24b675b3d8bb4e64a885a85361ecf5ea
+  m_GraphObject: {fileID: 0}
+  m_LastSerializedFileContents: "{\n    \"m_SGVersion\": 3,\n    \"m_Type\": \"UnityEditor.ShaderGraph.GraphData\",\n   
+    \"m_ObjectId\": \"5753e4647b2d4eaf9ee0196d6e90ba70\",\n    \"m_Properties\":
+    [\n        {\n            \"m_Id\": \"2c4a3e4791554c7c97f22b4ff12429f8\"\n       
+    }\n    ],\n    \"m_Keywords\": [],\n    \"m_Dropdowns\": [],\n    \"m_CategoryData\":
+    [\n        {\n            \"m_Id\": \"39cb92e705da420d87324fc177b1caf4\"\n       
+    }\n    ],\n    \"m_Nodes\": [\n        {\n            \"m_Id\": \"1a4f30626e29465197f588be351cd415\"\n       
+    },\n        {\n            \"m_Id\": \"cb536f3c806642ccb252e51de710ebb2\"\n       
+    },\n        {\n            \"m_Id\": \"3b400edf7601445ea76cb0a86ec07c47\"\n       
+    },\n        {\n            \"m_Id\": \"a7149f5474b24dd297d5ebe32e0e3510\"\n       
+    },\n        {\n            \"m_Id\": \"dba0698d9a2149d5a978e2c307b09bc2\"\n       
+    },\n        {\n            \"m_Id\": \"39c450d38f3b4b0391d5a6529fa29fca\"\n       
+    }\n    ],\n    \"m_GroupDatas\": [],\n    \"m_StickyNoteDatas\": [],\n    \"m_Edges\":
+    [\n        {\n            \"m_OutputSlot\": {\n                \"m_Node\": {\n                   
+    \"m_Id\": \"3b400edf7601445ea76cb0a86ec07c47\"\n                },\n               
+    \"m_SlotId\": 7\n            },\n            \"m_InputSlot\": {\n               
+    \"m_Node\": {\n                    \"m_Id\": \"cb536f3c806642ccb252e51de710ebb2\"\n               
+    },\n                \"m_SlotId\": 0\n            }\n        },\n        {\n           
+    \"m_OutputSlot\": {\n                \"m_Node\": {\n                    \"m_Id\":
+    \"a7149f5474b24dd297d5ebe32e0e3510\"\n                },\n                \"m_SlotId\":
+    0\n            },\n            \"m_InputSlot\": {\n                \"m_Node\":
+    {\n                    \"m_Id\": \"3b400edf7601445ea76cb0a86ec07c47\"\n               
+    },\n                \"m_SlotId\": 1\n            }\n        }\n    ],\n    \"m_VertexContext\":
+    {\n        \"m_Position\": {\n            \"x\": 0.0,\n            \"y\": 0.0\n       
+    },\n        \"m_Blocks\": []\n    },\n    \"m_FragmentContext\": {\n        \"m_Position\":
+    {\n            \"x\": 0.0,\n            \"y\": 200.0\n        },\n        \"m_Blocks\":
+    [\n            {\n                \"m_Id\": \"1a4f30626e29465197f588be351cd415\"\n           
+    },\n            {\n                \"m_Id\": \"cb536f3c806642ccb252e51de710ebb2\"\n           
+    },\n            {\n                \"m_Id\": \"39c450d38f3b4b0391d5a6529fa29fca\"\n           
+    }\n        ]\n    },\n    \"m_PreviewData\": {\n        \"serializedMesh\": {\n           
+    \"m_SerializedMesh\": \"{\\\"mesh\\\":{\\\"instanceID\\\":0}}\",\n           
+    \"m_Guid\": \"\"\n        },\n        \"preventRotation\": false\n    },\n   
+    \"m_Path\": \"Shader Graphs\",\n    \"m_GraphPrecision\": 1,\n    \"m_PreviewMode\":
+    2,\n    \"m_OutputNode\": {\n        \"m_Id\": \"\"\n    },\n    \"m_SubDatas\":
+    [],\n    \"m_ActiveTargets\": [\n        {\n            \"m_Id\": \"78b1e55335374f17b2d4535ca2a41ba3\"\n       
+    }\n    ]\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.SamplerStateMaterialSlot\",\n   
+    \"m_ObjectId\": \"069b8f7b893746d2bb0bd52f50c7778f\",\n    \"m_Id\": 3,\n   
+    \"m_DisplayName\": \"Sampler\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false,\n   
+    \"m_ShaderOutputName\": \"Sampler\",\n    \"m_StageCapability\": 3,\n    \"m_BareResource\":
+    false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector4MaterialSlot\",\n   
+    \"m_ObjectId\": \"0ab4738ec04a41078e4a52e4208ad6d2\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"RGBA\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n   
+    \"m_ShaderOutputName\": \"RGBA\",\n    \"m_StageCapability\": 2,\n    \"m_Value\":
+    {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\": 0.0,\n        \"w\":
+    0.0\n    },\n    \"m_DefaultValue\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n       
+    \"z\": 0.0,\n        \"w\": 0.0\n    },\n    \"m_Labels\": []\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\":
+    \"0c8d85183a7845a08b63bebb4a24d6ed\",\n    \"m_Id\": 4,\n    \"m_DisplayName\":
+    \"R\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"R\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": 0.0,\n    \"m_DefaultValue\":
+    0.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.UVMaterialSlot\",\n    \"m_ObjectId\":
+    \"16dc2b4a477240e79dce4c14dfa12a2d\",\n    \"m_Id\": 2,\n    \"m_DisplayName\":
+    \"UV\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"UV\",\n    \"m_StageCapability\": 3,\n    \"m_Value\": {\n        \"x\": 0.0,\n       
+    \"y\": 0.0\n    },\n    \"m_DefaultValue\": {\n        \"x\": 0.0,\n        \"y\":
+    0.0\n    },\n    \"m_Labels\": [],\n    \"m_Channel\": 0\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\":
+    \"1a4f30626e29465197f588be351cd415\",\n    \"m_Group\": {\n        \"m_Id\":
+    \"\"\n    },\n    \"m_Name\": \"SurfaceDescription.BaseColor\",\n    \"m_DrawState\":
+    {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n            \"width\":
+    0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\": [\n       
+    {\n            \"m_Id\": \"7a78cfbbf5b544db8d8ee760086b299d\"\n        }\n   
+    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.BaseColor\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\": \"2402b66496eb461cb019bd6bf2fff50c\",\n   
+    \"m_Id\": 7,\n    \"m_DisplayName\": \"A\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\":
+    false,\n    \"m_ShaderOutputName\": \"A\",\n    \"m_StageCapability\": 2,\n   
+    \"m_Value\": 0.0,\n    \"m_DefaultValue\": 0.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\":
+    false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty\",\n   
+    \"m_ObjectId\": \"2c4a3e4791554c7c97f22b4ff12429f8\",\n    \"m_Guid\": {\n       
+    \"m_GuidSerialized\": \"c037d80d-e3c5-402f-ad46-be9fe6db6178\"\n    },\n    \"promotedFromAssetID\":
+    \"\",\n    \"promotedFromCategoryName\": \"\",\n    \"promotedOrdering\": -1,\n   
+    \"m_Name\": \"_MainTex\",\n    \"m_DefaultRefNameVersion\": 1,\n    \"m_RefNameGeneratedByDisplayName\":
+    \"_MainTex\",\n    \"m_DefaultReferenceName\": \"_MainTex\",\n    \"m_OverrideReferenceName\":
+    \"\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_UseCustomSlotLabel\":
+    false,\n    \"m_CustomSlotLabel\": \"\",\n    \"m_DismissedVersion\": 0,\n   
+    \"m_Precision\": 0,\n    \"overrideHLSLDeclaration\": false,\n    \"hlslDeclarationOverride\":
+    0,\n    \"m_Hidden\": false,\n    \"m_PerRendererData\": false,\n    \"m_customAttributes\":
+    [],\n    \"m_Value\": {\n        \"m_SerializedTexture\": \"\",\n        \"m_Guid\":
+    \"\"\n    },\n    \"isMainTexture\": false,\n    \"useTilingAndOffset\": false,\n   
+    \"useTexelSize\": true,\n    \"isHDR\": false,\n    \"m_Modifiable\": true,\n   
+    \"m_DefaultType\": 0\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.Rendering.Canvas.ShaderGraph.CanvasData\",\n   
+    \"m_ObjectId\": \"2ca3d655444f4d3da1922ba0af97c021\",\n    \"m_Version\": 0,\n   
+    \"m_AlphaClip\": false,\n    \"m_DisableTint\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\":
+    \"39c450d38f3b4b0391d5a6529fa29fca\",\n    \"m_Group\": {\n        \"m_Id\":
+    \"\"\n    },\n    \"m_Name\": \"SurfaceDescription.Emission\",\n    \"m_DrawState\":
+    {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n            \"width\":
+    0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\": [\n       
+    {\n            \"m_Id\": \"a8a5858d9b9144b9ad83755c5ef19207\"\n        }\n   
+    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.Emission\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.CategoryData\",\n    \"m_ObjectId\": \"39cb92e705da420d87324fc177b1caf4\",\n   
+    \"m_Name\": \"\",\n    \"m_ChildObjectList\": [\n        {\n            \"m_Id\":
+    \"2c4a3e4791554c7c97f22b4ff12429f8\"\n        }\n    ]\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.SampleTexture2DNode\",\n    \"m_ObjectId\":
+    \"3b400edf7601445ea76cb0a86ec07c47\",\n    \"m_Group\": {\n        \"m_Id\":
+    \"\"\n    },\n    \"m_Name\": \"Sample Texture 2D\",\n    \"m_DrawState\": {\n       
+    \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": -497.1302490234375,\n            \"y\": -36.11622619628906,\n           
+    \"width\": 0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"0ab4738ec04a41078e4a52e4208ad6d2\"\n       
+    },\n        {\n            \"m_Id\": \"0c8d85183a7845a08b63bebb4a24d6ed\"\n       
+    },\n        {\n            \"m_Id\": \"f6b3a3c330d24b27b9e18e246243ab80\"\n       
+    },\n        {\n            \"m_Id\": \"eea36b51ca6c43d8904dd6b5c2deca56\"\n       
+    },\n        {\n            \"m_Id\": \"2402b66496eb461cb019bd6bf2fff50c\"\n       
+    },\n        {\n            \"m_Id\": \"8ec690cbb77f4a999cfa5c33b7e77310\"\n       
+    },\n        {\n            \"m_Id\": \"16dc2b4a477240e79dce4c14dfa12a2d\"\n       
+    },\n        {\n            \"m_Id\": \"069b8f7b893746d2bb0bd52f50c7778f\"\n       
+    }\n    ],\n    \"synonyms\": [\n        \"tex2d\"\n    ],\n    \"m_Precision\":
+    0,\n    \"m_PreviewExpanded\": true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\":
+    0,\n    \"m_CustomColors\": {\n        \"m_SerializableColors\": []\n    },\n   
+    \"m_TextureType\": 0,\n    \"m_NormalMapSpace\": 0,\n    \"m_EnableGlobalMipBias\":
+    true,\n    \"m_MipSamplingMode\": 0\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\": \"6f85cd61f1134eb19d530afd11c1823e\",\n   
+    \"m_Id\": 0,\n    \"m_DisplayName\": \"Alpha\",\n    \"m_SlotType\": 0,\n   
+    \"m_Hidden\": false,\n    \"m_ShaderOutputName\": \"Alpha\",\n    \"m_StageCapability\":
+    2,\n    \"m_Value\": 1.0,\n    \"m_DefaultValue\": 1.0,\n    \"m_Labels\": [],\n   
+    \"m_LiteralMode\": false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Texture2DMaterialSlot\",\n   
+    \"m_ObjectId\": \"72443ed0944a401da22d3f72c5019ac1\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"_MainTex\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n   
+    \"m_ShaderOutputName\": \"Out\",\n    \"m_StageCapability\": 3,\n    \"m_BareResource\":
+    false\n}\n\n{\n    \"m_SGVersion\": 1,\n    \"m_Type\": \"UnityEditor.Rendering.Universal.ShaderGraph.UniversalTarget\",\n   
+    \"m_ObjectId\": \"78b1e55335374f17b2d4535ca2a41ba3\",\n    \"m_Datas\": [\n       
+    {\n            \"m_Id\": \"2ca3d655444f4d3da1922ba0af97c021\"\n        }\n   
+    ],\n    \"m_ActiveSubTarget\": {\n        \"m_Id\": \"ca362b92c30e4b758bd4f2c0f8e24696\"\n   
+    },\n    \"m_AllowMaterialOverride\": false,\n    \"m_SurfaceType\": 0,\n    \"m_ZTestMode\":
+    4,\n    \"m_ZWriteControl\": 0,\n    \"m_AlphaMode\": 0,\n    \"m_RenderFace\":
+    2,\n    \"m_AlphaClip\": false,\n    \"m_CastShadows\": true,\n    \"m_ReceiveShadows\":
+    true,\n    \"m_DisableTint\": false,\n    \"m_Sort3DAs2DCompatible\": false,\n   
+    \"m_AdditionalMotionVectorMode\": 0,\n    \"m_AlembicMotionVectors\": false,\n   
+    \"m_SupportsLODCrossFade\": false,\n    \"m_CustomEditorGUI\": \"\",\n    \"m_SupportVFX\":
+    false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.ColorRGBMaterialSlot\",\n   
+    \"m_ObjectId\": \"7a78cfbbf5b544db8d8ee760086b299d\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Base Color\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\":
+    false,\n    \"m_ShaderOutputName\": \"BaseColor\",\n    \"m_StageCapability\":
+    2,\n    \"m_Value\": {\n        \"x\": 0.5,\n        \"y\": 0.5,\n        \"z\":
+    0.5\n    },\n    \"m_DefaultValue\": {\n        \"x\": 0.5,\n        \"y\": 0.5,\n       
+    \"z\": 0.5\n    },\n    \"m_Labels\": [],\n    \"m_ColorMode\": 0,\n    \"m_DefaultColor\":
+    {\n        \"r\": 0.5,\n        \"g\": 0.5,\n        \"b\": 0.5,\n        \"a\":
+    1.0\n    }\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Texture2DInputMaterialSlot\",\n   
+    \"m_ObjectId\": \"8ec690cbb77f4a999cfa5c33b7e77310\",\n    \"m_Id\": 1,\n   
+    \"m_DisplayName\": \"Texture\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false,\n   
+    \"m_ShaderOutputName\": \"Texture\",\n    \"m_StageCapability\": 3,\n    \"m_BareResource\":
+    false,\n    \"m_Texture\": {\n        \"m_SerializedTexture\": \"\",\n       
+    \"m_Guid\": \"\"\n    },\n    \"m_DefaultType\": 0\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.PropertyNode\",\n    \"m_ObjectId\":
+    \"a7149f5474b24dd297d5ebe32e0e3510\",\n    \"m_Group\": {\n        \"m_Id\":
+    \"\"\n    },\n    \"m_Name\": \"Property\",\n    \"m_DrawState\": {\n       
+    \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": -751.2000122070313,\n            \"y\": -0.000009076946298591793,\n           
+    \"width\": 131.20001220703126,\n            \"height\": 33.59999465942383\n       
+    }\n    },\n    \"m_Slots\": [\n        {\n            \"m_Id\": \"72443ed0944a401da22d3f72c5019ac1\"\n       
+    }\n    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_Property\": {\n       
+    \"m_Id\": \"2c4a3e4791554c7c97f22b4ff12429f8\"\n    }\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.ColorRGBMaterialSlot\",\n    \"m_ObjectId\":
+    \"a8a5858d9b9144b9ad83755c5ef19207\",\n    \"m_Id\": 0,\n    \"m_DisplayName\":
+    \"Emission\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"Emission\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": {\n        \"x\":
+    0.0,\n        \"y\": 0.0,\n        \"z\": 0.0\n    },\n    \"m_DefaultValue\":
+    {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\": 0.0\n    },\n   
+    \"m_Labels\": [],\n    \"m_ColorMode\": 1,\n    \"m_DefaultColor\": {\n       
+    \"r\": 0.0,\n        \"g\": 0.0,\n        \"b\": 0.0,\n        \"a\": 1.0\n   
+    }\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.Rendering.Universal.ShaderGraph.UniversalCanvasSubTarget\",\n   
+    \"m_ObjectId\": \"ca362b92c30e4b758bd4f2c0f8e24696\"\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\":
+    \"cb536f3c806642ccb252e51de710ebb2\",\n    \"m_Group\": {\n        \"m_Id\":
+    \"\"\n    },\n    \"m_Name\": \"SurfaceDescription.Alpha\",\n    \"m_DrawState\":
+    {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n            \"width\":
+    0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\": [\n       
+    {\n            \"m_Id\": \"6f85cd61f1134eb19d530afd11c1823e\"\n        }\n   
+    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.Alpha\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.SubGraphNode\",\n    \"m_ObjectId\": \"dba0698d9a2149d5a978e2c307b09bc2\",\n   
+    \"m_Group\": {\n        \"m_Id\": \"\"\n    },\n    \"m_Name\": \"Canvas Color\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": -496.7999572753906,\n           
+    \"y\": -416.79998779296877,\n            \"width\": 208.00003051757813,\n           
+    \"height\": 278.39996337890627\n        }\n    },\n    \"m_Slots\": [\n       
+    {\n            \"m_Id\": \"eed1fd747aa14a73befbcfa3257d85ce\"\n        }\n   
+    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedSubGraph\":
+    \"{\\n    \\\"subGraph\\\": {\\n        \\\"fileID\\\": -5475051401550479605,\\n       
+    \\\"guid\\\": \\\"74f647076bca3d442bc4a6ace5daf59f\\\",\\n        \\\"type\\\":
+    3\\n    }\\n}\",\n    \"m_PropertyGuids\": [],\n    \"m_PropertyIds\": [],\n   
+    \"m_Dropdowns\": [],\n    \"m_DropdownSelectedEntries\": []\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\":
+    \"eea36b51ca6c43d8904dd6b5c2deca56\",\n    \"m_Id\": 6,\n    \"m_DisplayName\":
+    \"B\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"B\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": 0.0,\n    \"m_DefaultValue\":
+    0.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector4MaterialSlot\",\n    \"m_ObjectId\":
+    \"eed1fd747aa14a73befbcfa3257d85ce\",\n    \"m_Id\": 1,\n    \"m_DisplayName\":
+    \"Out\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"Out\",\n    \"m_StageCapability\": 3,\n    \"m_Value\": {\n        \"x\": 0.0,\n       
+    \"y\": 0.0,\n        \"z\": 0.0,\n        \"w\": 0.0\n    },\n    \"m_DefaultValue\":
+    {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\": 0.0,\n        \"w\":
+    0.0\n    },\n    \"m_Labels\": []\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\": \"f6b3a3c330d24b27b9e18e246243ab80\",\n   
+    \"m_Id\": 5,\n    \"m_DisplayName\": \"G\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\":
+    false,\n    \"m_ShaderOutputName\": \"G\",\n    \"m_StageCapability\": 2,\n   
+    \"m_Value\": 0.0,\n    \"m_DefaultValue\": 0.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\":
+    false\n}\n\n"
+  m_AssetMaybeChangedOnDisk: 0
+  m_AssetMaybeDeleted: 0
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924ffcbe75518854f97b48776d0f1939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.ShaderGraph.Editor::UnityEditor.ShaderGraph.Drawing.MaterialGraphEditWindow
+  m_MinSize: {x: 50, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Gray
+    m_Image: {fileID: 2800000, guid: 7129268cf102b2f45809905bcb27ce8b, type: 3}
+    m_Tooltip: 
+    m_TextWithWhitespace: "Gray\u200B"
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 79.200005
+    width: 792.6
+    height: 512.4
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_ContainerData: []
+    m_DynamicPanelContainerData: []
+    m_OverlaysVisible: 1
+    m_DynamicPanelBehavior: 0
+  m_Selected: be1ff8e56081d7a4e8e4157f2d0d4495
+  m_GraphObject: {fileID: 0}
+  m_LastSerializedFileContents: "{\n    \"m_SGVersion\": 3,\n    \"m_Type\": \"UnityEditor.ShaderGraph.GraphData\",\n   
+    \"m_ObjectId\": \"6eafa56d7f8641c2910a1e86431b057e\",\n    \"m_Properties\":
+    [\n        {\n            \"m_Id\": \"787e155d2ff1490aa9d2107fef027560\"\n       
+    }\n    ],\n    \"m_Keywords\": [],\n    \"m_Dropdowns\": [],\n    \"m_CategoryData\":
+    [\n        {\n            \"m_Id\": \"d568d4675ca54e6ca1accd37a2c94446\"\n       
+    }\n    ],\n    \"m_Nodes\": [\n        {\n            \"m_Id\": \"489cf47be68044aba86f2b6459648080\"\n       
+    },\n        {\n            \"m_Id\": \"d4b4676d761e4883bdc0e10733ee0c33\"\n       
+    },\n        {\n            \"m_Id\": \"c220407c7d114c0d979dd3c7c1e6da67\"\n       
+    },\n        {\n            \"m_Id\": \"c5f8520ea9874598b1c3d58f60a22732\"\n       
+    },\n        {\n            \"m_Id\": \"b9f4a41fc4864dc08873daa6ef0834f4\"\n       
+    },\n        {\n            \"m_Id\": \"ab742c9fd2b245d1841dab7251d3cc1d\"\n       
+    },\n        {\n            \"m_Id\": \"1f9ae24756544a5aab1a2c2a455d6b80\"\n       
+    }\n    ],\n    \"m_GroupDatas\": [],\n    \"m_StickyNoteDatas\": [],\n    \"m_Edges\":
+    [\n        {\n            \"m_OutputSlot\": {\n                \"m_Node\": {\n                   
+    \"m_Id\": \"1f9ae24756544a5aab1a2c2a455d6b80\"\n                },\n               
+    \"m_SlotId\": 7\n            },\n            \"m_InputSlot\": {\n               
+    \"m_Node\": {\n                    \"m_Id\": \"b9f4a41fc4864dc08873daa6ef0834f4\"\n               
+    },\n                \"m_SlotId\": 0\n            }\n        },\n        {\n           
+    \"m_OutputSlot\": {\n                \"m_Node\": {\n                    \"m_Id\":
+    \"ab742c9fd2b245d1841dab7251d3cc1d\"\n                },\n                \"m_SlotId\":
+    0\n            },\n            \"m_InputSlot\": {\n                \"m_Node\":
+    {\n                    \"m_Id\": \"1f9ae24756544a5aab1a2c2a455d6b80\"\n               
+    },\n                \"m_SlotId\": 1\n            }\n        }\n    ],\n    \"m_VertexContext\":
+    {\n        \"m_Position\": {\n            \"x\": 0.0,\n            \"y\": 0.0\n       
+    },\n        \"m_Blocks\": [\n            {\n                \"m_Id\": \"489cf47be68044aba86f2b6459648080\"\n           
+    },\n            {\n                \"m_Id\": \"d4b4676d761e4883bdc0e10733ee0c33\"\n           
+    },\n            {\n                \"m_Id\": \"c220407c7d114c0d979dd3c7c1e6da67\"\n           
+    }\n        ]\n    },\n    \"m_FragmentContext\": {\n        \"m_Position\": {\n           
+    \"x\": 0.0,\n            \"y\": 200.0\n        },\n        \"m_Blocks\": [\n           
+    {\n                \"m_Id\": \"c5f8520ea9874598b1c3d58f60a22732\"\n           
+    },\n            {\n                \"m_Id\": \"b9f4a41fc4864dc08873daa6ef0834f4\"\n           
+    }\n        ]\n    },\n    \"m_PreviewData\": {\n        \"serializedMesh\": {\n           
+    \"m_SerializedMesh\": \"{\\\"mesh\\\":{\\\"instanceID\\\":0}}\",\n           
+    \"m_Guid\": \"\"\n        },\n        \"preventRotation\": false\n    },\n   
+    \"m_Path\": \"Shader Graphs\",\n    \"m_GraphPrecision\": 1,\n    \"m_PreviewMode\":
+    2,\n    \"m_OutputNode\": {\n        \"m_Id\": \"\"\n    },\n    \"m_SubDatas\":
+    [],\n    \"m_ActiveTargets\": [\n        {\n            \"m_Id\": \"0d3088c458c44dcaa69c188d7c2bbde4\"\n       
+    }\n    ]\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.ColorRGBMaterialSlot\",\n   
+    \"m_ObjectId\": \"0322e0689a9a4a1283685e5534ff41c9\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Base Color\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\":
+    false,\n    \"m_ShaderOutputName\": \"BaseColor\",\n    \"m_StageCapability\":
+    2,\n    \"m_Value\": {\n        \"x\": 0.5,\n        \"y\": 0.5,\n        \"z\":
+    0.5\n    },\n    \"m_DefaultValue\": {\n        \"x\": 0.5,\n        \"y\": 0.5,\n       
+    \"z\": 0.5\n    },\n    \"m_Labels\": [],\n    \"m_ColorMode\": 0,\n    \"m_DefaultColor\":
+    {\n        \"r\": 0.5,\n        \"g\": 0.5,\n        \"b\": 0.5,\n        \"a\":
+    1.0\n    }\n}\n\n{\n    \"m_SGVersion\": 1,\n    \"m_Type\": \"UnityEditor.Rendering.Universal.ShaderGraph.UniversalTarget\",\n   
+    \"m_ObjectId\": \"0d3088c458c44dcaa69c188d7c2bbde4\",\n    \"m_Datas\": [],\n   
+    \"m_ActiveSubTarget\": {\n        \"m_Id\": \"1caeb99e0cfb4e828c5c6abcae49034a\"\n   
+    },\n    \"m_AllowMaterialOverride\": false,\n    \"m_SurfaceType\": 0,\n    \"m_ZTestMode\":
+    4,\n    \"m_ZWriteControl\": 0,\n    \"m_AlphaMode\": 0,\n    \"m_RenderFace\":
+    2,\n    \"m_AlphaClip\": false,\n    \"m_CastShadows\": true,\n    \"m_ReceiveShadows\":
+    true,\n    \"m_DisableTint\": false,\n    \"m_Sort3DAs2DCompatible\": false,\n   
+    \"m_AdditionalMotionVectorMode\": 0,\n    \"m_AlembicMotionVectors\": false,\n   
+    \"m_SupportsLODCrossFade\": false,\n    \"m_CustomEditorGUI\": \"\",\n    \"m_SupportVFX\":
+    false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.Rendering.Universal.ShaderGraph.UniversalSpriteUnlitSubTarget\",\n   
+    \"m_ObjectId\": \"1caeb99e0cfb4e828c5c6abcae49034a\"\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.SampleTexture2DNode\",\n    \"m_ObjectId\":
+    \"1f9ae24756544a5aab1a2c2a455d6b80\",\n    \"m_Group\": {\n        \"m_Id\":
+    \"\"\n    },\n    \"m_Name\": \"Sample Texture 2D\",\n    \"m_DrawState\": {\n       
+    \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": -397.5999450683594,\n            \"y\": 73.5999755859375,\n           
+    \"width\": 208.0,\n            \"height\": 430.3999938964844\n        }\n   
+    },\n    \"m_Slots\": [\n        {\n            \"m_Id\": \"65d5475221dd4d7bbb7897dd3748b13d\"\n       
+    },\n        {\n            \"m_Id\": \"76c69eb44d1849319b465c36a398b9b7\"\n       
+    },\n        {\n            \"m_Id\": \"53790cd7a76e40a9b9fe5a12e8abdae7\"\n       
+    },\n        {\n            \"m_Id\": \"8f1f33c0f4ea4790a6d887de6ec63e6a\"\n       
+    },\n        {\n            \"m_Id\": \"915bb9f1dcc94cddadb72e09098e08aa\"\n       
+    },\n        {\n            \"m_Id\": \"c5be685f6fff413c935178323c966146\"\n       
+    },\n        {\n            \"m_Id\": \"494b0b1cec0c462d8405b360e5c7b59c\"\n       
+    },\n        {\n            \"m_Id\": \"d021677295364fef978e1778b8f77e56\"\n       
+    }\n    ],\n    \"synonyms\": [\n        \"tex2d\"\n    ],\n    \"m_Precision\":
+    0,\n    \"m_PreviewExpanded\": true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\":
+    0,\n    \"m_CustomColors\": {\n        \"m_SerializableColors\": []\n    },\n   
+    \"m_TextureType\": 0,\n    \"m_NormalMapSpace\": 0,\n    \"m_EnableGlobalMipBias\":
+    true,\n    \"m_MipSamplingMode\": 0\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.PositionMaterialSlot\",\n    \"m_ObjectId\": \"47a7389a0c834fe38997c315632af75b\",\n   
+    \"m_Id\": 0,\n    \"m_DisplayName\": \"Position\",\n    \"m_SlotType\": 0,\n   
+    \"m_Hidden\": false,\n    \"m_ShaderOutputName\": \"Position\",\n    \"m_StageCapability\":
+    1,\n    \"m_Value\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\":
+    0.0\n    },\n    \"m_DefaultValue\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n       
+    \"z\": 0.0\n    },\n    \"m_Labels\": [],\n    \"m_Space\": 0\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\":
+    \"489cf47be68044aba86f2b6459648080\",\n    \"m_Group\": {\n        \"m_Id\":
+    \"\"\n    },\n    \"m_Name\": \"VertexDescription.Position\",\n    \"m_DrawState\":
+    {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n            \"width\":
+    0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\": [\n       
+    {\n            \"m_Id\": \"47a7389a0c834fe38997c315632af75b\"\n        }\n   
+    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"VertexDescription.Position\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.UVMaterialSlot\",\n    \"m_ObjectId\": \"494b0b1cec0c462d8405b360e5c7b59c\",\n   
+    \"m_Id\": 2,\n    \"m_DisplayName\": \"UV\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\":
+    false,\n    \"m_ShaderOutputName\": \"UV\",\n    \"m_StageCapability\": 3,\n   
+    \"m_Value\": {\n        \"x\": 0.0,\n        \"y\": 0.0\n    },\n    \"m_DefaultValue\":
+    {\n        \"x\": 0.0,\n        \"y\": 0.0\n    },\n    \"m_Labels\": [],\n   
+    \"m_Channel\": 0\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.TangentMaterialSlot\",\n   
+    \"m_ObjectId\": \"4b80490f57e845df942dcf06a4658895\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Tangent\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false,\n   
+    \"m_ShaderOutputName\": \"Tangent\",\n    \"m_StageCapability\": 1,\n    \"m_Value\":
+    {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\": 0.0\n    },\n   
+    \"m_DefaultValue\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\":
+    0.0\n    },\n    \"m_Labels\": [],\n    \"m_Space\": 0\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\":
+    \"53790cd7a76e40a9b9fe5a12e8abdae7\",\n    \"m_Id\": 5,\n    \"m_DisplayName\":
+    \"G\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"G\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": 0.0,\n    \"m_DefaultValue\":
+    0.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector4MaterialSlot\",\n    \"m_ObjectId\":
+    \"65d5475221dd4d7bbb7897dd3748b13d\",\n    \"m_Id\": 0,\n    \"m_DisplayName\":
+    \"RGBA\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"RGBA\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": {\n        \"x\":
+    0.0,\n        \"y\": 0.0,\n        \"z\": 0.0,\n        \"w\": 0.0\n    },\n   
+    \"m_DefaultValue\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\":
+    0.0,\n        \"w\": 0.0\n    },\n    \"m_Labels\": []\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\":
+    \"76c69eb44d1849319b465c36a398b9b7\",\n    \"m_Id\": 4,\n    \"m_DisplayName\":
+    \"R\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"R\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": 0.0,\n    \"m_DefaultValue\":
+    0.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty\",\n   
+    \"m_ObjectId\": \"787e155d2ff1490aa9d2107fef027560\",\n    \"m_Guid\": {\n       
+    \"m_GuidSerialized\": \"215ea361-97f4-4249-acbb-0e4c17d12540\"\n    },\n    \"promotedFromAssetID\":
+    \"\",\n    \"promotedFromCategoryName\": \"\",\n    \"promotedOrdering\": -1,\n   
+    \"m_Name\": \"_MainTex\",\n    \"m_DefaultRefNameVersion\": 1,\n    \"m_RefNameGeneratedByDisplayName\":
+    \"_MainTex\",\n    \"m_DefaultReferenceName\": \"_MainTex\",\n    \"m_OverrideReferenceName\":
+    \"\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_UseCustomSlotLabel\":
+    false,\n    \"m_CustomSlotLabel\": \"\",\n    \"m_DismissedVersion\": 0,\n   
+    \"m_Precision\": 0,\n    \"overrideHLSLDeclaration\": false,\n    \"hlslDeclarationOverride\":
+    0,\n    \"m_Hidden\": false,\n    \"m_PerRendererData\": false,\n    \"m_customAttributes\":
+    [],\n    \"m_Value\": {\n        \"m_SerializedTexture\": \"\",\n        \"m_Guid\":
+    \"\"\n    },\n    \"isMainTexture\": false,\n    \"useTilingAndOffset\": false,\n   
+    \"useTexelSize\": true,\n    \"isHDR\": false,\n    \"m_Modifiable\": true,\n   
+    \"m_DefaultType\": 0\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Texture2DMaterialSlot\",\n   
+    \"m_ObjectId\": \"8b0a68b9390b451aa60c381c195f55c2\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"_MainTex\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n   
+    \"m_ShaderOutputName\": \"Out\",\n    \"m_StageCapability\": 3,\n    \"m_BareResource\":
+    false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.NormalMaterialSlot\",\n   
+    \"m_ObjectId\": \"8cb3471a5d1e454a8f2cd286b3a6bd69\",\n    \"m_Id\": 0,\n   
+    \"m_DisplayName\": \"Normal\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false,\n   
+    \"m_ShaderOutputName\": \"Normal\",\n    \"m_StageCapability\": 1,\n    \"m_Value\":
+    {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\": 0.0\n    },\n   
+    \"m_DefaultValue\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\":
+    0.0\n    },\n    \"m_Labels\": [],\n    \"m_Space\": 0\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\":
+    \"8f1f33c0f4ea4790a6d887de6ec63e6a\",\n    \"m_Id\": 6,\n    \"m_DisplayName\":
+    \"B\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"B\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": 0.0,\n    \"m_DefaultValue\":
+    0.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\":
+    \"915bb9f1dcc94cddadb72e09098e08aa\",\n    \"m_Id\": 7,\n    \"m_DisplayName\":
+    \"A\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"A\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": 0.0,\n    \"m_DefaultValue\":
+    0.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\":
+    \"985cb47291eb44c4affb5ae76d94f41f\",\n    \"m_Id\": 0,\n    \"m_DisplayName\":
+    \"Alpha\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"Alpha\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": 1.0,\n    \"m_DefaultValue\":
+    1.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\": false\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.PropertyNode\",\n    \"m_ObjectId\":
+    \"ab742c9fd2b245d1841dab7251d3cc1d\",\n    \"m_Group\": {\n        \"m_Id\":
+    \"\"\n    },\n    \"m_Name\": \"Property\",\n    \"m_DrawState\": {\n       
+    \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": -587.5771484375,\n            \"y\": 113.52667236328125,\n           
+    \"width\": 0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"8b0a68b9390b451aa60c381c195f55c2\"\n       
+    }\n    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_Property\": {\n       
+    \"m_Id\": \"787e155d2ff1490aa9d2107fef027560\"\n    }\n}\n\n{\n    \"m_SGVersion\":
+    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\":
+    \"b9f4a41fc4864dc08873daa6ef0834f4\",\n    \"m_Group\": {\n        \"m_Id\":
+    \"\"\n    },\n    \"m_Name\": \"SurfaceDescription.Alpha\",\n    \"m_DrawState\":
+    {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n            \"serializedVersion\":
+    \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n            \"width\":
+    0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\": [\n       
+    {\n            \"m_Id\": \"985cb47291eb44c4affb5ae76d94f41f\"\n        }\n   
+    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.Alpha\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\": \"c220407c7d114c0d979dd3c7c1e6da67\",\n   
+    \"m_Group\": {\n        \"m_Id\": \"\"\n    },\n    \"m_Name\": \"VertexDescription.Tangent\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n           
+    \"width\": 0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"4b80490f57e845df942dcf06a4658895\"\n       
+    }\n    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"VertexDescription.Tangent\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.Texture2DInputMaterialSlot\",\n    \"m_ObjectId\":
+    \"c5be685f6fff413c935178323c966146\",\n    \"m_Id\": 1,\n    \"m_DisplayName\":
+    \"Texture\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
+    \"Texture\",\n    \"m_StageCapability\": 3,\n    \"m_BareResource\": false,\n   
+    \"m_Texture\": {\n        \"m_SerializedTexture\": \"\",\n        \"m_Guid\":
+    \"\"\n    },\n    \"m_DefaultType\": 0\n}\n\n{\n    \"m_SGVersion\": 0,\n   
+    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\": \"c5f8520ea9874598b1c3d58f60a22732\",\n   
+    \"m_Group\": {\n        \"m_Id\": \"\"\n    },\n    \"m_Name\": \"SurfaceDescription.BaseColor\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n           
+    \"width\": 0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"0322e0689a9a4a1283685e5534ff41c9\"\n       
+    }\n    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.BaseColor\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.SamplerStateMaterialSlot\",\n    \"m_ObjectId\": \"d021677295364fef978e1778b8f77e56\",\n   
+    \"m_Id\": 3,\n    \"m_DisplayName\": \"Sampler\",\n    \"m_SlotType\": 0,\n   
+    \"m_Hidden\": false,\n    \"m_ShaderOutputName\": \"Sampler\",\n    \"m_StageCapability\":
+    3,\n    \"m_BareResource\": false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.BlockNode\",\n    \"m_ObjectId\": \"d4b4676d761e4883bdc0e10733ee0c33\",\n   
+    \"m_Group\": {\n        \"m_Id\": \"\"\n    },\n    \"m_Name\": \"VertexDescription.Normal\",\n   
+    \"m_DrawState\": {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n           
+    \"serializedVersion\": \"2\",\n            \"x\": 0.0,\n            \"y\": 0.0,\n           
+    \"width\": 0.0,\n            \"height\": 0.0\n        }\n    },\n    \"m_Slots\":
+    [\n        {\n            \"m_Id\": \"8cb3471a5d1e454a8f2cd286b3a6bd69\"\n       
+    }\n    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
+    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
+    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
+    \"VertexDescription.Normal\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.CategoryData\",\n    \"m_ObjectId\": \"d568d4675ca54e6ca1accd37a2c94446\",\n   
+    \"m_Name\": \"\",\n    \"m_ChildObjectList\": [\n        {\n            \"m_Id\":
+    \"787e155d2ff1490aa9d2107fef027560\"\n        }\n    ]\n}\n\n"
+  m_AssetMaybeChangedOnDisk: 0
+  m_AssetMaybeDeleted: 0
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -330,8 +1124,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Git for Unity\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1135.4
-    y: 24
+    x: 1134.4
+    y: 79.200005
     width: 400.59998
     height: 738.8
   m_SerializedDataModeController:
@@ -354,9 +1148,9 @@ MonoBehaviour:
   currentTrackingStatusHasUpdate: 0
   currentStatusEntriesHasUpdate: 0
   repositoryProgressHasUpdate: 0
-  appManagerProgressHasUpdate: 0
-  changeTab: 2
-  activeTab: 2
+  appManagerProgressHasUpdate: 1
+  changeTab: 3
+  activeTab: 3
   initProjectView:
     hasCompletedInitialCheck: 0
     isUserDataPresent: 0
@@ -367,8 +1161,19 @@ MonoBehaviour:
     treeLocals:
       IsRemote: 0
       folders:
-        keys: []
-        values: []
+        keys:
+        - Local branches
+        values:
+        - path: Local branches
+          label: Local branches
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
       checkedFileNodes:
         keys: []
         values: []
@@ -377,7 +1182,27 @@ MonoBehaviour:
       displayRootNode: 1
       isSelectable: 1
       isCheckable: 0
-      nodes: []
+      nodes:
+      - path: Local branches
+        label: Local branches
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: master
+        label: master
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 1
+        treeIsCheckable: 0
+        checkState: 0
       selectedNode:
         path: 
         label: 
@@ -392,8 +1217,30 @@ MonoBehaviour:
     treeRemotes:
       IsRemote: 1
       folders:
-        keys: []
-        values: []
+        keys:
+        - Remote branches
+        - origin
+        values:
+        - path: Remote branches
+          label: Remote branches
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+        - path: origin
+          label: origin
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
       checkedFileNodes:
         keys: []
         values: []
@@ -402,7 +1249,37 @@ MonoBehaviour:
       displayRootNode: 1
       isSelectable: 1
       isCheckable: 0
-      nodes: []
+      nodes:
+      - path: Remote branches
+        label: Remote branches
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin
+        label: origin
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin/master
+        label: master
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
       selectedNode:
         path: 
         label: 
@@ -417,58 +1294,56 @@ MonoBehaviour:
     mode: 0
     newBranchName: 
     scroll: {x: 0, y: 0}
-    disableDelete: 0
-    disableCreate: 0
+    disableDelete: 1
+    disableCreate: 1
     lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2026-07-24T21:25:21.786-04:00
+      cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2026-07-24T21:25:21.745-04:00
+      cacheType: 1
     currentBranch:
-      name: 
-      tracking: 
+      name: master
+      tracking: origin/master
     currentRemote:
-      name: 
-      url: 
+      name: origin
+      url: https://github.com/AmaliJD/Alien-Operation.git
       login: 
       user: 
       host: 
       function: 0
       token: 
-    localBranches: []
-    remoteBranches: []
+    localBranches:
+    - name: master
+      tracking: origin/master
+    remoteBranches:
+    - name: origin/master
+      tracking: '[None]'
   changesView:
-    currentBranchHasUpdate: 0
-    currentStatusEntriesHasUpdate: 0
-    currentLocksHasUpdate: 0
+    currentBranchHasUpdate: 1
+    currentStatusEntriesHasUpdate: 1
+    currentLocksHasUpdate: 1
     commitBody: 
-    commitMessage: 
+    commitMessage: ailment sprite
     currentBranch: master
     treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
         keys:
         - 00000000000000001000000000000000
-        - e6d75ef6b88229340a63e3c106b8365b
-        - a0c786cc59ac6bb4ca64dfb0052e5ec7
-        - 026c9f39951c4c14aa43b823dafbf418
-        - 569abb1b1eb16cb409eb25fcb0228cde
         - 0185009b08ba3fe4499fb5d500d9fe8a
-        - 9248be55fc107744c9b6532a56c14b58
-        - 819cefd753cd47e41bd3f9e767cb7d56
-        - a5e0b2f964b28e64e91d3455a64e5c80
-        - da2e19a1c5f8b4e2ca7c1785ea338b2e
-        - f164d11d6323e46b786f187ecd84eb1b
-        - 090d70c1ebac0421985bd70fa7f561ef
-        - 118450fad714b420684eb5f984268b5c
-        - aafeeef745bb4406db1b2cd166853022
+        - 5bb70f3b430e3c84b9ff5ef3c64d6bd8
+        - 2af51e26e0eeb1d4982025ba9c7861ae
+        - b6f1a8a1850a0da43b10688d578c3613
+        - 8dd17426883dec549b2c786abad172e0
+        - 2a573d4b810827b4f9b64e31ef95e863
+        - 9724bcc728c631a4291bdc80e5cf0f5d
         - 91f73e2bbae5cdc4182c0c683ed16be8
+        - 0c1fd8b5f7cc1b948bdd8b39c216a291
         - 1691a1e81e6f7084eb7c646ac3ae6e63
         - 109e9bdd0fcc649c5bc59085c35bdc83
+        - 8c9cfa26abfee488c85f1582747f6a02
         - 6a7b672c91faa6f47adc90779b26532a
-        - 0160e44acfb31c147a6317a146180f2a
-        - 472762b446ee1594b92f01a552c27d8c
         - 7057876013c70de4abc4ef066be30557
         - 2f5e1094031e1144bb9940316b710dec
         values:
@@ -481,7 +1356,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -490,80 +1365,6 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Fonts
-          label: Fonts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Fonts\super_bouncer
-          label: super_bouncer
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Fonts\super_bouncer\Super Bouncer SDF 3.asset
-          label: Super Bouncer SDF 3.asset
-          level: 3
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Fonts\super_bouncer\Super Bouncer SDF 3.asset
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
-              Bouncer SDF 3.asset
-            projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF 3.asset
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Fonts\super_bouncer\Super Bouncer SDF UI.asset
-          label: Super Bouncer SDF UI.asset
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Fonts\super_bouncer\Super Bouncer SDF UI.asset
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
-              Bouncer SDF UI.asset
-            projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF UI.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
         - path: Assets\Images
           label: Images
           level: 1
@@ -573,7 +1374,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -582,62 +1383,8 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Images\64x64.png
-          label: 64x64.png
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\64x64.png
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\64x64.png
-            projectPath: Assets\Images\64x64.png
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Images\test_2.png
-          label: test_2.png
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\test_2.png
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\test_2.png
-            projectPath: Assets\Images\test_2.png
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins
-          label: Plugins
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Plugins\PrimeTween
-          label: PrimeTween
+        - path: Assets\Images\Aliens
+          label: Aliens
           level: 2
           isFolder: 1
           isContainer: 0
@@ -645,7 +1392,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -654,62 +1401,8 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Plugins\PrimeTween\internal
-          label: internal
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef
-          label: PrimeTween.Installer.asmdef
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef
-            projectPath: Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs
-          label: PrimeTweenInstaller.cs
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs
-            projectPath: Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset
-          label: PrimeTweenInstaller.asset
+        - path: Assets\Images\Aliens\Ailment Back.png
+          label: Ailment Back.png
           level: 3
           isFolder: 0
           isContainer: 1
@@ -717,12 +1410,87 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
-            path: Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset
-            projectPath: Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset
+            path: Assets\Images\Aliens\Ailment Back.png
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+              Back.png
+            projectPath: Assets\Images\Aliens\Ailment Back.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Ailment Full.png
+          label: Ailment Full.png
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Ailment Full.png
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+              Full.png
+            projectPath: Assets\Images\Aliens\Ailment Full.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Ailment Head.png
+          label: Ailment Head.png
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Ailment Head.png
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+              Head.png
+            projectPath: Assets\Images\Aliens\Ailment Head.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Ailment.blend
+          label: Ailment.blend
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Ailment.blend
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend
+            projectPath: Assets\Images\Aliens\Ailment.blend
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Ailment.blend1
+          label: Ailment.blend1
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Ailment.blend1
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend1
+            projectPath: Assets\Images\Aliens\Ailment.blend1
             originalPath: 
             indexStatus: 1
             workTreeStatus: 1
@@ -735,7 +1503,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -744,6 +1512,24 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
+        - path: Assets\Prefabs\Ailment.prefab
+          label: Ailment.prefab
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Prefabs\Ailment.prefab
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Ailment.prefab
+            projectPath: Assets\Prefabs\Ailment.prefab
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
         - path: Assets\Prefabs\Patient.prefab
           label: Patient.prefab
           level: 2
@@ -753,7 +1539,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: Assets\Prefabs\Patient.prefab
@@ -771,7 +1557,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -780,6 +1566,24 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
+        - path: Assets\Scenes\Game.unity
+          label: Game.unity
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scenes\Game.unity
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game.unity
+            projectPath: Assets\Scenes\Game.unity
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
         - path: Assets\Scripts
           label: Scripts
           level: 1
@@ -789,7 +1593,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -798,42 +1602,6 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Scripts\Ailment.cs
-          label: Ailment.cs
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scripts\Ailment.cs
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Ailment.cs
-            projectPath: Assets\Scripts\Ailment.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Scripts\Globals.cs
-          label: Globals.cs
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scripts\Globals.cs
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Globals.cs
-            projectPath: Assets\Scripts\Globals.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
         - path: Assets\Scripts\Main.cs
           label: Main.cs
           level: 2
@@ -843,7 +1611,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: Assets\Scripts\Main.cs
@@ -861,7 +1629,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: Assets\Scripts\Patient.cs
@@ -873,18 +1641,11 @@ MonoBehaviour:
       folders:
         keys:
         - Assets
-        - Assets\Fonts
-        - Assets\Fonts\super_bouncer
         - Assets\Images
-        - Assets\Plugins
-        - Assets\Plugins\PrimeTween
-        - Assets\Plugins\PrimeTween\internal
+        - Assets\Images\Aliens
         - Assets\Prefabs
         - Assets\Scenes
         - Assets\Scripts
-        - Packages
-        - UserSettings
-        - UserSettings\Layouts
         values:
         - path: Assets
           label: Assets
@@ -895,43 +1656,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Fonts
-          label: Fonts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Fonts\super_bouncer
-          label: super_bouncer
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -949,7 +1674,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -958,26 +1683,8 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Plugins
-          label: Plugins
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Plugins\PrimeTween
-          label: PrimeTween
+        - path: Assets\Images\Aliens
+          label: Aliens
           level: 2
           isFolder: 1
           isContainer: 0
@@ -985,25 +1692,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Plugins\PrimeTween\internal
-          label: internal
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1021,7 +1710,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1039,7 +1728,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1057,61 +1746,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Packages
-          label: Packages
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings
-          label: UserSettings
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings\Layouts
-          label: Layouts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1121,8 +1756,299 @@ MonoBehaviour:
             indexStatus: 0
             workTreeStatus: 0
       checkedFileNodes:
-        keys: []
-        values: []
+        keys:
+        - Assets\Images\Aliens\Ailment Back.png
+        - Assets\Images\Aliens\Ailment Back.png.meta
+        - Assets\Images\Aliens\Ailment Full.png
+        - Assets\Images\Aliens\Ailment Full.png.meta
+        - Assets\Images\Aliens\Ailment Head.png
+        - Assets\Images\Aliens\Ailment Head.png.meta
+        - Assets\Images\Aliens\Ailment.blend
+        - Assets\Images\Aliens\Ailment.blend.meta
+        - Assets\Images\Aliens\Ailment.blend1
+        - Assets\Images\Aliens\Ailment.blend1.meta
+        - Assets\Prefabs\Ailment.prefab
+        - Assets\Prefabs\Patient.prefab
+        - Assets\Scenes\Game.unity
+        - Assets\Scripts\Main.cs
+        - Assets\Scripts\Patient.cs
+        values:
+        - path: Assets\Images\Aliens\Ailment Back.png
+          label: Ailment Back.png
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Ailment Back.png
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+              Back.png
+            projectPath: Assets\Images\Aliens\Ailment Back.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Ailment Back.png.meta
+          label: Ailment Back.png.meta
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Ailment Back.png.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+              Back.png.meta
+            projectPath: Assets\Images\Aliens\Ailment Back.png.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Ailment Full.png
+          label: Ailment Full.png
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Ailment Full.png
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+              Full.png
+            projectPath: Assets\Images\Aliens\Ailment Full.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Ailment Full.png.meta
+          label: Ailment Full.png.meta
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Ailment Full.png.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+              Full.png.meta
+            projectPath: Assets\Images\Aliens\Ailment Full.png.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Ailment Head.png
+          label: Ailment Head.png
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Ailment Head.png
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+              Head.png
+            projectPath: Assets\Images\Aliens\Ailment Head.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Ailment Head.png.meta
+          label: Ailment Head.png.meta
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Ailment Head.png.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+              Head.png.meta
+            projectPath: Assets\Images\Aliens\Ailment Head.png.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Ailment.blend
+          label: Ailment.blend
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Ailment.blend
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend
+            projectPath: Assets\Images\Aliens\Ailment.blend
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Ailment.blend.meta
+          label: Ailment.blend.meta
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Ailment.blend.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend.meta
+            projectPath: Assets\Images\Aliens\Ailment.blend.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Ailment.blend1
+          label: Ailment.blend1
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Ailment.blend1
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend1
+            projectPath: Assets\Images\Aliens\Ailment.blend1
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Ailment.blend1.meta
+          label: Ailment.blend1.meta
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Ailment.blend1.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend1.meta
+            projectPath: Assets\Images\Aliens\Ailment.blend1.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Prefabs\Ailment.prefab
+          label: Ailment.prefab
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Prefabs\Ailment.prefab
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Ailment.prefab
+            projectPath: Assets\Prefabs\Ailment.prefab
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Prefabs\Patient.prefab
+          label: Patient.prefab
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Prefabs\Patient.prefab
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Patient.prefab
+            projectPath: Assets\Prefabs\Patient.prefab
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Scenes\Game.unity
+          label: Game.unity
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scenes\Game.unity
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game.unity
+            projectPath: Assets\Scenes\Game.unity
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Scripts\Main.cs
+          label: Main.cs
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scripts\Main.cs
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Main.cs
+            projectPath: Assets\Scripts\Main.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Scripts\Patient.cs
+          label: Patient.cs
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scripts\Patient.cs
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Patient.cs
+            projectPath: Assets\Scripts\Patient.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
       title: 
       pathSeparator: \
       displayRootNode: 0
@@ -1139,7 +2065,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1148,25 +2074,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Alien Operation - GMTK '26.slnx
-        label: Alien Operation - GMTK '26.slnx
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Alien Operation - GMTK '26.slnx
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Alien
-            Operation - GMTK '26.slnx
-          projectPath: Alien Operation - GMTK '26.slnx
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
       - path: Assets
         label: Assets
         level: 0
@@ -1176,7 +2083,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1185,99 +2092,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Fonts
-        label: Fonts
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Fonts\super_bouncer
-        label: super_bouncer
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Fonts\super_bouncer\Super Bouncer SDF 3.asset
-        label: Super Bouncer SDF 3.asset
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Fonts\super_bouncer\Super Bouncer SDF 3.asset
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
-            Bouncer SDF 3.asset
-          projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF 3.asset
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Fonts\super_bouncer\Super Bouncer SDF UI.asset
-        label: Super Bouncer SDF UI.asset
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Fonts\super_bouncer\Super Bouncer SDF UI.asset
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
-            Bouncer SDF UI.asset
-          projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF UI.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Fonts\super_bouncer\Super Bouncer SDF UI.asset.meta
-        label: Super Bouncer SDF UI.asset.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Fonts\super_bouncer\Super Bouncer SDF UI.asset.meta
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
-            Bouncer SDF UI.asset.meta
-          projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF UI.asset.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
       - path: Assets\Images
         label: Images
         level: 1
@@ -1287,7 +2101,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1296,134 +2110,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Images\64x64.png
-        label: 64x64.png
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Images\64x64.png
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\64x64.png
-          projectPath: Assets\Images\64x64.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Images\64x64.png.meta
-        label: 64x64.png.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Images\64x64.png.meta
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\64x64.png.meta
-          projectPath: Assets\Images\64x64.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Images\test.png.meta
-        label: test.png.meta
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Images\test.png.meta
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\test.png.meta
-          projectPath: Assets\Images\test.png.meta
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Images\test_2.png
-        label: test_2.png
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Images\test_2.png
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\test_2.png
-          projectPath: Assets\Images\test_2.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Images\test_2.png.meta
-        label: test_2.png.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Images\test_2.png.meta
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\test_2.png.meta
-          projectPath: Assets\Images\test_2.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins
-        label: Plugins
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Plugins\PrimeTween.meta
-        label: PrimeTween.meta
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\PrimeTween.meta
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween.meta
-          projectPath: Assets\Plugins\PrimeTween.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\PrimeTween
-        label: PrimeTween
+      - path: Assets\Images\Aliens
+        label: Aliens
         level: 2
         isFolder: 1
         isContainer: 0
@@ -1431,7 +2119,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1440,116 +2128,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Plugins\PrimeTween\internal.meta
-        label: internal.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\PrimeTween\internal.meta
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\internal.meta
-          projectPath: Assets\Plugins\PrimeTween\internal.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\PrimeTween\internal
-        label: internal
-        level: 3
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef
-        label: PrimeTween.Installer.asmdef
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef
-          projectPath: Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef.meta
-        label: PrimeTween.Installer.asmdef.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef.meta
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef.meta
-          projectPath: Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs
-        label: PrimeTweenInstaller.cs
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs
-          projectPath: Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs.meta
-        label: PrimeTweenInstaller.cs.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs.meta
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs.meta
-          projectPath: Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset
-        label: PrimeTweenInstaller.asset
+      - path: Assets\Images\Aliens\Ailment Back.png
+        label: Ailment Back.png
         level: 3
         isFolder: 0
         isContainer: 1
@@ -1557,17 +2137,18 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset
-          projectPath: Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset
+          path: Assets\Images\Aliens\Ailment Back.png
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+            Back.png
+          projectPath: Assets\Images\Aliens\Ailment Back.png
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
-      - path: Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset.meta
-        label: PrimeTweenInstaller.asset.meta
+      - path: Assets\Images\Aliens\Ailment Back.png.meta
+        label: Ailment Back.png.meta
         level: 4
         isFolder: 0
         isContainer: 0
@@ -1575,12 +2156,161 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset.meta
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset.meta
-          projectPath: Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset.meta
+          path: Assets\Images\Aliens\Ailment Back.png.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+            Back.png.meta
+          projectPath: Assets\Images\Aliens\Ailment Back.png.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Images\Aliens\Ailment Full.png
+        label: Ailment Full.png
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Images\Aliens\Ailment Full.png
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+            Full.png
+          projectPath: Assets\Images\Aliens\Ailment Full.png
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Images\Aliens\Ailment Full.png.meta
+        label: Ailment Full.png.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Images\Aliens\Ailment Full.png.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+            Full.png.meta
+          projectPath: Assets\Images\Aliens\Ailment Full.png.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Images\Aliens\Ailment Head.png
+        label: Ailment Head.png
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Images\Aliens\Ailment Head.png
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+            Head.png
+          projectPath: Assets\Images\Aliens\Ailment Head.png
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Images\Aliens\Ailment Head.png.meta
+        label: Ailment Head.png.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Images\Aliens\Ailment Head.png.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+            Head.png.meta
+          projectPath: Assets\Images\Aliens\Ailment Head.png.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Images\Aliens\Ailment.blend
+        label: Ailment.blend
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Images\Aliens\Ailment.blend
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend
+          projectPath: Assets\Images\Aliens\Ailment.blend
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Images\Aliens\Ailment.blend.meta
+        label: Ailment.blend.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Images\Aliens\Ailment.blend.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend.meta
+          projectPath: Assets\Images\Aliens\Ailment.blend.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Images\Aliens\Ailment.blend1
+        label: Ailment.blend1
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Images\Aliens\Ailment.blend1
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend1
+          projectPath: Assets\Images\Aliens\Ailment.blend1
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Images\Aliens\Ailment.blend1.meta
+        label: Ailment.blend1.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Images\Aliens\Ailment.blend1.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend1.meta
+          projectPath: Assets\Images\Aliens\Ailment.blend1.meta
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
@@ -1593,7 +2323,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1602,6 +2332,24 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+      - path: Assets\Prefabs\Ailment.prefab
+        label: Ailment.prefab
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Prefabs\Ailment.prefab
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Ailment.prefab
+          projectPath: Assets\Prefabs\Ailment.prefab
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
       - path: Assets\Prefabs\Patient.prefab
         label: Patient.prefab
         level: 2
@@ -1611,7 +2359,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: Assets\Prefabs\Patient.prefab
@@ -1629,7 +2377,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1638,8 +2386,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Scenes\SampleScene.unity
-        label: SampleScene.unity
+      - path: Assets\Scenes\Game.unity
+        label: Game.unity
         level: 2
         isFolder: 0
         isContainer: 0
@@ -1647,12 +2395,12 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Scenes\SampleScene.unity
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\SampleScene.unity
-          projectPath: Assets\Scenes\SampleScene.unity
+          path: Assets\Scenes\Game.unity
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game.unity
+          projectPath: Assets\Scenes\Game.unity
           originalPath: 
           indexStatus: 0
           workTreeStatus: 3
@@ -1665,7 +2413,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1674,42 +2422,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Scripts\Ailment.cs
-        label: Ailment.cs
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scripts\Ailment.cs
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Ailment.cs
-          projectPath: Assets\Scripts\Ailment.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Scripts\Globals.cs
-        label: Globals.cs
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scripts\Globals.cs
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Globals.cs
-          projectPath: Assets\Scripts\Globals.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
       - path: Assets\Scripts\Main.cs
         label: Main.cs
         level: 2
@@ -1719,7 +2431,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: Assets\Scripts\Main.cs
@@ -1737,7 +2449,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: Assets\Scripts\Patient.cs
@@ -1746,279 +2458,108 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 3
-      - path: Packages
-        label: Packages
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Packages\com.kyrylokuzyk.primetween.tgz
-        label: com.kyrylokuzyk.primetween.tgz
-        level: 1
+      selectedNode:
+        path: Assets\Images\Aliens\Ailment Head.png
+        label: Ailment Head.png
+        level: 3
         isFolder: 0
-        isContainer: 0
+        isContainer: 1
         isCollapsed: 0
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
-          path: Packages\com.kyrylokuzyk.primetween.tgz
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Packages\com.kyrylokuzyk.primetween.tgz
-          projectPath: Packages\com.kyrylokuzyk.primetween.tgz
+          path: Assets\Images\Aliens\Ailment Head.png
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+            Head.png
+          projectPath: Assets\Images\Aliens\Ailment Head.png
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
-      - path: Packages\manifest.json
-        label: manifest.json
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Packages\manifest.json
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Packages\manifest.json
-          projectPath: Packages\manifest.json
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Packages\packages-lock.json
-        label: packages-lock.json
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Packages\packages-lock.json
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Packages\packages-lock.json
-          projectPath: Packages\packages-lock.json
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: UserSettings
-        label: UserSettings
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts
-        label: Layouts
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts\default-6000.dwlt
-        label: default-6000.dwlt
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings\Layouts\default-6000.dwlt
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\UserSettings\Layouts\default-6000.dwlt
-          projectPath: UserSettings\Layouts\default-6000.dwlt
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      selectedNode:
-        path: 
-        label: 
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
     gitStatusEntries:
-    - path: Alien Operation - GMTK '26.slnx
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Alien Operation
-        - GMTK '26.slnx
-      projectPath: Alien Operation - GMTK '26.slnx
+    - path: Assets\Images\Aliens\Ailment Back.png
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+        Back.png
+      projectPath: Assets\Images\Aliens\Ailment Back.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Ailment Back.png.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+        Back.png.meta
+      projectPath: Assets\Images\Aliens\Ailment Back.png.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Ailment Full.png
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+        Full.png
+      projectPath: Assets\Images\Aliens\Ailment Full.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Ailment Full.png.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+        Full.png.meta
+      projectPath: Assets\Images\Aliens\Ailment Full.png.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Ailment Head.png
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+        Head.png
+      projectPath: Assets\Images\Aliens\Ailment Head.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Ailment Head.png.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
+        Head.png.meta
+      projectPath: Assets\Images\Aliens\Ailment Head.png.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Ailment.blend
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend
+      projectPath: Assets\Images\Aliens\Ailment.blend
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Ailment.blend.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend.meta
+      projectPath: Assets\Images\Aliens\Ailment.blend.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Ailment.blend1
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend1
+      projectPath: Assets\Images\Aliens\Ailment.blend1
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Ailment.blend1.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend1.meta
+      projectPath: Assets\Images\Aliens\Ailment.blend1.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Prefabs\Ailment.prefab
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Ailment.prefab
+      projectPath: Assets\Prefabs\Ailment.prefab
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    - path: Assets\Fonts\super_bouncer\Super Bouncer SDF 3.asset
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
-        Bouncer SDF 3.asset
-      projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF 3.asset
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Fonts\super_bouncer\Super Bouncer SDF UI.asset
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
-        Bouncer SDF UI.asset
-      projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF UI.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Fonts\super_bouncer\Super Bouncer SDF UI.asset.meta
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
-        Bouncer SDF UI.asset.meta
-      projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF UI.asset.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Images\64x64.png
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\64x64.png
-      projectPath: Assets\Images\64x64.png
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Images\64x64.png.meta
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\64x64.png.meta
-      projectPath: Assets\Images\64x64.png.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Images\test.png.meta
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\test.png.meta
-      projectPath: Assets\Images\test.png.meta
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Images\test_2.png
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\test_2.png
-      projectPath: Assets\Images\test_2.png
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Images\test_2.png.meta
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\test_2.png.meta
-      projectPath: Assets\Images\test_2.png.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\PrimeTween.meta
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween.meta
-      projectPath: Assets\Plugins\PrimeTween.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\PrimeTween\internal.meta
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\internal.meta
-      projectPath: Assets\Plugins\PrimeTween\internal.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef
-      projectPath: Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef.meta
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef.meta
-      projectPath: Assets\Plugins\PrimeTween\internal\PrimeTween.Installer.asmdef.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs
-      projectPath: Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs.meta
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs.meta
-      projectPath: Assets\Plugins\PrimeTween\internal\PrimeTweenInstaller.cs.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset
-      projectPath: Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset.meta
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset.meta
-      projectPath: Assets\Plugins\PrimeTween\PrimeTweenInstaller.asset.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
     - path: Assets\Prefabs\Patient.prefab
       fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Patient.prefab
       projectPath: Assets\Prefabs\Patient.prefab
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    - path: Assets\Scenes\SampleScene.unity
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\SampleScene.unity
-      projectPath: Assets\Scenes\SampleScene.unity
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Scripts\Ailment.cs
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Ailment.cs
-      projectPath: Assets\Scripts\Ailment.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Scripts\Globals.cs
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Globals.cs
-      projectPath: Assets\Scripts\Globals.cs
+    - path: Assets\Scenes\Game.unity
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game.unity
+      projectPath: Assets\Scenes\Game.unity
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
@@ -2034,33 +2575,9 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    - path: Packages\com.kyrylokuzyk.primetween.tgz
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Packages\com.kyrylokuzyk.primetween.tgz
-      projectPath: Packages\com.kyrylokuzyk.primetween.tgz
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Packages\manifest.json
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Packages\manifest.json
-      projectPath: Packages\manifest.json
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Packages\packages-lock.json
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Packages\packages-lock.json
-      projectPath: Packages\packages-lock.json
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: UserSettings\Layouts\default-6000.dwlt
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\UserSettings\Layouts\default-6000.dwlt
-      projectPath: UserSettings\Layouts\default-6000.dwlt
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    changedFilesText: 27 changed files
+    changedFilesText: 15 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2026-07-24T16:45:51.329-04:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
       updatedTimeString: 0001-01-01T00:00:00.000+00:00
@@ -2069,8 +2586,8 @@ MonoBehaviour:
       updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 7
   historyView:
-    currentLogHasUpdate: 1
-    currentTrackingStatusHasUpdate: 1
+    currentLogHasUpdate: 0
+    currentTrackingStatusHasUpdate: 0
     logEntries:
     - commitID: ea416687e15529b24a18cf1051c06db71439bce8
       mergeA: 
@@ -10690,30 +11207,30 @@ MonoBehaviour:
     detailsScroll: {x: 0, y: 0}
   settingsView:
     gitPathView:
-      gitPath: 
-      gitLfsPath: 
+      gitPath: C:\Users\jioje\AppData\Local\GitForUnity\git\cmd\git.exe
+      gitLfsPath: C:\Users\jioje\AppData\Local\GitForUnity\git\mingw64\libexec\git-core\git-lfs.exe
       errorMessage: 
       resetToBundled: 0
       resetToSystem: 0
       changingManually: 0
       installSettingsHidden: 0
-    hasRemote: 0
+    hasRemote: 1
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
-    newRepositoryRemoteUrl: 
-    repositoryRemoteName: 
-    repositoryRemoteUrl: 
+      updatedTimeString: 2026-07-24T21:25:21.745-04:00
+      cacheType: 1
+    newRepositoryRemoteUrl: https://github.com/AmaliJD/Alien-Operation.git
+    repositoryRemoteName: origin
+    repositoryRemoteUrl: https://github.com/AmaliJD/Alien-Operation.git
     scroll: {x: 0, y: 0}
     userSettingsView:
-      gitName: 
-      gitEmail: 
-      newGitName: 
-      newGitEmail: 
+      gitName: AmaliJD
+      gitEmail: amali.jdelauney@gmail.com
+      newGitName: AmaliJD
+      newGitEmail: amali.jdelauney@gmail.com
       needsSaving: 0
       lastCheckUserChangedEvent:
-        updatedTimeString: 
-        cacheType: 0
+        updatedTimeString: 2026-07-24T23:24:36.726-04:00
+        cacheType: 8
       configSettingsHidden: 0
     repositorySettingsHidden: 0
     generalSettingsHidden: 0
@@ -10721,10 +11238,10 @@ MonoBehaviour:
     uiSceneSettingsHidden: 0
     uiProjectSettingsHidden: 0
   locksView:
-    currentRemoteHasUpdate: 0
+    currentRemoteHasUpdate: 1
     currentStatusEntriesHasUpdate: 0
     currentLocksHasUpdate: 0
-    keychainHasUpdate: 0
+    keychainHasUpdate: 1
     locksControl:
       scroll: {x: 0, y: 0}
       gitLockEntries: []
@@ -10743,18 +11260,190 @@ MonoBehaviour:
             email: 
           lockedAtString: 
         gitFileStatus: 0
-        lockedAt: 
+        lockedAt: 1 Jan 0001, 00:00
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2026-07-24T21:25:21.745-04:00
+      cacheType: 1
     lastLocksChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      cacheType: 7
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      cacheType: 6
     lockedFiles: []
-    gitStatusEntries: []
+    gitStatusEntries:
+    - path: Assets\Gray.mat
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Gray.mat
+      projectPath: Assets\Gray.mat
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Gray.mat.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Gray.mat.meta
+      projectPath: Assets\Gray.mat.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Gray.shadergraph
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Gray.shadergraph
+      projectPath: Assets\Gray.shadergraph
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Gray.shadergraph.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Gray.shadergraph.meta
+      projectPath: Assets\Gray.shadergraph.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens.meta
+      projectPath: Assets\Images\Aliens.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Wazowski Body.png
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Wazowski
+        Body.png
+      projectPath: Assets\Images\Aliens\Wazowski Body.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Wazowski Body.png.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Wazowski
+        Body.png.meta
+      projectPath: Assets\Images\Aliens\Wazowski Body.png.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Wazowski Dead.png
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Wazowski
+        Dead.png
+      projectPath: Assets\Images\Aliens\Wazowski Dead.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Wazowski Dead.png.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Wazowski
+        Dead.png.meta
+      projectPath: Assets\Images\Aliens\Wazowski Dead.png.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Wazowski Healed.png
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Wazowski
+        Healed.png
+      projectPath: Assets\Images\Aliens\Wazowski Healed.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Wazowski Healed.png.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Wazowski
+        Healed.png.meta
+      projectPath: Assets\Images\Aliens\Wazowski Healed.png.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Wazowski Hurt.png
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Wazowski
+        Hurt.png
+      projectPath: Assets\Images\Aliens\Wazowski Hurt.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Wazowski Hurt.png.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Wazowski
+        Hurt.png.meta
+      projectPath: Assets\Images\Aliens\Wazowski Hurt.png.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Wazowski Sick.png
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Wazowski
+        Sick.png
+      projectPath: Assets\Images\Aliens\Wazowski Sick.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Wazowski Sick.png.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Wazowski
+        Sick.png.meta
+      projectPath: Assets\Images\Aliens\Wazowski Sick.png.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Wazowski.blend
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Wazowski.blend
+      projectPath: Assets\Images\Aliens\Wazowski.blend
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Wazowski.blend.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Wazowski.blend.meta
+      projectPath: Assets\Images\Aliens\Wazowski.blend.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Wazowski.blend1
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Wazowski.blend1
+      projectPath: Assets\Images\Aliens\Wazowski.blend1
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Wazowski.blend1.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Wazowski.blend1.meta
+      projectPath: Assets\Images\Aliens\Wazowski.blend1.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Prefabs\Patient.prefab
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Patient.prefab
+      projectPath: Assets\Prefabs\Patient.prefab
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Scenes\Game.unity
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game.unity
+      projectPath: Assets\Scenes\Game.unity
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Scripts\Main.cs
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Main.cs
+      projectPath: Assets\Scripts\Main.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Scripts\Patient.cs
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Patient.cs
+      projectPath: Assets\Scripts\Patient.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Shaders\White.mat
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Shaders\White.mat
+      projectPath: Assets\Shaders\White.mat
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Shaders\White.mat.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Shaders\White.mat.meta
+      projectPath: Assets\Shaders\White.mat.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Shaders\White.shadergraph
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Shaders\White.shadergraph
+      projectPath: Assets\Shaders\White.shadergraph
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Shaders\White.shadergraph.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Shaders\White.shadergraph.meta
+      projectPath: Assets\Shaders\White.shadergraph.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
     currentUsername: 
     unlockFileMenuContent:
       m_Text: Release Lock
@@ -10770,7 +11459,7 @@ MonoBehaviour:
   currentRemoteName: origin
   currentBranch: master
   currentRemoteUrl: https://github.com/AmaliJD/Alien-Operation.git
-  statusAhead: 0
+  statusAhead: 1
   statusBehind: 0
   hasItemsToCommit: 1
   isTrackingRemoteBranch: 1
@@ -10785,13 +11474,13 @@ MonoBehaviour:
     m_Tooltip: Url of the origin remote
     m_TextWithWhitespace: "https://github.com/AmaliJD/Alien-Operation.git\u200B"
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2026-07-24T18:42:27.567-04:00
+    updatedTimeString: 2026-07-24T21:25:21.745-04:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2026-07-24T18:42:27.987-04:00
+    updatedTimeString: 0001-01-01T00:00:00.000+00:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2026-07-24T18:42:46.685-04:00
+    updatedTimeString: 0001-01-01T00:00:00.000+00:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -10815,10 +11504,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Fetch\u200B"
   repositoryProgressValue: 0
   repositoryProgressMessage: 
-  appManagerProgressValue: 0
+  appManagerProgressValue: 1
   appManagerProgressMessage: 
   primaryConnectionUsername: 
---- !u!114 &14
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10840,9 +11529,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 446.4
-    width: 792.6
-    height: 371.59998
+    y: 735.2
+    width: 851.8
+    height: 82.79999
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -10860,7 +11549,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: []
     m_LastClickedID:
-      m_Data: -27098
+      m_Data: 50564
     m_ExpandedIDs:
     - m_Data: 1010101010
     m_RenameOverlay:
@@ -10983,8 +11672,8 @@ MonoBehaviour:
       splitterInitialOffset: 0
       currentActiveSplitter: -1
       realSizes:
-      - 237.59995
-      - 555.2
+      - 255.2
+      - 596.8
       relativeSizes:
       - 0.3
       - 0.7
@@ -10994,7 +11683,7 @@ MonoBehaviour:
       maxSizes:
       - 0
       - 0
-      lastTotalSize: 792.8
+      lastTotalSize: 852
       splitSize: 6
       xOffset: 0
       m_Version: 1
@@ -11008,7 +11697,7 @@ MonoBehaviour:
   m_ShowReferencedBuses: 1
   m_ShowBusConnections: 0
   m_ShowBusConnectionsOfSelection: 0
---- !u!114 &15
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11274,7 +11963,7 @@ MonoBehaviour:
     m_DynamicPanelContainerData: []
     m_OverlaysVisible: 1
     m_DynamicPanelBehavior: 0
---- !u!114 &16
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11297,8 +11986,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 24
-    width: 792.6
-    height: 512.4
+    width: 851.8
+    height: 630
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -11318,7 +12007,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1920, y: 1080}
+  m_TargetSize: {x: 1920, y: 1440}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -11327,7 +12016,7 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 0700000000000000000000000a000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 1200000000000000000000000a000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
@@ -11335,8 +12024,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -768
     m_HBaseRangeMax: 768
-    m_VBaseRangeMin: -432
-    m_VBaseRangeMax: 432
+    m_VBaseRangeMin: -576
+    m_VBaseRangeMax: 576
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -11354,30 +12043,30 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 792.6
-      height: 491.40002
-    m_Scale: {x: 0.5160156, y: 0.5160156}
-    m_Translation: {x: 396.3, y: 245.70001}
+      width: 851.8
+      height: 609
+    m_Scale: {x: 0.5286458, y: 0.5286458}
+    m_Translation: {x: 425.9, y: 304.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -768
-      y: -476.14844
-      width: 1536
-      height: 952.2969
+      x: -805.6434
+      y: -576
+      width: 1611.2867
+      height: 1152
     m_MinimalGUI: 1
-  m_defaultScale: 0.5160156
-  m_LastWindowPixelSize: {x: 792.6, y: 512.4}
+  m_defaultScale: 0.5286458
+  m_LastWindowPixelSize: {x: 851.8, y: 630}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
   m_showToolbar: 1
---- !u!114 &17
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11400,8 +12089,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 79.200005
-    width: 792.6
-    height: 512.4
+    width: 851.8
+    height: 630
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -11794,10 +12483,10 @@ MonoBehaviour:
       displayed: 1
       id: unity-scene-view-camera-mode-toolbar
       index: 1
-      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":24.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":24.0,"y":24.799999237060548},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 24, y: 0}
+      snapOffset: {x: 24, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       layout: 1
@@ -11850,10 +12539,10 @@ MonoBehaviour:
       displayed: 1
       id: Overlays/OverlayMenu
       index: 1
-      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":24.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":24.0,"y":24.799999237060548},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 24, y: 0}
+      snapOffset: {x: 24, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       layout: 1
@@ -11986,9 +12675,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 1037.2402, y: 82.67276, z: -13.716357}
+    m_Target: {x: 0.8920467, y: 7.8886523, z: -0.07834649}
     speed: 2
-    m_Value: {x: 1037.2402, y: 82.67276, z: -13.716357}
+    m_Value: {x: 0.8920467, y: 7.8886523, z: -0.07834649}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -12038,9 +12727,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1381.6327
+    m_Target: 17.820011
     speed: 2
-    m_Value: 1381.6327
+    m_Value: 17.820011
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -12061,7 +12750,7 @@ MonoBehaviour:
   m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_Viewpoint:
-    m_SceneView: {fileID: 17}
+    m_SceneView: {fileID: 20}
     m_CameraOverscanSettings:
       m_Opacity: 50
       m_Scale: 1
@@ -12074,7 +12763,7 @@ MonoBehaviour:
     name: Contributors / Receivers
     section: Lighting
   m_ViewIsLockedToObject: 0
---- !u!114 &18
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12096,9 +12785,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 562.4
-    width: 792.6
-    height: 200.39996
+    y: 680
+    width: 851.8
+    height: 82.79999
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -12112,7 +12801,7 @@ MonoBehaviour:
     m_DynamicPanelContainerData: []
     m_OverlaysVisible: 1
     m_DynamicPanelBehavior: 0
---- !u!114 &19
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12134,9 +12823,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 598.4
-    width: 849.4
-    height: 225
+    y: 735.2
+    width: 851.8
+    height: 82.79999
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -12153,7 +12842,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_LastSelectedObjectID: 0
---- !u!114 &20
+--- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12175,9 +12864,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 572
-    width: 849.4
-    height: 246
+    y: 735.2
+    width: 851.8
+    height: 82.79999
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -12208,7 +12897,7 @@ MonoBehaviour:
   m_CurrentEditor: 0
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &21
+--- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12231,7 +12920,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1
     y: 24
-    width: 338.80005
+    width: 279.60004
     height: 391.6
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -12279,7 +12968,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &22
+--- !u!114 &25
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12302,7 +12991,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1
     y: 441.6
-    width: 338.80005
+    width: 279.60004
     height: 321.19998
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -12328,7 +13017,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Game
+    - Assets/Images/Aliens
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -12350,19 +13039,20 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51648
-    - m_Data: 51658
-    - m_Data: 51660
-    - m_Data: 51970
-    - m_Data: 51972
-    - m_Data: 51974
-    - m_Data: 51976
-    - m_Data: 51978
-    - m_Data: 51980
-    - m_Data: 51982
-    - m_Data: 51984
-    - m_Data: 51986
-    - m_Data: 51988
+    - m_Data: 50582
+    - m_Data: 52278
+    - m_Data: 52280
+    - m_Data: 52282
+    - m_Data: 52284
+    - m_Data: 52286
+    - m_Data: 52288
+    - m_Data: 52290
+    - m_Data: 52292
+    - m_Data: 52294
+    - m_Data: 52296
+    - m_Data: 52298
+    - m_Data: 52300
+    - m_Data: 52302
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -12389,25 +13079,27 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: []
+    scrollPos: {x: 0, y: 360}
+    m_SelectedIDs:
+    - m_Data: 51800
     m_LastClickedID:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51648
-    - m_Data: 51658
-    - m_Data: 51660
-    - m_Data: 51970
-    - m_Data: 51972
-    - m_Data: 51974
-    - m_Data: 51976
-    - m_Data: 51978
-    - m_Data: 51980
-    - m_Data: 51982
-    - m_Data: 51984
-    - m_Data: 51986
-    - m_Data: 51988
+    - m_Data: 50582
+    - m_Data: 52278
+    - m_Data: 52280
+    - m_Data: 52282
+    - m_Data: 52284
+    - m_Data: 52286
+    - m_Data: 52288
+    - m_Data: 52290
+    - m_Data: 52292
+    - m_Data: 52294
+    - m_Data: 52296
+    - m_Data: 52298
+    - m_Data: 52300
+    - m_Data: 52302
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -12434,8 +13126,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: []
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs:
+    - m_Data: 51800
+    m_LastClickedInstanceID: 51800
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
@@ -12467,7 +13160,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 192
---- !u!114 &23
+--- !u!114 &26
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12488,8 +13181,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1134.4
-    y: 79.200005
+    x: 1135.4
+    y: 24
     width: 400.59998
     height: 738.8
   m_SerializedDataModeController:

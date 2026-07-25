@@ -14,9 +14,11 @@ public class Patient
     public SpriteRenderer face_hit;
     PatientSprites sprites;
 
-    public bool started;
-    public bool healed;
-    public bool finished;
+    public int lives = 3;
+    public int ailmentsHit = 0;
+    public bool finished => ailmentsHit >= ailments.Count || lives <= 0;
+    public int next;
+    public bool lastSuccess;
 
     public GameObject gameObject;
 
@@ -26,6 +28,39 @@ public class Patient
         {
             this.ailments.Add(ail);
             ail.patient = this;
+        }
+
+        lives = Mathf.Min(this.ailments.Count, 3);
+    }
+
+    public void Reset()
+    {
+        currentAilments.Clear();
+        lives = Mathf.Min(this.ailments.Count, 3);
+        ailmentIndex = -1;
+        ailmentsHit = 0;
+        next = 0;
+        lastSuccess = false;
+
+        foreach (Ailment ail in ailments)
+        {
+            ail.Reset();
+        }
+        //Timing.RunCoroutine(_ResetAilments(), gameObject);
+    }
+
+    IEnumerator<float> _ResetAilments()
+    {
+        float time = 0;
+        while (time < 1.5f)
+        {
+            yield return Timing.WaitForOneFrame;
+            time += Time.deltaTime;
+        }
+
+        foreach (Ailment ail in ailments)
+        {
+            ail.Reset();
         }
     }
 
@@ -71,7 +106,7 @@ public class Patient
 
     public void Load(PatientSprites sprites)
     {
-        gameObject = GameObject.Instantiate(Ref.patientGameObject, new Vector2(20, .25f), Quaternion.identity);
+        gameObject = GameObject.Instantiate(Ref.patientGameObject, new Vector2(20, .75f), Quaternion.identity);
         body = gameObject.transform.GetChild(0).GetChild(0).GetComponent<SpriteRenderer>();
         face = gameObject.transform.GetChild(0).GetChild(1).GetComponent<SpriteRenderer>();
         body_hit = gameObject.transform.GetChild(0).GetChild(2).GetComponent<SpriteRenderer>();
@@ -92,9 +127,12 @@ public class Patient
         this.sprites = sprites;
     }
 
-    public IEnumerator<float> _SwapFaces(int i)
+    public IEnumerator<float> _SwapFaces(int i, int j = 0)
     {
         if (sprites.faces.Count <= i)
+            yield break;
+
+        if (sprites.faces[i] == null)
             yield break;
 
         face.sprite = sprites.faces[i];
@@ -107,8 +145,8 @@ public class Patient
             time += Time.deltaTime;
         }
 
-        face.sprite = sprites.faces[0];
-        face_hit.sprite = sprites.faces[0];
+        face.sprite = sprites.faces[j];
+        face_hit.sprite = sprites.faces[j];
     }
 
     public void SetFace(int i)
@@ -116,9 +154,24 @@ public class Patient
         if (sprites.faces.Count <= i)
             return;
 
+        if (sprites.faces[i] == null)
+            return;
+
         face.sprite = sprites.faces[i];
         face_hit.sprite = sprites.faces[i];
     }
 
+    public IEnumerator<float> _Next()
+    {
+        next = 1;
 
+        float time = 0;
+        while (time < 1.2f)
+        {
+            yield return Timing.WaitForOneFrame;
+            time += Time.deltaTime;
+        }
+
+        next = 2;
+    }
 }
