@@ -25,6 +25,9 @@ public class Main : MonoBehaviour
     [Header("Patient Sprites")]
     public List<PatientSprites> patientSprites;
 
+    [Header("Audio")]
+    [SerializeField] AudioClip failSfx;
+
     [Header("UI")]
     public Transform ui_title;
 
@@ -42,8 +45,8 @@ public class Main : MonoBehaviour
         );
 
         NewPatient().AddAilments(
-            new Ailment(5, 1f, true, 4, new Vector2(-3, 0)),
-            new Ailment(10, 2f, false, 4, new Vector2(3, 0))
+            new Ailment(5, .9f, true, 4, new Vector2(-3, 0)),
+            new Ailment(10, 1.8f, false, 4, new Vector2(3, 0))
         );
     }
 
@@ -157,6 +160,7 @@ public class Main : MonoBehaviour
                         ail.state = AilmentState.Fail_Early;
                         Timing.KillCoroutines(ail.couroutineLayer);
                         Timing.RunCoroutine(ail._FlashHoldFadeOut(.1f, Color.white, Color.red, .5f, 1f), ail.couroutineLayer);
+                        AudioPlayer.ap.PlaySfx(failSfx, 1);
                     }
                 }
 
