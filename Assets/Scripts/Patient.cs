@@ -64,7 +64,7 @@ public class Patient
 
     public void Load(PatientSprites sprites)
     {
-        gameObject = GameObject.Instantiate(Ref.patientGameObject, new Vector2(20, 0), Quaternion.identity);
+        gameObject = GameObject.Instantiate(Ref.patientGameObject, new Vector2(20, .25f), Quaternion.identity);
         gameObject.transform.GetChild(0).GetChild(0).GetComponent<SpriteRenderer>().sprite = sprites.body;
     }
 }
