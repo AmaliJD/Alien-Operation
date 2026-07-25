@@ -2119,6 +2119,12 @@ MonoBehaviour:
   ref_ailmentGameObject: {fileID: 2867710513331435373, guid: 0c1fd8b5f7cc1b948bdd8b39c216a291, type: 3}
   ref_patientGameObject: {fileID: 520904887566224475, guid: 1691a1e81e6f7084eb7c646ac3ae6e63, type: 3}
   patientSprites:
+  - body: {fileID: 21300000, guid: 0325decac2bbf164fac4f729fe138ed3, type: 3}
+    faces:
+    - {fileID: 21300000, guid: 7c0119467f660064aa18027b0b85961a, type: 3}
+    - {fileID: 21300000, guid: ee5a503a889b0c24c91671a35c10684b, type: 3}
+    - {fileID: 21300000, guid: 0b01406f4d48a894f93c07b27115efa1, type: 3}
+    - {fileID: 21300000, guid: 8927d7af01b2a9843ba1fc7acbd56714, type: 3}
   - body: {fileID: 21300000, guid: 5370ab1a4a55c42439484365975e462b, type: 3}
     faces: []
   - body: {fileID: 21300000, guid: 819cefd753cd47e41bd3f9e767cb7d56, type: 3}

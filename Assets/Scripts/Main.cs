@@ -40,8 +40,8 @@ public class Main : MonoBehaviour
         Ref.patientGameObject = ref_patientGameObject;
 
         NewPatient().AddAilments(
-            new Ailment(5, .8f, false, -2, new Vector2(-3, 0), AIL_RADIUS * 1.4f, 45),
-            new Ailment(5, 1f, false, -4, new Vector2(0, 0))
+            new Ailment(5, .8f, false, -2, new Vector2(-1.75f, 0), AIL_RADIUS * 1.4f, 45),
+            new Ailment(5, 1f, false, -4, new Vector2(1, 1))
         );
 
         NewPatient().AddAilments(
