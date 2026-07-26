@@ -30,6 +30,12 @@ public class Main : MonoBehaviour
 
     [Header("UI")]
     public Transform ui_title;
+    public TextMeshProUGUI ui_title_text;
+    public RectTransform ui_icons;
+    public RectTransform ui_x;
+
+    public int lives;
+    bool start;
 
     void Awake()
     {
@@ -38,6 +44,18 @@ public class Main : MonoBehaviour
         Fonts.successFont = ref_successFont;
         Ref.ailmentGameObject = ref_ailmentGameObject;
         Ref.patientGameObject = ref_patientGameObject;
+
+        Init();
+    }
+
+    void Init()
+    {
+        patients.Clear();
+
+        foreach (Transform t in ui_x)
+        {
+            t.GetComponent<TextMeshProUGUI>().text = "";
+        }
 
         NewPatient().AddAilments(
             new Ailment(5, 1f, false, 0, new Vector2(0, 0), AIL_RADIUS * 1.3f, 45)
@@ -55,16 +73,54 @@ public class Main : MonoBehaviour
         );
 
         NewPatient().AddAilments(
-            new Ailment(5, 1f, false, -3, new Vector2(0f, 1.7f), AIL_RADIUS * 1.4f, 90),
-            new Ailment(5, 1.667f, true, -1, new Vector2(0f, 1.7f), AIL_RADIUS * 1.3f, 90),
-            new Ailment(3, 1f, false, -1, new Vector2(1.4f, -1.5f), AIL_RADIUS * 1.3f, -90)
+            new Ailment(5, 1f, false, -3, new Vector2(-.5f, 3f), AIL_RADIUS * 1.3f, 90),
+            new Ailment(5, 1.667f, true, -1, new Vector2(-2.25f, 1f), AIL_RADIUS * 1.3f, 90),
+            new Ailment(3, 1f, false, -1, new Vector2(.6f, -.55f), AIL_RADIUS * 1.3f, 135)
         );
 
         NewPatient().AddAilments(
-            new Ailment(5, 1.2f, true, 1f, new Vector2(0f, 1.7f), AIL_RADIUS * 1.4f, 90),
-            new Ailment(5, .8f, false, 2f, new Vector2(0f, 1.7f), AIL_RADIUS * 1.3f, 90),
-            new Ailment(3, 1f, false, -1, new Vector2(1.4f, -1.5f), AIL_RADIUS * 1.3f, -90)
+            new Ailment(5, 1.2f, true, -2, new Vector2(-.4f, -2.4f), AIL_RADIUS * 1.3f, -90),
+            new Ailment(5, 1.2f, false, -3, new Vector2(1.3f, -1.4f), AIL_RADIUS * 1.3f, 90),
+            new Ailment(3, 1f, true, -1, new Vector2(0f, .6f), AIL_RADIUS * 1.3f, 90),
+            new Ailment(3, 2f, false, -1, new Vector2(-2f, 1.7f), AIL_RADIUS * 1.3f, -90),
+            new Ailment(10, 2f, false, -6, new Vector2(2f, 1.7f), AIL_RADIUS * 2f, 90)
         );
+
+        NewPatient().AddAilments(
+            new Ailment(10, 3f, false, -2, new Vector2(0, 3), AIL_RADIUS * 1.5f, 180),
+            new Ailment(6, 3f, false, -2, new Vector2(0, 1.5f), AIL_RADIUS * 1.5f, 180),
+            new Ailment(4, 3f, false, -2, new Vector2(0, 0), AIL_RADIUS * 1.5f, 0),
+            new Ailment(2, 2f, true, -1, new Vector2(-2, 0), AIL_RADIUS * 1.3f, -90),
+            new Ailment(2, 1f, true, -1, new Vector2(2, 0), AIL_RADIUS * 1.3f, 90)
+        );
+
+        NewPatient().AddAilments(
+            new Ailment(5, 1f, true, 2, new Vector2(-.5f, 0), AIL_RADIUS * 1.5f, 180),
+            new Ailment(10, 2f, true, 2, new Vector2(-.4f, 2.5f), AIL_RADIUS * 2f, -90),
+            new Ailment(15, 3f, false, 2, new Vector2(1.4f, 1.75f), AIL_RADIUS * 2f, 90),
+            new Ailment(15, 2f, true, -10, new Vector2(.1f, 1.3f), AIL_RADIUS * 1.7f, -135)
+        );
+
+        NewPatient().AddAilments(
+            new Ailment(10, 1f, true, -7, new Vector2(-1f, -1.6f), AIL_RADIUS * 1.5f, -90),
+            new Ailment(5, 1f, true, -2, new Vector2(-1f, 0f), AIL_RADIUS * 1.5f, -90),
+            new Ailment(12, 1.2f, false, -4, new Vector2(1.5f, 1.8f), AIL_RADIUS * 2f, 45),
+            new Ailment(12, 1.2f, true, -2, new Vector2(-2.7f, 2f), AIL_RADIUS * 2f, -135),
+            new Ailment(12, 1.5f, false, -2, new Vector2(3f, 3f), AIL_RADIUS * 2f, 135),
+            new Ailment(10, 1.5f, false, -8, new Vector2(2.1f, 4f), AIL_RADIUS * 2f, 135),
+            new Ailment(20, 4f, false, -5, new Vector2(-1.5f, -1.75f), AIL_RADIUS * 2f, -30),
+            new Ailment(20, 8f, false, -5, new Vector2(-3f, -3f), AIL_RADIUS * 2f, -90)
+        );
+
+        lives = 3;
+        patientIndex = -1;
+
+        start = true;
+    }
+
+    void SetX(int i)
+    {
+        ui_x.GetChild(i).GetComponent<TextMeshProUGUI>().text = "x";
     }
 
     Patient NewPatient()
@@ -83,6 +139,10 @@ public class Main : MonoBehaviour
             {
                 LoadNextPatient();
             }
+        }
+        if (Keyboard.current.escapeKey.wasPressedThisFrame && patientIndex >= 0)
+        {
+            Esc();
         }
 
         if (patientIndex < 0)
@@ -115,15 +175,34 @@ public class Main : MonoBehaviour
                         ail.initializing = true;
                         Timing.KillCoroutines(ail.coroutineLayer);
                         ail.displayText.color = Color.red;
+                        //Tween.Scale(ail.displayText.transform, endValue: Vector2.one, duration: .25f, ease: Ease.OutBack, startDelay: patientIndex > 0 ? 1f : 1.5f);
+                        //Tween.Scale(ail.sprite_head.transform, endValue: Vector2.one, duration: .25f, ease: Ease.OutBack, startDelay: patientIndex > 0 ? 1f : 1.5f)
+                        //    .OnComplete(() =>
+                        //    {
+                        //        ail.state = AilmentState.Ready;
+                        //        ail.SetDisplayTime();
+                        //    });
                         Sequence.Create()
                             .Group(Tween.Scale(ail.displayText.transform, endValue: Vector2.one, duration: .25f, ease: Ease.OutBack, startDelay: patientIndex > 0 ? 1f : 1.5f))
                             .Group(Tween.Scale(ail.sprite_head.transform, endValue: Vector2.one, duration: .25f, ease: Ease.OutBack, startDelay: patientIndex > 0 ? 1f : 1.5f))
+                            //.Group(Tween.Delay(duration: .25f, () =>
+                            //{
+                            //    ail.state = AilmentState.Ready;
+                            //    ail.SetDisplayTime();
+                            //}));
                             //.ChainDelay(.25f)
                             .OnComplete(() =>
                             {
                                 ail.state = AilmentState.Ready;
                                 ail.SetDisplayTime();
                             });
+                        //Sequence.Create()
+                        //    .ChainDelay(.25f)
+                        //    .OnComplete(() =>
+                        //    {
+                        //        ail.state = AilmentState.Ready;
+                        //        ail.SetDisplayTime();
+                        //    });
                         continue;
                     }
                     continue;
@@ -178,6 +257,7 @@ public class Main : MonoBehaviour
                     patient.body_hit.color = Color.red;
                     patient.face_hit.color = Color.red;
                     Sequence.Create()
+                        .ChainDelay(patient.lives > 1 ? 0f : .5f)
                         .Group(Tween.Alpha(patient.body_hit, endValue: 0, duration: patient.lives > 1 ? .6f : 1f))
                         .Group(Tween.Alpha(patient.face_hit, endValue: 0, duration: patient.lives > 1 ? .6f : 1f))
                         .Group(Tween.ShakeLocalPosition(patient.gameObject.transform, strength: Vector2.one * (patient.lives > 1 ? .1f : .25f), duration: 1f));
@@ -221,6 +301,7 @@ public class Main : MonoBehaviour
                         patient.body_hit.color = Color.red;
                         patient.face_hit.color = Color.red;
                         Sequence.Create()
+                            .ChainDelay(patient.lives > 1 ? 0f : .5f)
                             .Group(Tween.Alpha(patient.body_hit, endValue: 0, duration: patient.lives > 1 ? .6f : 1f))
                             .Group(Tween.Alpha(patient.face_hit, endValue: 0, duration: patient.lives > 1 ? .6f : 1f))
                             .Group(Tween.ShakeLocalPosition(patient.gameObject.transform, strength: Vector2.one * (patient.lives > 1 ? .1f : .25f), duration: 1f));
@@ -246,6 +327,12 @@ public class Main : MonoBehaviour
                 {
                     Timing.KillCoroutines(patient.gameObject);
                     patient.SetFace(3);
+
+                    if (patientIndex > 0)
+                    {
+                        lives--;
+                        SetX(patientIndex - 1);
+                    } 
                 }
 
                 Timing.RunCoroutine(patient._Next(), patient.gameObject);
@@ -257,8 +344,47 @@ public class Main : MonoBehaviour
         }
     }
 
+    void Esc()
+    {
+        start = false;
+        lives = -1;
+        Patient prev_patient = patients[patientIndex];
+        Timing.KillCoroutines(prev_patient.gameObject);
+        GameObject go = prev_patient.gameObject;
+        patientIndex = -1;
+
+        Sequence.Create()
+            .Group(Tween.PositionY(go.transform, endValue: -10, duration: .5f, ease: Ease.InCubic).OnComplete(() => Destroy(go)))
+            .Group(Tween.Scale(ui_title, endValue: Vector2.one, duration: .5f, ease: Ease.OutBack, startDelay: .2f))
+            .Group(Tween.UIAnchoredPositionY(ui_icons, endValue: -800, duration: .5f, ease: Ease.InBack, startDelay: .2f))
+            .Group(Tween.UIAnchoredPositionY(ui_x, endValue: -800, duration: .5f, ease: Ease.InBack, startDelay: .2f))
+            .OnComplete(() => Init());
+    }
+
     void LoadNextPatient()
     {
+        if (lives < 0)
+            return;
+
+        if (lives == 0)
+        {
+            start = false;
+            lives = -1;
+            Patient prev_patient = patients[patientIndex];
+            Timing.KillCoroutines(prev_patient.gameObject);
+            GameObject go = prev_patient.gameObject;
+
+            Sequence.Create()
+                .Group(Tween.PositionY(go.transform, endValue: -10, duration: .5f, startDelay: 1f, ease: Ease.InCubic).OnComplete(() => Destroy(go)))
+                .Group(Tween.Scale(ui_title, endValue: Vector2.one, duration: .5f, ease: Ease.OutBack, startDelay: 1.75f))
+                .Group(Tween.UIAnchoredPositionY(ui_icons, endValue: -800, duration: .5f, ease: Ease.InBack, startDelay: 1.75f))
+                .Group(Tween.UIAnchoredPositionY(ui_x, endValue: -800, duration: .5f, ease: Ease.InBack, startDelay: 1.75f))
+                .OnComplete(() => Init());
+
+            patientIndex = -1;
+            return;
+        }
+
         if (patientIndex >= 0)
         {
             Patient prev_patient = patients[patientIndex];
@@ -292,8 +418,40 @@ public class Main : MonoBehaviour
 
         if (patientIndex == 0)
         {
-            Tween.Scale(ui_title, endValue: Vector2.zero, duration: .5f, ease: Ease.InBack);
+            Sequence.Create()
+                .Group(Tween.Scale(ui_title, endValue: Vector2.zero, duration: .5f, ease: Ease.InBack))
+                .Group(Tween.UIAnchoredPositionY(ui_icons, endValue: -600, duration: .4f, ease: Ease.OutBack, startDelay: .5f))
+                .Group(Tween.UIAnchoredPositionY(ui_x, endValue: -600, duration: .4f, ease: Ease.OutBack, startDelay: .5f))
+            ;
         }
         Tween.PositionX(patients[patientIndex].gameObject.transform, endValue: 0, duration: .75f, ease: Ease.OutBack, startDelay: patientIndex > 0 ? .25f : .75f);
+    }
+
+    // ------------------------------------------------- Title Click
+    public void ClickTitle()
+    {
+        if (!start)
+            return;
+
+        if (patientIndex < patients.Count - 1)
+        {
+            LoadNextPatient();
+        }
+    }
+
+    public void EnterTitle()
+    {
+        if (!start)
+            return;
+
+        ui_title_text.color = Color.white;
+    }
+
+    public void ExitTitle()
+    {
+        if (!start)
+            return;
+
+        ui_title_text.color = Color.black;
     }
 }

@@ -107,6 +107,7 @@ public class Patient
     public void Load(PatientSprites sprites)
     {
         gameObject = GameObject.Instantiate(Ref.patientGameObject, new Vector2(20, .75f), Quaternion.identity);
+        gameObject.name = sprites.body.name.Substring(0, 2);
         body = gameObject.transform.GetChild(0).GetChild(0).GetComponent<SpriteRenderer>();
         face = gameObject.transform.GetChild(0).GetChild(1).GetComponent<SpriteRenderer>();
         body_hit = gameObject.transform.GetChild(0).GetChild(2).GetComponent<SpriteRenderer>();
