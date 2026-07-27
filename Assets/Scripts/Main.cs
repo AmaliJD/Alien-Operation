@@ -1,5 +1,4 @@
 using GLDebug;
-using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -40,13 +39,16 @@ public class Main : MonoBehaviour
     public Transform ui_perfect;
     public RectTransform ui_icons;
     public RectTransform ui_x;
-    public Transform trail;
+    public TrailRenderer trail;
 
     public int lives;
     bool start;
     bool perfectRun = true;
+    bool perfectPatient = true;
     bool win;
     bool win_click;
+
+    int frame_count = -1;
 
     void Awake()
     {
@@ -56,6 +58,9 @@ public class Main : MonoBehaviour
         Ref.ailmentGameObject = ref_ailmentGameObject;
         Ref.patientGameObject = ref_patientGameObject;
         Ref.clock_tick = ref_clock_tick;
+
+        Vector2 mousePos_1 = Camera.main.ScreenToWorldPoint(Mouse.current.position.value);
+        trail.transform.position = mousePos_1;
 
         Init();
     }
@@ -80,12 +85,12 @@ public class Main : MonoBehaviour
 
         NewPatient().AddAilments(
             new Ailment(5, 1f, false, -2, new Vector2(-2.4f, 2.4f), AIL_RADIUS * 1.3f, -90),
-            new Ailment(5, 1f, false, -2, new Vector2(1.2f, 1.3f), AIL_RADIUS * 1.3f, 45),
+            new Ailment(5, 1.5f, false, -2, new Vector2(1.2f, 1.3f), AIL_RADIUS * 1.3f, 45),
             new Ailment(10, 2f, false, -4, new Vector2(-.3f, 0), AIL_RADIUS * 1.9f, -135)
         );
 
         NewPatient().AddAilments(
-            new Ailment(5, 1f, false, -3, new Vector2(-.5f, 3f), AIL_RADIUS * 1.3f, 90),
+            new Ailment(5, 1.2f, false, -3, new Vector2(-.5f, 3f), AIL_RADIUS * 1.3f, 90),
             new Ailment(5, 1.667f, true, -1, new Vector2(-2.25f, 1f), AIL_RADIUS * 1.3f, 90),
             new Ailment(3, 1f, false, -1, new Vector2(.6f, -.55f), AIL_RADIUS * 1.3f, 135)
         );
@@ -114,14 +119,14 @@ public class Main : MonoBehaviour
         );
 
         NewPatient().AddAilments(
-            new Ailment(10, 1f, true, -7, new Vector2(-1f, -1.6f), AIL_RADIUS * 1.5f, -90),
+            new Ailment(10, 1f, true, -7, new Vector2(-.8f, 1.5f/*-1f, -1.6f*/), AIL_RADIUS * 2f, -60),
             new Ailment(5, 1f, true, -2, new Vector2(-1f, 0f), AIL_RADIUS * 1.5f, -90),
-            new Ailment(12, 1.2f, false, -4, new Vector2(1.5f, 1.8f), AIL_RADIUS * 2f, 45),
+            new Ailment(12, 1.2f, false, -4, new Vector2(1.5f, 1.8f), AIL_RADIUS * 2f, 45), //
             new Ailment(12, 1.2f, true, -2, new Vector2(-2.7f, 2f), AIL_RADIUS * 2f, -135),
-            new Ailment(12, 1.5f, false, -2, new Vector2(3f, 3f), AIL_RADIUS * 2f, 135),
-            new Ailment(10, 1.5f, false, -8, new Vector2(2.1f, 4f), AIL_RADIUS * 2f, 135),
-            new Ailment(20, 4f, false, -5, new Vector2(-1.5f, -1.75f), AIL_RADIUS * 2f, -30),
-            new Ailment(20, 8f, false, -5, new Vector2(-3f, -3f), AIL_RADIUS * 2f, -90)
+            new Ailment(12, 1.5f, false, -2, new Vector2(3f, 3f), AIL_RADIUS * 2f, 135), //
+            new Ailment(10, 1.5f, false, -8, new Vector2(2.1f, .4f), AIL_RADIUS * 2f, 135), //
+            new Ailment(20, 4f, false, -5, new Vector2(-1.5f, -1.75f), AIL_RADIUS * 2f, -30), //
+            new Ailment(20, 8f, false, -5, new Vector2(-3f, -3f), AIL_RADIUS * 2f, -90) //
         );
 
         lives = 3;
@@ -129,6 +134,7 @@ public class Main : MonoBehaviour
 
         start = true;
         perfectRun = true;
+        perfectPatient = true;
 
         win = false;
         win_click = false;
@@ -136,7 +142,16 @@ public class Main : MonoBehaviour
 
     void SetX(int i)
     {
-        ui_x.GetChild(i).GetComponent<TextMeshProUGUI>().text = "x";
+        TextMeshProUGUI ui_x_i = ui_x.GetChild(i).GetComponent<TextMeshProUGUI>();
+        ui_x_i.text = "x";
+        ui_x_i.color = new Color(1, 0, 0, ui_x_i.color.a);
+    }
+
+    void SetP(int i)
+    {
+        TextMeshProUGUI ui_x_i = ui_x.GetChild(i).GetComponent<TextMeshProUGUI>();
+        ui_x_i.text = "P";
+        ui_x_i.color = new Color(1, .9f, 0, ui_x_i.color.a);
     }
 
     Patient NewPatient()
@@ -149,9 +164,16 @@ public class Main : MonoBehaviour
 
     void Update()
     {
+        frame_count++;
+
         Vector2 mousePos_1 = Camera.main.ScreenToWorldPoint(Mouse.current.position.value);
-        trail.position = mousePos_1;
-        trail.gameObject.SetActive(true);
+        trail.transform.position = mousePos_1;
+
+        if (frame_count == 2)
+        {
+            trail.emitting = true;
+            trail.time = .1f;
+        }
 
         if (win)
             return;
@@ -160,10 +182,16 @@ public class Main : MonoBehaviour
         {
             if (patientIndex < patients.Count - 1)
             {
+                if (patientIndex > 0)
+                    perfectRun = false;
+
                 LoadNextPatient();
             }
             else if (patientIndex == patients.Count - 1)
             {
+                if (patientIndex > 0)
+                    perfectRun = false;
+
                 LoadWin();
             }
         }
@@ -295,7 +323,10 @@ public class Main : MonoBehaviour
                     patient.lives--;
 
                     if (patientIndex > 0)
+                    {
                         perfectRun = false;
+                        perfectPatient = false;
+                    } 
                 }
                 else if (mousePressed && cursorOnAil && readMouseDown)
                 {
@@ -344,7 +375,10 @@ public class Main : MonoBehaviour
                         patient.lives--;
 
                         if (patientIndex > 0)
+                        {
                             perfectRun = false;
+                            perfectPatient = false;
+                        }
                     }
                 }
 
@@ -359,6 +393,11 @@ public class Main : MonoBehaviour
                 {
                     Timing.KillCoroutines(patient.gameObject);
                     patient.SetFace(2);
+
+                    if (perfectPatient && patientIndex > 0)
+                    {
+                        SetP(patientIndex - 1);
+                    }
                 }
                 else if (patient.lives <= 0)
                 {
@@ -431,6 +470,8 @@ public class Main : MonoBehaviour
     {
         if (lives < 0)
             return;
+
+        perfectPatient = true;
 
         if (lives == 0)
         {

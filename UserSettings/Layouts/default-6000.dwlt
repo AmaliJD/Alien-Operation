@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 820.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Git for Unity
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -73,7 +73,7 @@ MonoBehaviour:
     height: 36
   m_MinSize: {x: 50, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 19}
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 16
+  controlID: 109
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -166,18 +166,18 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 852.8
-    height: 508
+    height: 626.4
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 20}
   m_Panes:
+  - {fileID: 21}
   - {fileID: 20}
-  - {fileID: 19}
+  - {fileID: 16}
   - {fileID: 15}
   - {fileID: 14}
-  - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -188,25 +188,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: RecorderWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 508
+    y: 626.4
     width: 852.8
-    height: 256.8
-  m_MinSize: {x: 101, y: 126}
+    height: 138.39996
+  m_MinSize: {x: 561, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 13}
   m_Panes:
-  - {fileID: 21}
-  - {fileID: 17}
   - {fileID: 22}
+  - {fileID: 13}
+  - {fileID: 18}
   - {fileID: 23}
-  m_Selected: 0
-  m_LastSelected: 1
+  - {fileID: 24}
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -231,7 +232,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 69
+  controlID: 54
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -254,9 +255,9 @@ MonoBehaviour:
     height: 417.6
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
-  m_ActualView: {fileID: 24}
+  m_ActualView: {fileID: 25}
   m_Panes:
-  - {fileID: 24}
+  - {fileID: 25}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &11
@@ -280,9 +281,9 @@ MonoBehaviour:
     height: 347.19998
   m_MinSize: {x: 232, y: 276}
   m_MaxSize: {x: 10002, y: 10026}
-  m_ActualView: {fileID: 25}
+  m_ActualView: {fileID: 26}
   m_Panes:
-  - {fileID: 25}
+  - {fileID: 26}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &12
@@ -295,7 +296,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: Window
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -304,15 +305,53 @@ MonoBehaviour:
     y: 0
     width: 401.59998
     height: 764.8
-  m_MinSize: {x: 276, y: 76}
+  m_MinSize: {x: 51, y: 76}
   m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 26}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 26}
-  - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 1
+  - {fileID: 27}
+  - {fileID: 17}
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c66a740a74845a08dc18bab7f2ffa03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Recorder.Editor::UnityEditor.Recorder.RecorderWindow
+  m_MinSize: {x: 560, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Recorder
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+    m_TextWithWhitespace: "Recorder\u200B"
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 650.4
+    width: 851.8
+    height: 112.39996
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_ContainerData: []
+    m_DynamicPanelContainerData: []
+    m_OverlaysVisible: 1
+    m_DynamicPanelBehavior: 0
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -579,7 +618,7 @@ MonoBehaviour:
     \"787e155d2ff1490aa9d2107fef027560\"\n        }\n    ]\n}\n\n"
   m_AssetMaybeChangedOnDisk: 0
   m_AssetMaybeDeleted: 0
---- !u!114 &14
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -814,7 +853,7 @@ MonoBehaviour:
     false\n}\n\n"
   m_AssetMaybeChangedOnDisk: 0
   m_AssetMaybeDeleted: 0
---- !u!114 &15
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1081,7 +1120,7 @@ MonoBehaviour:
     \"787e155d2ff1490aa9d2107fef027560\"\n        }\n    ]\n}\n\n"
   m_AssetMaybeChangedOnDisk: 0
   m_AssetMaybeDeleted: 0
---- !u!114 &16
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1102,8 +1141,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Git for Unity\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1134.4
-    y: 79.200005
+    x: 1135.4
+    y: 24
     width: 400.59998
     height: 738.8
   m_SerializedDataModeController:
@@ -1126,9 +1165,9 @@ MonoBehaviour:
   currentTrackingStatusHasUpdate: 0
   currentStatusEntriesHasUpdate: 0
   repositoryProgressHasUpdate: 0
-  appManagerProgressHasUpdate: 1
-  changeTab: 3
-  activeTab: 3
+  appManagerProgressHasUpdate: 0
+  changeTab: 2
+  activeTab: 2
   initProjectView:
     hasCompletedInitialCheck: 0
     isUserDataPresent: 0
@@ -1298,22 +1337,53 @@ MonoBehaviour:
     - name: origin/master
       tracking: '[None]'
   changesView:
-    currentBranchHasUpdate: 1
-    currentStatusEntriesHasUpdate: 1
-    currentLocksHasUpdate: 1
+    currentBranchHasUpdate: 0
+    currentStatusEntriesHasUpdate: 0
+    currentLocksHasUpdate: 0
     commitBody: 
-    commitMessage: esc and lose - close game loop
+    commitMessage: game jam complete
     currentBranch: master
-    treeScroll: {x: 0, y: 0}
+    treeScroll: {x: 0, y: 884}
     treeChanges:
       assets:
         keys:
         - 00000000000000001000000000000000
         - 603c2cc1f3183d841af784635e2312b7
+        - dc392af9c0ccdd245912b6a710d6e5db
         - a3e39e67a22fc6e49978ec7a4dc46e91
+        - 31bb94bf8f62bef49b80a8558369d9bd
+        - 07ce53350617ca34eab50ae2cd12685c
+        - ac8c4970be392d44387ab7d2f5fc99f6
+        - cdcf2a5d74ba2514d9bf2f330b5ba252
+        - e546a105b9a9d1c47b10577ef59eaa73
+        - 8c42c383af6a47a409ad55bc4654b4d2
+        - 56342522ed3486448a826aefa66cf7dc
         - 213afddafc1fa004ebf3ab2655a13d72
+        - 7f90b76ba97093b4a9ad695e09944758
+        - bdd8dbe172a09e34694ca71751e4a1b3
+        - 1d37c3af895c3294fb501d1efcd3de3c
+        - 3f9215ea0144899419cfbc0957140d3f
+        - e6d75ef6b88229340a63e3c106b8365b
+        - a0c786cc59ac6bb4ca64dfb0052e5ec7
+        - 8fdc9e1c87f839f45a6b3c695f237d64
+        - 0185009b08ba3fe4499fb5d500d9fe8a
+        - 5bb70f3b430e3c84b9ff5ef3c64d6bd8
+        - 892b845bb5da8044a9117f9356430f2f
+        - ae27d0dacb381be46a4fc28ab281207b
+        - f247592684879a941aa0860125186888
+        - 109e9bdd0fcc649c5bc59085c35bdc83
+        - 8c9cfa26abfee488c85f1582747f6a02
+        - 76f86a90963bfff4d8fef558bbee6419
+        - e84cd717bc51d80469584a0f558dc76e
         - 6a7b672c91faa6f47adc90779b26532a
+        - 0160e44acfb31c147a6317a146180f2a
+        - 691c4f1c643d8194eb9db6786cc9da2b
+        - 472762b446ee1594b92f01a552c27d8c
         - 7057876013c70de4abc4ef066be30557
+        - 0220aab0833d04faeb927d84ca6cc40c
+        - 681886c5eb7344803b6206f758bf0b1c
+        - 93b439a37f63240aca3dd4e01d978a9f
+        - 00000000000000004000000000000000
         values:
         - path: Assets
           label: Assets
@@ -1324,7 +1394,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1342,7 +1412,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1351,6 +1421,24 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
+        - path: Assets\Audio\clock-tick.mp3
+          label: clock-tick.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\clock-tick.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\clock-tick.mp3
+            projectPath: Assets\Audio\clock-tick.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
         - path: Assets\Audio\err.mp3
           label: err.mp3
           level: 2
@@ -1360,12 +1448,138 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: Assets\Audio\err.mp3
             fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\err.mp3
             projectPath: Assets\Audio\err.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt1.mp3
+          label: hurt1.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt1.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt1.mp3
+            projectPath: Assets\Audio\hurt1.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt2.mp3
+          label: hurt2.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt2.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt2.mp3
+            projectPath: Assets\Audio\hurt2.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt3.mp3
+          label: hurt3.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt3.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt3.mp3
+            projectPath: Assets\Audio\hurt3.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt4.mp3
+          label: hurt4.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt4.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt4.mp3
+            projectPath: Assets\Audio\hurt4.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt5.mp3
+          label: hurt5.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt5.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt5.mp3
+            projectPath: Assets\Audio\hurt5.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt6.mp3
+          label: hurt6.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt6.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt6.mp3
+            projectPath: Assets\Audio\hurt6.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt7.mp3
+          label: hurt7.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt7.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt7.mp3
+            projectPath: Assets\Audio\hurt7.mp3
             originalPath: 
             indexStatus: 1
             workTreeStatus: 1
@@ -1378,7 +1592,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: Assets\Audio\success.mp3
@@ -1387,6 +1601,296 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 1
             workTreeStatus: 1
+        - path: Assets\Audio\tom-scream.mp3
+          label: tom-scream.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\tom-scream.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\tom-scream.mp3
+            projectPath: Assets\Audio\tom-scream.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\you-win.mp3
+          label: you-win.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\you-win.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\you-win.mp3
+            projectPath: Assets\Audio\you-win.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\you-win-perfect.mp3
+          label: you-win-perfect.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\you-win-perfect.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\you-win-perfect.mp3
+            projectPath: Assets\Audio\you-win-perfect.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\DefaultVolumeProfile.asset
+          label: DefaultVolumeProfile.asset
+          level: 1
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\DefaultVolumeProfile.asset
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\DefaultVolumeProfile.asset
+            projectPath: Assets\DefaultVolumeProfile.asset
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Fonts
+          label: Fonts
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Fonts\super_bouncer
+          label: super_bouncer
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset
+          label: Super Bouncer SDF Cover.asset
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
+              Bouncer SDF Cover.asset
+            projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images
+          label: Images
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Images\Aliens
+          label: Aliens
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Images\Aliens\Icon.png
+          label: Icon.png
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Icon.png
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Icon.png
+            projectPath: Assets\Images\Aliens\Icon.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Malcoot.blend
+          label: Malcoot.blend
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Malcoot.blend
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Malcoot.blend
+            projectPath: Assets\Images\Aliens\Malcoot.blend
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Malcoot.blend1
+          label: Malcoot.blend1
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Malcoot.blend1
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Malcoot.blend1
+            projectPath: Assets\Images\Aliens\Malcoot.blend1
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Scenes
+          label: Scenes
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Scenes\Game.unity
+          label: Game.unity
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scenes\Game.unity
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game.unity
+            projectPath: Assets\Scenes\Game.unity
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Scenes\Game
+          label: Game
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Scenes\Game\Global Volume Profile.asset
+          label: Global Volume Profile.asset
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scenes\Game\Global Volume Profile.asset
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game\Global
+              Volume Profile.asset
+            projectPath: Assets\Scenes\Game\Global Volume Profile.asset
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
         - path: Assets\Scripts
           label: Scripts
           level: 1
@@ -1396,7 +1900,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1405,6 +1909,60 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
+        - path: Assets\Scripts\Ailment.cs
+          label: Ailment.cs
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scripts\Ailment.cs
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Ailment.cs
+            projectPath: Assets\Scripts\Ailment.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Scripts\AudioPlayer.cs
+          label: AudioPlayer.cs
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scripts\AudioPlayer.cs
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\AudioPlayer.cs
+            projectPath: Assets\Scripts\AudioPlayer.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Scripts\Globals.cs
+          label: Globals.cs
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scripts\Globals.cs
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Globals.cs
+            projectPath: Assets\Scripts\Globals.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
         - path: Assets\Scripts\Main.cs
           label: Main.cs
           level: 2
@@ -1414,7 +1972,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: Assets\Scripts\Main.cs
@@ -1423,11 +1981,95 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 3
+        - path: Assets\Settings
+          label: Settings
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Settings\UniversalRP.asset
+          label: UniversalRP.asset
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Settings\UniversalRP.asset
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Settings\UniversalRP.asset
+            projectPath: Assets\Settings\UniversalRP.asset
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\UniversalRenderPipelineGlobalSettings.asset
+          label: UniversalRenderPipelineGlobalSettings.asset
+          level: 1
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\UniversalRenderPipelineGlobalSettings.asset
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\UniversalRenderPipelineGlobalSettings.asset
+            projectPath: Assets\UniversalRenderPipelineGlobalSettings.asset
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: ProjectSettings\ProjectSettings.asset
+          label: ProjectSettings.asset
+          level: 1
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: ProjectSettings\ProjectSettings.asset
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\ProjectSettings\ProjectSettings.asset
+            projectPath: ProjectSettings\ProjectSettings.asset
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
       folders:
         keys:
         - Assets
         - Assets\Audio
+        - Assets\Fonts
+        - Assets\Fonts\super_bouncer
+        - Assets\Images
+        - Assets\Images\Aliens
+        - Assets\Scenes
+        - Assets\Scenes\Game
         - Assets\Scripts
+        - Assets\Settings
+        - Packages
+        - ProjectSettings
+        - Recordings
+        - UserSettings
+        - UserSettings\Layouts
         values:
         - path: Assets
           label: Assets
@@ -1438,7 +2080,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1456,7 +2098,115 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Fonts
+          label: Fonts
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Fonts\super_bouncer
+          label: super_bouncer
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Images
+          label: Images
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Images\Aliens
+          label: Aliens
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Scenes
+          label: Scenes
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Scenes\Game
+          label: Game
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1474,7 +2224,115 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Settings
+          label: Settings
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Packages
+          label: Packages
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: ProjectSettings
+          label: ProjectSettings
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Recordings
+          label: Recordings
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: UserSettings
+          label: UserSettings
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: UserSettings\Layouts
+          label: Layouts
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1484,8 +2342,964 @@ MonoBehaviour:
             indexStatus: 0
             workTreeStatus: 0
       checkedFileNodes:
-        keys: []
-        values: []
+        keys:
+        - Assets\Audio\clock-tick.mp3
+        - Assets\Audio\clock-tick.mp3.meta
+        - Assets\Audio\err.mp3
+        - Assets\Audio\err.mp3.meta
+        - Assets\Audio\hurt1.mp3
+        - Assets\Audio\hurt1.mp3.meta
+        - Assets\Audio\hurt2.mp3
+        - Assets\Audio\hurt2.mp3.meta
+        - Assets\Audio\hurt3.mp3
+        - Assets\Audio\hurt3.mp3.meta
+        - Assets\Audio\hurt4.mp3
+        - Assets\Audio\hurt4.mp3.meta
+        - Assets\Audio\hurt5.mp3
+        - Assets\Audio\hurt5.mp3.meta
+        - Assets\Audio\hurt6.mp3
+        - Assets\Audio\hurt6.mp3.meta
+        - Assets\Audio\hurt7.mp3
+        - Assets\Audio\hurt7.mp3.meta
+        - Assets\Audio\success.mp3
+        - Assets\Audio\success.mp3.meta
+        - Assets\Audio\tom-scream.mp3
+        - Assets\Audio\tom-scream.mp3.meta
+        - Assets\Audio\you-win.mp3
+        - Assets\Audio\you-win.mp3.meta
+        - Assets\Audio\you-win-perfect.mp3
+        - Assets\Audio\you-win-perfect.mp3.meta
+        - Assets\DefaultVolumeProfile.asset
+        - Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset
+        - Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset.meta
+        - Assets\Images\Aliens\Icon.png
+        - Assets\Images\Aliens\Icon.png.meta
+        - Assets\Images\Aliens\Malcoot.blend
+        - Assets\Images\Aliens\Malcoot.blend.meta
+        - Assets\Images\Aliens\Malcoot.blend1
+        - Assets\Images\Aliens\Malcoot.blend1.meta
+        - Assets\Scenes\Game.unity
+        - Assets\Scenes\Game\Global Volume Profile.asset
+        - Assets\Scripts\Ailment.cs
+        - Assets\Scripts\AudioPlayer.cs
+        - Assets\Scripts\Globals.cs
+        - Assets\Scripts\Main.cs
+        - Assets\Settings\UniversalRP.asset
+        - Assets\UniversalRenderPipelineGlobalSettings.asset
+        - Packages\manifest.json
+        - Packages\packages-lock.json
+        - ProjectSettings\ProjectSettings.asset
+        - Recordings\Image Sequence_002_0000.png
+        - Recordings\Image Sequence_005_0000.png
+        - Recordings\Image Sequence_011_0000.png
+        - UserSettings\Layouts\default-6000.dwlt
+        values:
+        - path: Assets\Audio\clock-tick.mp3
+          label: clock-tick.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\clock-tick.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\clock-tick.mp3
+            projectPath: Assets\Audio\clock-tick.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\clock-tick.mp3.meta
+          label: clock-tick.mp3.meta
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\clock-tick.mp3.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\clock-tick.mp3.meta
+            projectPath: Assets\Audio\clock-tick.mp3.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\err.mp3
+          label: err.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\err.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\err.mp3
+            projectPath: Assets\Audio\err.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\err.mp3.meta
+          label: err.mp3.meta
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\err.mp3.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\err.mp3.meta
+            projectPath: Assets\Audio\err.mp3.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt1.mp3
+          label: hurt1.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt1.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt1.mp3
+            projectPath: Assets\Audio\hurt1.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt1.mp3.meta
+          label: hurt1.mp3.meta
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt1.mp3.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt1.mp3.meta
+            projectPath: Assets\Audio\hurt1.mp3.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt2.mp3
+          label: hurt2.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt2.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt2.mp3
+            projectPath: Assets\Audio\hurt2.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt2.mp3.meta
+          label: hurt2.mp3.meta
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt2.mp3.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt2.mp3.meta
+            projectPath: Assets\Audio\hurt2.mp3.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt3.mp3
+          label: hurt3.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt3.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt3.mp3
+            projectPath: Assets\Audio\hurt3.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt3.mp3.meta
+          label: hurt3.mp3.meta
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt3.mp3.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt3.mp3.meta
+            projectPath: Assets\Audio\hurt3.mp3.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt4.mp3
+          label: hurt4.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt4.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt4.mp3
+            projectPath: Assets\Audio\hurt4.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt4.mp3.meta
+          label: hurt4.mp3.meta
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt4.mp3.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt4.mp3.meta
+            projectPath: Assets\Audio\hurt4.mp3.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt5.mp3
+          label: hurt5.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt5.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt5.mp3
+            projectPath: Assets\Audio\hurt5.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt5.mp3.meta
+          label: hurt5.mp3.meta
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt5.mp3.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt5.mp3.meta
+            projectPath: Assets\Audio\hurt5.mp3.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt6.mp3
+          label: hurt6.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt6.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt6.mp3
+            projectPath: Assets\Audio\hurt6.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt6.mp3.meta
+          label: hurt6.mp3.meta
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt6.mp3.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt6.mp3.meta
+            projectPath: Assets\Audio\hurt6.mp3.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt7.mp3
+          label: hurt7.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt7.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt7.mp3
+            projectPath: Assets\Audio\hurt7.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\hurt7.mp3.meta
+          label: hurt7.mp3.meta
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\hurt7.mp3.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt7.mp3.meta
+            projectPath: Assets\Audio\hurt7.mp3.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\success.mp3
+          label: success.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\success.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\success.mp3
+            projectPath: Assets\Audio\success.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\success.mp3.meta
+          label: success.mp3.meta
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\success.mp3.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\success.mp3.meta
+            projectPath: Assets\Audio\success.mp3.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\tom-scream.mp3
+          label: tom-scream.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\tom-scream.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\tom-scream.mp3
+            projectPath: Assets\Audio\tom-scream.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\tom-scream.mp3.meta
+          label: tom-scream.mp3.meta
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\tom-scream.mp3.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\tom-scream.mp3.meta
+            projectPath: Assets\Audio\tom-scream.mp3.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\you-win.mp3
+          label: you-win.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\you-win.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\you-win.mp3
+            projectPath: Assets\Audio\you-win.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\you-win.mp3.meta
+          label: you-win.mp3.meta
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\you-win.mp3.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\you-win.mp3.meta
+            projectPath: Assets\Audio\you-win.mp3.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\you-win-perfect.mp3
+          label: you-win-perfect.mp3
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\you-win-perfect.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\you-win-perfect.mp3
+            projectPath: Assets\Audio\you-win-perfect.mp3
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\you-win-perfect.mp3.meta
+          label: you-win-perfect.mp3.meta
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Audio\you-win-perfect.mp3.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\you-win-perfect.mp3.meta
+            projectPath: Assets\Audio\you-win-perfect.mp3.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\DefaultVolumeProfile.asset
+          label: DefaultVolumeProfile.asset
+          level: 1
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\DefaultVolumeProfile.asset
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\DefaultVolumeProfile.asset
+            projectPath: Assets\DefaultVolumeProfile.asset
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset
+          label: Super Bouncer SDF Cover.asset
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
+              Bouncer SDF Cover.asset
+            projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset.meta
+          label: Super Bouncer SDF Cover.asset.meta
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
+              Bouncer SDF Cover.asset.meta
+            projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Icon.png
+          label: Icon.png
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Icon.png
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Icon.png
+            projectPath: Assets\Images\Aliens\Icon.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Icon.png.meta
+          label: Icon.png.meta
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Icon.png.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Icon.png.meta
+            projectPath: Assets\Images\Aliens\Icon.png.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Malcoot.blend
+          label: Malcoot.blend
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Malcoot.blend
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Malcoot.blend
+            projectPath: Assets\Images\Aliens\Malcoot.blend
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Malcoot.blend.meta
+          label: Malcoot.blend.meta
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Malcoot.blend.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Malcoot.blend.meta
+            projectPath: Assets\Images\Aliens\Malcoot.blend.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Malcoot.blend1
+          label: Malcoot.blend1
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Malcoot.blend1
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Malcoot.blend1
+            projectPath: Assets\Images\Aliens\Malcoot.blend1
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Images\Aliens\Malcoot.blend1.meta
+          label: Malcoot.blend1.meta
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Images\Aliens\Malcoot.blend1.meta
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Malcoot.blend1.meta
+            projectPath: Assets\Images\Aliens\Malcoot.blend1.meta
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Scenes\Game.unity
+          label: Game.unity
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scenes\Game.unity
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game.unity
+            projectPath: Assets\Scenes\Game.unity
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Scenes\Game\Global Volume Profile.asset
+          label: Global Volume Profile.asset
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scenes\Game\Global Volume Profile.asset
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game\Global
+              Volume Profile.asset
+            projectPath: Assets\Scenes\Game\Global Volume Profile.asset
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Scripts\Ailment.cs
+          label: Ailment.cs
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scripts\Ailment.cs
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Ailment.cs
+            projectPath: Assets\Scripts\Ailment.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Scripts\AudioPlayer.cs
+          label: AudioPlayer.cs
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scripts\AudioPlayer.cs
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\AudioPlayer.cs
+            projectPath: Assets\Scripts\AudioPlayer.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Scripts\Globals.cs
+          label: Globals.cs
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scripts\Globals.cs
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Globals.cs
+            projectPath: Assets\Scripts\Globals.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Scripts\Main.cs
+          label: Main.cs
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scripts\Main.cs
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Main.cs
+            projectPath: Assets\Scripts\Main.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Settings\UniversalRP.asset
+          label: UniversalRP.asset
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Settings\UniversalRP.asset
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Settings\UniversalRP.asset
+            projectPath: Assets\Settings\UniversalRP.asset
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\UniversalRenderPipelineGlobalSettings.asset
+          label: UniversalRenderPipelineGlobalSettings.asset
+          level: 1
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\UniversalRenderPipelineGlobalSettings.asset
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\UniversalRenderPipelineGlobalSettings.asset
+            projectPath: Assets\UniversalRenderPipelineGlobalSettings.asset
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Packages\manifest.json
+          label: manifest.json
+          level: 1
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Packages\manifest.json
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Packages\manifest.json
+            projectPath: Packages\manifest.json
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Packages\packages-lock.json
+          label: packages-lock.json
+          level: 1
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Packages\packages-lock.json
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Packages\packages-lock.json
+            projectPath: Packages\packages-lock.json
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: ProjectSettings\ProjectSettings.asset
+          label: ProjectSettings.asset
+          level: 1
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: ProjectSettings\ProjectSettings.asset
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\ProjectSettings\ProjectSettings.asset
+            projectPath: ProjectSettings\ProjectSettings.asset
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Recordings\Image Sequence_002_0000.png
+          label: Image Sequence_002_0000.png
+          level: 1
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Recordings\Image Sequence_002_0000.png
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Recordings\Image
+              Sequence_002_0000.png
+            projectPath: Recordings\Image Sequence_002_0000.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Recordings\Image Sequence_005_0000.png
+          label: Image Sequence_005_0000.png
+          level: 1
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Recordings\Image Sequence_005_0000.png
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Recordings\Image
+              Sequence_005_0000.png
+            projectPath: Recordings\Image Sequence_005_0000.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Recordings\Image Sequence_011_0000.png
+          label: Image Sequence_011_0000.png
+          level: 1
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Recordings\Image Sequence_011_0000.png
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Recordings\Image
+              Sequence_011_0000.png
+            projectPath: Recordings\Image Sequence_011_0000.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: UserSettings\Layouts\default-6000.dwlt
+          label: default-6000.dwlt
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: UserSettings\Layouts\default-6000.dwlt
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\UserSettings\Layouts\default-6000.dwlt
+            projectPath: UserSettings\Layouts\default-6000.dwlt
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
       title: 
       pathSeparator: \
       displayRootNode: 0
@@ -1502,7 +3316,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1520,7 +3334,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1538,7 +3352,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1547,6 +3361,42 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+      - path: Assets\Audio\clock-tick.mp3
+        label: clock-tick.mp3
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\clock-tick.mp3
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\clock-tick.mp3
+          projectPath: Assets\Audio\clock-tick.mp3
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\clock-tick.mp3.meta
+        label: clock-tick.mp3.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\clock-tick.mp3.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\clock-tick.mp3.meta
+          projectPath: Assets\Audio\clock-tick.mp3.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
       - path: Assets\Audio\err.mp3
         label: err.mp3
         level: 2
@@ -1556,7 +3406,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: Assets\Audio\err.mp3
@@ -1574,12 +3424,264 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: Assets\Audio\err.mp3.meta
           fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\err.mp3.meta
           projectPath: Assets\Audio\err.mp3.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\hurt1.mp3
+        label: hurt1.mp3
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\hurt1.mp3
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt1.mp3
+          projectPath: Assets\Audio\hurt1.mp3
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\hurt1.mp3.meta
+        label: hurt1.mp3.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\hurt1.mp3.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt1.mp3.meta
+          projectPath: Assets\Audio\hurt1.mp3.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\hurt2.mp3
+        label: hurt2.mp3
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\hurt2.mp3
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt2.mp3
+          projectPath: Assets\Audio\hurt2.mp3
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\hurt2.mp3.meta
+        label: hurt2.mp3.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\hurt2.mp3.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt2.mp3.meta
+          projectPath: Assets\Audio\hurt2.mp3.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\hurt3.mp3
+        label: hurt3.mp3
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\hurt3.mp3
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt3.mp3
+          projectPath: Assets\Audio\hurt3.mp3
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\hurt3.mp3.meta
+        label: hurt3.mp3.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\hurt3.mp3.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt3.mp3.meta
+          projectPath: Assets\Audio\hurt3.mp3.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\hurt4.mp3
+        label: hurt4.mp3
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\hurt4.mp3
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt4.mp3
+          projectPath: Assets\Audio\hurt4.mp3
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\hurt4.mp3.meta
+        label: hurt4.mp3.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\hurt4.mp3.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt4.mp3.meta
+          projectPath: Assets\Audio\hurt4.mp3.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\hurt5.mp3
+        label: hurt5.mp3
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\hurt5.mp3
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt5.mp3
+          projectPath: Assets\Audio\hurt5.mp3
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\hurt5.mp3.meta
+        label: hurt5.mp3.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\hurt5.mp3.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt5.mp3.meta
+          projectPath: Assets\Audio\hurt5.mp3.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\hurt6.mp3
+        label: hurt6.mp3
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\hurt6.mp3
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt6.mp3
+          projectPath: Assets\Audio\hurt6.mp3
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\hurt6.mp3.meta
+        label: hurt6.mp3.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\hurt6.mp3.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt6.mp3.meta
+          projectPath: Assets\Audio\hurt6.mp3.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\hurt7.mp3
+        label: hurt7.mp3
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\hurt7.mp3
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt7.mp3
+          projectPath: Assets\Audio\hurt7.mp3
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\hurt7.mp3.meta
+        label: hurt7.mp3.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\hurt7.mp3.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt7.mp3.meta
+          projectPath: Assets\Audio\hurt7.mp3.meta
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
@@ -1592,7 +3694,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: Assets\Audio\success.mp3
@@ -1610,7 +3712,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: Assets\Audio\success.mp3.meta
@@ -1619,6 +3721,423 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
+      - path: Assets\Audio\tom-scream.mp3
+        label: tom-scream.mp3
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\tom-scream.mp3
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\tom-scream.mp3
+          projectPath: Assets\Audio\tom-scream.mp3
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\tom-scream.mp3.meta
+        label: tom-scream.mp3.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\tom-scream.mp3.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\tom-scream.mp3.meta
+          projectPath: Assets\Audio\tom-scream.mp3.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\you-win.mp3
+        label: you-win.mp3
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\you-win.mp3
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\you-win.mp3
+          projectPath: Assets\Audio\you-win.mp3
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\you-win.mp3.meta
+        label: you-win.mp3.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\you-win.mp3.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\you-win.mp3.meta
+          projectPath: Assets\Audio\you-win.mp3.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\you-win-perfect.mp3
+        label: you-win-perfect.mp3
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\you-win-perfect.mp3
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\you-win-perfect.mp3
+          projectPath: Assets\Audio\you-win-perfect.mp3
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\you-win-perfect.mp3.meta
+        label: you-win-perfect.mp3.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Audio\you-win-perfect.mp3.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\you-win-perfect.mp3.meta
+          projectPath: Assets\Audio\you-win-perfect.mp3.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\DefaultVolumeProfile.asset
+        label: DefaultVolumeProfile.asset
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\DefaultVolumeProfile.asset
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\DefaultVolumeProfile.asset
+          projectPath: Assets\DefaultVolumeProfile.asset
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Fonts
+        label: Fonts
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Fonts\super_bouncer
+        label: super_bouncer
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset
+        label: Super Bouncer SDF Cover.asset
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
+            Bouncer SDF Cover.asset
+          projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset.meta
+        label: Super Bouncer SDF Cover.asset.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
+            Bouncer SDF Cover.asset.meta
+          projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Images
+        label: Images
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Images\Aliens
+        label: Aliens
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Images\Aliens\Icon.png
+        label: Icon.png
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Images\Aliens\Icon.png
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Icon.png
+          projectPath: Assets\Images\Aliens\Icon.png
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Images\Aliens\Icon.png.meta
+        label: Icon.png.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Images\Aliens\Icon.png.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Icon.png.meta
+          projectPath: Assets\Images\Aliens\Icon.png.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Images\Aliens\Malcoot.blend
+        label: Malcoot.blend
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Images\Aliens\Malcoot.blend
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Malcoot.blend
+          projectPath: Assets\Images\Aliens\Malcoot.blend
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Images\Aliens\Malcoot.blend.meta
+        label: Malcoot.blend.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Images\Aliens\Malcoot.blend.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Malcoot.blend.meta
+          projectPath: Assets\Images\Aliens\Malcoot.blend.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Images\Aliens\Malcoot.blend1
+        label: Malcoot.blend1
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Images\Aliens\Malcoot.blend1
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Malcoot.blend1
+          projectPath: Assets\Images\Aliens\Malcoot.blend1
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Images\Aliens\Malcoot.blend1.meta
+        label: Malcoot.blend1.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Images\Aliens\Malcoot.blend1.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Malcoot.blend1.meta
+          projectPath: Assets\Images\Aliens\Malcoot.blend1.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Scenes
+        label: Scenes
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Scenes\Game.unity
+        label: Game.unity
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Scenes\Game.unity
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game.unity
+          projectPath: Assets\Scenes\Game.unity
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Scenes\Game
+        label: Game
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Scenes\Game\Global Volume Profile.asset
+        label: Global Volume Profile.asset
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Scenes\Game\Global Volume Profile.asset
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game\Global
+            Volume Profile.asset
+          projectPath: Assets\Scenes\Game\Global Volume Profile.asset
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
       - path: Assets\Scripts
         label: Scripts
         level: 1
@@ -1628,7 +4147,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1637,6 +4156,60 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+      - path: Assets\Scripts\Ailment.cs
+        label: Ailment.cs
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Scripts\Ailment.cs
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Ailment.cs
+          projectPath: Assets\Scripts\Ailment.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Scripts\AudioPlayer.cs
+        label: AudioPlayer.cs
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Scripts\AudioPlayer.cs
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\AudioPlayer.cs
+          projectPath: Assets\Scripts\AudioPlayer.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Scripts\Globals.cs
+        label: Globals.cs
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Scripts\Globals.cs
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Globals.cs
+          projectPath: Assets\Scripts\Globals.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
       - path: Assets\Scripts\Main.cs
         label: Main.cs
         level: 2
@@ -1646,12 +4219,285 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: Assets\Scripts\Main.cs
           fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Main.cs
           projectPath: Assets\Scripts\Main.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Settings
+        label: Settings
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Settings\UniversalRP.asset
+        label: UniversalRP.asset
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Settings\UniversalRP.asset
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Settings\UniversalRP.asset
+          projectPath: Assets\Settings\UniversalRP.asset
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\UniversalRenderPipelineGlobalSettings.asset
+        label: UniversalRenderPipelineGlobalSettings.asset
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\UniversalRenderPipelineGlobalSettings.asset
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\UniversalRenderPipelineGlobalSettings.asset
+          projectPath: Assets\UniversalRenderPipelineGlobalSettings.asset
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Packages
+        label: Packages
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Packages\manifest.json
+        label: manifest.json
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\manifest.json
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Packages\manifest.json
+          projectPath: Packages\manifest.json
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Packages\packages-lock.json
+        label: packages-lock.json
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\packages-lock.json
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Packages\packages-lock.json
+          projectPath: Packages\packages-lock.json
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: ProjectSettings
+        label: ProjectSettings
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: ProjectSettings\ProjectSettings.asset
+        label: ProjectSettings.asset
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: ProjectSettings\ProjectSettings.asset
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\ProjectSettings\ProjectSettings.asset
+          projectPath: ProjectSettings\ProjectSettings.asset
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Recordings
+        label: Recordings
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Recordings\Image Sequence_002_0000.png
+        label: Image Sequence_002_0000.png
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Recordings\Image Sequence_002_0000.png
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Recordings\Image
+            Sequence_002_0000.png
+          projectPath: Recordings\Image Sequence_002_0000.png
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Recordings\Image Sequence_005_0000.png
+        label: Image Sequence_005_0000.png
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Recordings\Image Sequence_005_0000.png
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Recordings\Image
+            Sequence_005_0000.png
+          projectPath: Recordings\Image Sequence_005_0000.png
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Recordings\Image Sequence_011_0000.png
+        label: Image Sequence_011_0000.png
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Recordings\Image Sequence_011_0000.png
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Recordings\Image
+            Sequence_011_0000.png
+          projectPath: Recordings\Image Sequence_011_0000.png
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: UserSettings
+        label: UserSettings
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings\Layouts
+        label: Layouts
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings\Layouts\default-6000.dwlt
+        label: default-6000.dwlt
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: UserSettings\Layouts\default-6000.dwlt
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\UserSettings\Layouts\default-6000.dwlt
+          projectPath: UserSettings\Layouts\default-6000.dwlt
           originalPath: 
           indexStatus: 0
           workTreeStatus: 3
@@ -1675,6 +4521,18 @@ MonoBehaviour:
           indexStatus: 0
           workTreeStatus: 0
     gitStatusEntries:
+    - path: Assets\Audio\clock-tick.mp3
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\clock-tick.mp3
+      projectPath: Assets\Audio\clock-tick.mp3
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\clock-tick.mp3.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\clock-tick.mp3.meta
+      projectPath: Assets\Audio\clock-tick.mp3.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
     - path: Assets\Audio\err.mp3
       fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\err.mp3
       projectPath: Assets\Audio\err.mp3
@@ -1684,6 +4542,90 @@ MonoBehaviour:
     - path: Assets\Audio\err.mp3.meta
       fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\err.mp3.meta
       projectPath: Assets\Audio\err.mp3.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\hurt1.mp3
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt1.mp3
+      projectPath: Assets\Audio\hurt1.mp3
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\hurt1.mp3.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt1.mp3.meta
+      projectPath: Assets\Audio\hurt1.mp3.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\hurt2.mp3
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt2.mp3
+      projectPath: Assets\Audio\hurt2.mp3
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\hurt2.mp3.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt2.mp3.meta
+      projectPath: Assets\Audio\hurt2.mp3.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\hurt3.mp3
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt3.mp3
+      projectPath: Assets\Audio\hurt3.mp3
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\hurt3.mp3.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt3.mp3.meta
+      projectPath: Assets\Audio\hurt3.mp3.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\hurt4.mp3
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt4.mp3
+      projectPath: Assets\Audio\hurt4.mp3
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\hurt4.mp3.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt4.mp3.meta
+      projectPath: Assets\Audio\hurt4.mp3.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\hurt5.mp3
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt5.mp3
+      projectPath: Assets\Audio\hurt5.mp3
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\hurt5.mp3.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt5.mp3.meta
+      projectPath: Assets\Audio\hurt5.mp3.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\hurt6.mp3
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt6.mp3
+      projectPath: Assets\Audio\hurt6.mp3
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\hurt6.mp3.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt6.mp3.meta
+      projectPath: Assets\Audio\hurt6.mp3.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\hurt7.mp3
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt7.mp3
+      projectPath: Assets\Audio\hurt7.mp3
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\hurt7.mp3.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\hurt7.mp3.meta
+      projectPath: Assets\Audio\hurt7.mp3.meta
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
@@ -1699,21 +4641,201 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
+    - path: Assets\Audio\tom-scream.mp3
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\tom-scream.mp3
+      projectPath: Assets\Audio\tom-scream.mp3
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\tom-scream.mp3.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\tom-scream.mp3.meta
+      projectPath: Assets\Audio\tom-scream.mp3.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\you-win.mp3
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\you-win.mp3
+      projectPath: Assets\Audio\you-win.mp3
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\you-win.mp3.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\you-win.mp3.meta
+      projectPath: Assets\Audio\you-win.mp3.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\you-win-perfect.mp3
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\you-win-perfect.mp3
+      projectPath: Assets\Audio\you-win-perfect.mp3
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Audio\you-win-perfect.mp3.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\you-win-perfect.mp3.meta
+      projectPath: Assets\Audio\you-win-perfect.mp3.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\DefaultVolumeProfile.asset
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\DefaultVolumeProfile.asset
+      projectPath: Assets\DefaultVolumeProfile.asset
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
+        Bouncer SDF Cover.asset
+      projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Fonts\super_bouncer\Super
+        Bouncer SDF Cover.asset.meta
+      projectPath: Assets\Fonts\super_bouncer\Super Bouncer SDF Cover.asset.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Icon.png
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Icon.png
+      projectPath: Assets\Images\Aliens\Icon.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Icon.png.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Icon.png.meta
+      projectPath: Assets\Images\Aliens\Icon.png.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Malcoot.blend
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Malcoot.blend
+      projectPath: Assets\Images\Aliens\Malcoot.blend
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Malcoot.blend.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Malcoot.blend.meta
+      projectPath: Assets\Images\Aliens\Malcoot.blend.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Malcoot.blend1
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Malcoot.blend1
+      projectPath: Assets\Images\Aliens\Malcoot.blend1
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Images\Aliens\Malcoot.blend1.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Malcoot.blend1.meta
+      projectPath: Assets\Images\Aliens\Malcoot.blend1.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Scenes\Game.unity
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game.unity
+      projectPath: Assets\Scenes\Game.unity
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Scenes\Game\Global Volume Profile.asset
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game\Global
+        Volume Profile.asset
+      projectPath: Assets\Scenes\Game\Global Volume Profile.asset
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Scripts\Ailment.cs
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Ailment.cs
+      projectPath: Assets\Scripts\Ailment.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Scripts\AudioPlayer.cs
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\AudioPlayer.cs
+      projectPath: Assets\Scripts\AudioPlayer.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Scripts\Globals.cs
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Globals.cs
+      projectPath: Assets\Scripts\Globals.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
     - path: Assets\Scripts\Main.cs
       fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Main.cs
       projectPath: Assets\Scripts\Main.cs
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    changedFilesText: 5 changed files
+    - path: Assets\Settings\UniversalRP.asset
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Settings\UniversalRP.asset
+      projectPath: Assets\Settings\UniversalRP.asset
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\UniversalRenderPipelineGlobalSettings.asset
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\UniversalRenderPipelineGlobalSettings.asset
+      projectPath: Assets\UniversalRenderPipelineGlobalSettings.asset
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Packages\manifest.json
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Packages\manifest.json
+      projectPath: Packages\manifest.json
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Packages\packages-lock.json
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Packages\packages-lock.json
+      projectPath: Packages\packages-lock.json
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: ProjectSettings\ProjectSettings.asset
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\ProjectSettings\ProjectSettings.asset
+      projectPath: ProjectSettings\ProjectSettings.asset
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Recordings\Image Sequence_002_0000.png
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Recordings\Image
+        Sequence_002_0000.png
+      projectPath: Recordings\Image Sequence_002_0000.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Recordings\Image Sequence_005_0000.png
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Recordings\Image
+        Sequence_005_0000.png
+      projectPath: Recordings\Image Sequence_005_0000.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Recordings\Image Sequence_011_0000.png
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Recordings\Image
+        Sequence_011_0000.png
+      projectPath: Recordings\Image Sequence_011_0000.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: UserSettings\Layouts\default-6000.dwlt
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\UserSettings\Layouts\default-6000.dwlt
+      projectPath: UserSettings\Layouts\default-6000.dwlt
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    changedFilesText: 50 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2026-07-25T23:06:55.405-04:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2026-07-25T23:52:08.152-04:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2026-07-25T23:52:08.174-04:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -10607,7 +13729,7 @@ MonoBehaviour:
     updatedTimeString: 2026-07-24T21:25:21.745-04:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2026-07-25T21:19:19.004-04:00
+    updatedTimeString: 0001-01-01T00:00:00.000+00:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
     updatedTimeString: 2026-07-25T21:19:18.994-04:00
@@ -10637,7 +13759,7 @@ MonoBehaviour:
   appManagerProgressValue: 1
   appManagerProgressMessage: 
   primaryConnectionUsername: 
---- !u!114 &17
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10827,7 +13949,7 @@ MonoBehaviour:
   m_ShowReferencedBuses: 1
   m_ShowBusConnections: 0
   m_ShowBusConnectionsOfSelection: 0
---- !u!114 &18
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11093,7 +14215,7 @@ MonoBehaviour:
     m_DynamicPanelContainerData: []
     m_OverlaysVisible: 1
     m_DynamicPanelBehavior: 0
---- !u!114 &19
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11115,9 +14237,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 79.200005
+    y: 24
     width: 851.8
-    height: 482
+    height: 600.4
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -11164,7 +14286,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -11174,29 +14296,29 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 851.8
-      height: 461
-    m_Scale: {x: 0.4001736, y: 0.4001736}
-    m_Translation: {x: 425.9, y: 230.5}
+      height: 579.4
+    m_Scale: {x: 0.5029514, y: 0.5029514}
+    m_Translation: {x: 425.9, y: 289.7}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1064.2881
+      x: -846.8015
       y: -576
-      width: 2128.5762
+      width: 1693.603
       height: 1152
     m_MinimalGUI: 1
-  m_defaultScale: 0.4001736
-  m_LastWindowPixelSize: {x: 851.8, y: 482}
+  m_defaultScale: 0.5029514
+  m_LastWindowPixelSize: {x: 851.8, y: 600.4}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
   m_showToolbar: 1
---- !u!114 &20
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11218,9 +14340,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 24
+    y: 79.200005
     width: 851.8
-    height: 482
+    height: 355.6
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -11249,12 +14371,12 @@ MonoBehaviour:
       displayed: 1
       id: unity-grid-and-snap-toolbar
       index: 2
-      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":-141.0,"y":149.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":1,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":-141.0,"y":-207.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":3,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: -141, y: 149}
+      snapOffset: {x: -141, y: -207}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 1
+      snapCorner: 3
       layout: 1
       size: {x: 0, y: 0}
       sizeOverridden: 0
@@ -11805,9 +14927,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 799.3682, y: 897.404, z: -6.779992}
+    m_Target: {x: -5.4969063, y: -1.1332307, z: -0.0854694}
     speed: 2
-    m_Value: {x: 799.3682, y: 897.404, z: -6.779992}
+    m_Value: {x: -5.4969063, y: -1.1332307, z: -0.0854694}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -11857,9 +14979,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 687.9955
+    m_Target: 18.542862
     speed: 2
-    m_Value: 687.9955
+    m_Value: 18.542862
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -11880,7 +15002,7 @@ MonoBehaviour:
   m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_Viewpoint:
-    m_SceneView: {fileID: 20}
+    m_SceneView: {fileID: 21}
     m_CameraOverscanSettings:
       m_Opacity: 50
       m_Scale: 1
@@ -11893,7 +15015,7 @@ MonoBehaviour:
     name: Contributors / Receivers
     section: Lighting
   m_ViewIsLockedToObject: 0
---- !u!114 &21
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11915,7 +15037,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 532
+    y: 587.2
     width: 851.8
     height: 230.79999
   m_SerializedDataModeController:
@@ -11931,7 +15053,7 @@ MonoBehaviour:
     m_DynamicPanelContainerData: []
     m_OverlaysVisible: 1
     m_DynamicPanelBehavior: 0
---- !u!114 &22
+--- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11972,7 +15094,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_LastSelectedObjectID: 0
---- !u!114 &23
+--- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12027,7 +15149,7 @@ MonoBehaviour:
   m_CurrentEditor: 0
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &24
+--- !u!114 &25
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12072,13 +15194,22 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -57134
-      - m_Data: -55088
-      - m_Data: -40528
-      - m_Data: -4104
-      - m_Data: -1358
-      - m_Data: 51668
-      - m_Data: 51736
+      - m_Data: -128772
+      - m_Data: -128508
+      - m_Data: -127792
+      - m_Data: -125856
+      - m_Data: -125592
+      - m_Data: -124804
+      - m_Data: -87928
+      - m_Data: -73386
+      - m_Data: -73136
+      - m_Data: -72424
+      - m_Data: -70514
+      - m_Data: -70262
+      - m_Data: -69478
+      - m_Data: -1380
+      - m_Data: 51680
+      - m_Data: 73070
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -12104,7 +15235,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &25
+--- !u!114 &26
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12152,8 +15283,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Audio
+    m_Folders: []
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -12175,19 +15305,19 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 50586
-    - m_Data: 52454
-    - m_Data: 52456
-    - m_Data: 52458
-    - m_Data: 52460
-    - m_Data: 52462
-    - m_Data: 52464
-    - m_Data: 52466
-    - m_Data: 52468
-    - m_Data: 52470
-    - m_Data: 52472
-    - m_Data: 52474
-    - m_Data: 52476
+    - m_Data: 51234
+    - m_Data: 53248
+    - m_Data: 53250
+    - m_Data: 53252
+    - m_Data: 53254
+    - m_Data: 53256
+    - m_Data: 53258
+    - m_Data: 53260
+    - m_Data: 53262
+    - m_Data: 53264
+    - m_Data: 53266
+    - m_Data: 53268
+    - m_Data: 53270
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -12214,26 +15344,25 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs:
-    - m_Data: 51800
+    scrollPos: {x: 0, y: 300}
+    m_SelectedIDs: []
     m_LastClickedID:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 50586
-    - m_Data: 52454
-    - m_Data: 52456
-    - m_Data: 52458
-    - m_Data: 52460
-    - m_Data: 52462
-    - m_Data: 52464
-    - m_Data: 52466
-    - m_Data: 52468
-    - m_Data: 52470
-    - m_Data: 52472
-    - m_Data: 52474
-    - m_Data: 52476
+    - m_Data: 51234
+    - m_Data: 53248
+    - m_Data: 53250
+    - m_Data: 53252
+    - m_Data: 53254
+    - m_Data: 53256
+    - m_Data: 53258
+    - m_Data: 53260
+    - m_Data: 53262
+    - m_Data: 53264
+    - m_Data: 53266
+    - m_Data: 53268
+    - m_Data: 53270
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -12260,9 +15389,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs:
-    - m_Data: 51800
-    m_LastClickedInstanceID: 51800
+    m_SelectedInstanceIDs: []
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
@@ -12294,7 +15422,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 192
---- !u!114 &26
+--- !u!114 &27
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12315,8 +15443,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1135.4
-    y: 24
+    x: 1134.4
+    y: 79.200005
     width: 400.59998
     height: 738.8
   m_SerializedDataModeController:

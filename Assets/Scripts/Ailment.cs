@@ -4,7 +4,6 @@ using PrimeTween;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem.LowLevel;
 
 public class Ailment
 {
