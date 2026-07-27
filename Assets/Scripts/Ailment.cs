@@ -76,7 +76,12 @@ public class Ailment
     public void DecrementTime()
     {
         timer -= Time.deltaTime * timerSpeed;
+        int prev_displayTime = displayTime;
         displayTime = Mathf.CeilToInt(timer);
+        if (prev_displayTime != displayTime && state == AilmentState.CountDown)
+        {
+            AudioPlayer.ap.PlaySfx(Ref.clock_tick, .2f, 1.2f);
+        }
         displayText.text = timeLimit.ToString();
         atZero = timer <= 0 && timer > -1;
 
@@ -90,12 +95,18 @@ public class Ailment
             case AilmentState.Initializing:
                 SetDisplayTextParams("--", null, Color.clear, true);
                 break;
-            case AilmentState.CountDown:
             case AilmentState.Ready:
                 SetDisplayTextParams(displayTime.ToString(), Fonts.activeFont, Color.red, newState);
                 break;
+            case AilmentState.CountDown:
+                SetDisplayTextParams(displayTime.ToString(), Fonts.activeFont, Color.red, newState);
+                if (newState)
+                    AudioPlayer.ap.PlaySfx(Ref.clock_tick, .2f, 1.2f);
+                break;
             case AilmentState.Faded:
                 SetDisplayTextParams(fadedDisplayTime.ToString(), Fonts.fadedFont, Color.white, newState);
+                if (newState)
+                    AudioPlayer.ap.PlaySfx(Ref.clock_tick, .2f, 1.2f);
                 break;
             case AilmentState.Success:
                 SetDisplayTextParams(displayTime.ToString(), Fonts.successFont, new Color(.5f, 1, 0), newState);

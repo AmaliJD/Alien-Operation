@@ -27,15 +27,26 @@ public class Main : MonoBehaviour
 
     [Header("Audio")]
     [SerializeField] AudioClip failSfx;
+    [SerializeField] AudioClip successSfx;
+    [SerializeField] AudioClip[] hurtSfx;
+    [SerializeField] AudioClip you_win;
+    [SerializeField] AudioClip you_win_perfect;
+    [SerializeField] AudioClip ref_clock_tick;
 
     [Header("UI")]
     public Transform ui_title;
     public TextMeshProUGUI ui_title_text;
+    public Transform ui_you_win;
+    public Transform ui_perfect;
     public RectTransform ui_icons;
     public RectTransform ui_x;
+    public Transform trail;
 
     public int lives;
     bool start;
+    bool perfectRun = true;
+    bool win;
+    bool win_click;
 
     void Awake()
     {
@@ -44,6 +55,7 @@ public class Main : MonoBehaviour
         Fonts.successFont = ref_successFont;
         Ref.ailmentGameObject = ref_ailmentGameObject;
         Ref.patientGameObject = ref_patientGameObject;
+        Ref.clock_tick = ref_clock_tick;
 
         Init();
     }
@@ -116,6 +128,10 @@ public class Main : MonoBehaviour
         patientIndex = -1;
 
         start = true;
+        perfectRun = true;
+
+        win = false;
+        win_click = false;
     }
 
     void SetX(int i)
@@ -133,11 +149,22 @@ public class Main : MonoBehaviour
 
     void Update()
     {
+        Vector2 mousePos_1 = Camera.main.ScreenToWorldPoint(Mouse.current.position.value);
+        trail.position = mousePos_1;
+        trail.gameObject.SetActive(true);
+
+        if (win)
+            return;
+
         if (Keyboard.current.leftShiftKey.value == 1 && Keyboard.current.nKey.wasPressedThisFrame)
         {
             if (patientIndex < patients.Count - 1)
             {
                 LoadNextPatient();
+            }
+            else if (patientIndex == patients.Count - 1)
+            {
+                LoadWin();
             }
         }
         if (Keyboard.current.escapeKey.wasPressedThisFrame && patientIndex >= 0)
@@ -250,6 +277,8 @@ public class Main : MonoBehaviour
                     ail.state = AilmentState.Fail_Late;
                     Timing.KillCoroutines(ail.coroutineLayer);
                     Timing.RunCoroutine(ail._FlashHoldFadeOut(.1f, Color.white, Color.red, .5f, 1f), ail.coroutineLayer);
+                    AudioPlayer.ap.PlaySfx(failSfx, 1);
+                    PlayRandomHurtSfx();
 
                     Timing.KillCoroutines(patient.gameObject);
                     Timing.RunCoroutine(patient._SwapFaces(1, patient.lives > 1 ? 0 : 2), patient.gameObject);
@@ -264,6 +293,9 @@ public class Main : MonoBehaviour
 
                     patient.ailmentsHit++;
                     patient.lives--;
+
+                    if (patientIndex > 0)
+                        perfectRun = false;
                 }
                 else if (mousePressed && cursorOnAil && readMouseDown)
                 {
@@ -272,6 +304,7 @@ public class Main : MonoBehaviour
                         ail.state = AilmentState.Success;
                         Timing.KillCoroutines(ail.coroutineLayer);
                         Timing.RunCoroutine(ail._FlashHoldFadeOut(.1f, new Color(.5f, 1, 0), new Color(.9f, 1, .75f), 1f, .25f), ail.coroutineLayer);
+                        AudioPlayer.ap.PlaySfx(successSfx, .8f);
 
                         Timing.KillCoroutines(patient.gameObject);
 
@@ -294,6 +327,7 @@ public class Main : MonoBehaviour
                         Timing.KillCoroutines(ail.coroutineLayer);
                         Timing.RunCoroutine(ail._FlashHoldFadeOut(.1f, Color.white, Color.red, .5f, 1f), ail.coroutineLayer);
                         AudioPlayer.ap.PlaySfx(failSfx, 1);
+                        PlayRandomHurtSfx();
 
                         Timing.KillCoroutines(patient.gameObject);
                         Timing.RunCoroutine(patient._SwapFaces(1, patient.lives > 1 ? 0 : 2), patient.gameObject);
@@ -308,6 +342,9 @@ public class Main : MonoBehaviour
 
                         patient.ailmentsHit++;
                         patient.lives--;
+
+                        if (patientIndex > 0)
+                            perfectRun = false;
                     }
                 }
 
@@ -337,11 +374,27 @@ public class Main : MonoBehaviour
 
                 Timing.RunCoroutine(patient._Next(), patient.gameObject);
             }
-            else if (patient.next == 2 && patientIndex < patients.Count - 1)
+            else if (patient.next == 2)
             {
-                LoadNextPatient();
+                if (patientIndex < patients.Count - 1)
+                {
+                    LoadNextPatient();
+                }
+                else if (patientIndex == patients.Count - 1)
+                {
+                    if (lives > 0)
+                        LoadWin();
+                    else
+                        LoadNextPatient();
+                }
             }
         }
+    }
+
+    void PlayRandomHurtSfx()
+    {
+        int i = UnityEngine.Random.Range(0, hurtSfx.Length);
+        AudioPlayer.ap.PlaySfx(hurtSfx[i], .6f);
     }
 
     void Esc()
@@ -359,6 +412,19 @@ public class Main : MonoBehaviour
             .Group(Tween.UIAnchoredPositionY(ui_icons, endValue: -800, duration: .5f, ease: Ease.InBack, startDelay: .2f))
             .Group(Tween.UIAnchoredPositionY(ui_x, endValue: -800, duration: .5f, ease: Ease.InBack, startDelay: .2f))
             .OnComplete(() => Init());
+    }
+
+    void LoadWin()
+    {
+        win = true;
+        Patient prev_patient = patients[patientIndex];
+        Timing.KillCoroutines(prev_patient.gameObject);
+        GameObject go = prev_patient.gameObject;
+
+        Sequence.Create()
+            .Group(Tween.PositionY(go.transform, endValue: -10, duration: .5f, ease: Ease.InCubic, startDelay: .5f))//.OnComplete(() => Destroy(go)))
+            .Group(Tween.Scale(ui_you_win, endValue: Vector2.one, duration: .5f, ease: Ease.OutBack, startDelay: 1f)).ChainCallback(() => AudioPlayer.ap.PlaySfx(perfectRun ? you_win_perfect : you_win, 1))
+            .Group(Tween.Scale(ui_perfect, endValue: perfectRun ? Vector2.one : Vector2.zero, duration: .25f, ease: Ease.OutBack, startDelay: 1f));
     }
 
     void LoadNextPatient()
@@ -453,5 +519,35 @@ public class Main : MonoBehaviour
             return;
 
         ui_title_text.color = Color.black;
+    }
+
+    public void ClickWin()
+    {
+        if (win_click)
+            return;
+
+        win_click = true;
+
+        Sequence.Create()
+            .Group(Tween.Scale(ui_you_win, endValue: Vector2.zero, duration: .25f, ease: Ease.InBack))
+            .Group(Tween.Scale(ui_perfect, endValue: Vector2.zero, duration: .25f, ease: Ease.InBack));
+
+        Esc();
+    }
+
+    public void EnterWin()
+    {
+        if (win_click)
+            return;
+
+        ui_you_win.GetComponent<TextMeshProUGUI>().color = Color.white;
+    }
+
+    public void ExitWin()
+    {
+        if (win_click)
+            return;
+
+        ui_you_win.GetComponent<TextMeshProUGUI>().color = Color.black;
     }
 }

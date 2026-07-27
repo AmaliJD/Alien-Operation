@@ -31,11 +31,12 @@ public class AudioPlayer : MonoBehaviour
         musicSource.Stop();
     }
 
-    public void PlaySfx(AudioClip audioClip, float volume)
+    public void PlaySfx(AudioClip audioClip, float volume, float pitch = 1)
     {
         AudioSource audioSource = Instantiate(sfxSource);
         audioSource.clip = audioClip;
         audioSource.volume = volume;
+        audioSource.pitch = pitch;
         audioSource.Play();
 
         float clipLength = audioSource.clip.length;

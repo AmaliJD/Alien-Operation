@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 820.8
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -166,18 +166,18 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 852.8
-    height: 656
+    height: 508
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
   - {fileID: 19}
   - {fileID: 15}
   - {fileID: 14}
   - {fileID: 13}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -194,9 +194,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 656
+    y: 508
     width: 852.8
-    height: 108.79999
+    height: 256.8
   m_MinSize: {x: 101, y: 126}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 21}
@@ -594,16 +594,16 @@ MonoBehaviour:
   m_MinSize: {x: 50, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Gray UI
+    m_Text: White UI
     m_Image: {fileID: 2800000, guid: 7129268cf102b2f45809905bcb27ce8b, type: 3}
     m_Tooltip: 
-    m_TextWithWhitespace: "Gray UI\u200B"
+    m_TextWithWhitespace: "White UI\u200B"
   m_Pos:
     serializedVersion: 2
     x: 0
     y: 79.200005
-    width: 792.6
-    height: 512.4
+    width: 851.8
+    height: 590
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -628,7 +628,6 @@ MonoBehaviour:
     },\n        {\n            \"m_Id\": \"cb536f3c806642ccb252e51de710ebb2\"\n       
     },\n        {\n            \"m_Id\": \"3b400edf7601445ea76cb0a86ec07c47\"\n       
     },\n        {\n            \"m_Id\": \"a7149f5474b24dd297d5ebe32e0e3510\"\n       
-    },\n        {\n            \"m_Id\": \"dba0698d9a2149d5a978e2c307b09bc2\"\n       
     },\n        {\n            \"m_Id\": \"39c450d38f3b4b0391d5a6529fa29fca\"\n       
     }\n    ],\n    \"m_GroupDatas\": [],\n    \"m_StickyNoteDatas\": [],\n    \"m_Edges\":
     [\n        {\n            \"m_OutputSlot\": {\n                \"m_Node\": {\n                   
@@ -761,8 +760,8 @@ MonoBehaviour:
     \"m_ObjectId\": \"7a78cfbbf5b544db8d8ee760086b299d\",\n    \"m_Id\": 0,\n   
     \"m_DisplayName\": \"Base Color\",\n    \"m_SlotType\": 0,\n    \"m_Hidden\":
     false,\n    \"m_ShaderOutputName\": \"BaseColor\",\n    \"m_StageCapability\":
-    2,\n    \"m_Value\": {\n        \"x\": 0.5,\n        \"y\": 0.5,\n        \"z\":
-    0.5\n    },\n    \"m_DefaultValue\": {\n        \"x\": 0.5,\n        \"y\": 0.5,\n       
+    2,\n    \"m_Value\": {\n        \"x\": 1.0,\n        \"y\": 1.0,\n        \"z\":
+    1.0\n    },\n    \"m_DefaultValue\": {\n        \"x\": 0.5,\n        \"y\": 0.5,\n       
     \"z\": 0.5\n    },\n    \"m_Labels\": [],\n    \"m_ColorMode\": 0,\n    \"m_DefaultColor\":
     {\n        \"r\": 0.5,\n        \"g\": 0.5,\n        \"b\": 0.5,\n        \"a\":
     1.0\n    }\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Texture2DInputMaterialSlot\",\n   
@@ -803,36 +802,15 @@ MonoBehaviour:
     true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
     {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedDescriptor\":
     \"SurfaceDescription.Alpha\"\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
-    \"UnityEditor.ShaderGraph.SubGraphNode\",\n    \"m_ObjectId\": \"dba0698d9a2149d5a978e2c307b09bc2\",\n   
-    \"m_Group\": {\n        \"m_Id\": \"\"\n    },\n    \"m_Name\": \"Canvas Color\",\n   
-    \"m_DrawState\": {\n        \"m_Expanded\": true,\n        \"m_Position\": {\n           
-    \"serializedVersion\": \"2\",\n            \"x\": -496.7999572753906,\n           
-    \"y\": -416.79998779296877,\n            \"width\": 208.00003051757813,\n           
-    \"height\": 278.39996337890627\n        }\n    },\n    \"m_Slots\": [\n       
-    {\n            \"m_Id\": \"eed1fd747aa14a73befbcfa3257d85ce\"\n        }\n   
-    ],\n    \"synonyms\": [],\n    \"m_Precision\": 0,\n    \"m_PreviewExpanded\":
-    true,\n    \"m_DismissedVersion\": 0,\n    \"m_PreviewMode\": 0,\n    \"m_CustomColors\":
-    {\n        \"m_SerializableColors\": []\n    },\n    \"m_SerializedSubGraph\":
-    \"{\\n    \\\"subGraph\\\": {\\n        \\\"fileID\\\": -5475051401550479605,\\n       
-    \\\"guid\\\": \\\"74f647076bca3d442bc4a6ace5daf59f\\\",\\n        \\\"type\\\":
-    3\\n    }\\n}\",\n    \"m_PropertyGuids\": [],\n    \"m_PropertyIds\": [],\n   
-    \"m_Dropdowns\": [],\n    \"m_DropdownSelectedEntries\": []\n}\n\n{\n    \"m_SGVersion\":
-    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\":
-    \"eea36b51ca6c43d8904dd6b5c2deca56\",\n    \"m_Id\": 6,\n    \"m_DisplayName\":
-    \"B\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
-    \"B\",\n    \"m_StageCapability\": 2,\n    \"m_Value\": 0.0,\n    \"m_DefaultValue\":
-    0.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\": false\n}\n\n{\n    \"m_SGVersion\":
-    0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector4MaterialSlot\",\n    \"m_ObjectId\":
-    \"eed1fd747aa14a73befbcfa3257d85ce\",\n    \"m_Id\": 1,\n    \"m_DisplayName\":
-    \"Out\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n    \"m_ShaderOutputName\":
-    \"Out\",\n    \"m_StageCapability\": 3,\n    \"m_Value\": {\n        \"x\": 0.0,\n       
-    \"y\": 0.0,\n        \"z\": 0.0,\n        \"w\": 0.0\n    },\n    \"m_DefaultValue\":
-    {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\": 0.0,\n        \"w\":
-    0.0\n    },\n    \"m_Labels\": []\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\":
-    \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\": \"f6b3a3c330d24b27b9e18e246243ab80\",\n   
-    \"m_Id\": 5,\n    \"m_DisplayName\": \"G\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\":
-    false,\n    \"m_ShaderOutputName\": \"G\",\n    \"m_StageCapability\": 2,\n   
+    \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n    \"m_ObjectId\": \"eea36b51ca6c43d8904dd6b5c2deca56\",\n   
+    \"m_Id\": 6,\n    \"m_DisplayName\": \"B\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\":
+    false,\n    \"m_ShaderOutputName\": \"B\",\n    \"m_StageCapability\": 2,\n   
     \"m_Value\": 0.0,\n    \"m_DefaultValue\": 0.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\":
+    false\n}\n\n{\n    \"m_SGVersion\": 0,\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\n   
+    \"m_ObjectId\": \"f6b3a3c330d24b27b9e18e246243ab80\",\n    \"m_Id\": 5,\n   
+    \"m_DisplayName\": \"G\",\n    \"m_SlotType\": 1,\n    \"m_Hidden\": false,\n   
+    \"m_ShaderOutputName\": \"G\",\n    \"m_StageCapability\": 2,\n    \"m_Value\":
+    0.0,\n    \"m_DefaultValue\": 0.0,\n    \"m_Labels\": [],\n    \"m_LiteralMode\":
     false\n}\n\n"
   m_AssetMaybeChangedOnDisk: 0
   m_AssetMaybeDeleted: 0
@@ -1324,28 +1302,18 @@ MonoBehaviour:
     currentStatusEntriesHasUpdate: 1
     currentLocksHasUpdate: 1
     commitBody: 
-    commitMessage: ailment sprite
+    commitMessage: esc and lose - close game loop
     currentBranch: master
     treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
         keys:
         - 00000000000000001000000000000000
-        - 0185009b08ba3fe4499fb5d500d9fe8a
-        - 5bb70f3b430e3c84b9ff5ef3c64d6bd8
-        - 2af51e26e0eeb1d4982025ba9c7861ae
-        - b6f1a8a1850a0da43b10688d578c3613
-        - 8dd17426883dec549b2c786abad172e0
-        - 2a573d4b810827b4f9b64e31ef95e863
-        - 9724bcc728c631a4291bdc80e5cf0f5d
-        - 91f73e2bbae5cdc4182c0c683ed16be8
-        - 0c1fd8b5f7cc1b948bdd8b39c216a291
-        - 1691a1e81e6f7084eb7c646ac3ae6e63
-        - 109e9bdd0fcc649c5bc59085c35bdc83
-        - 8c9cfa26abfee488c85f1582747f6a02
+        - 603c2cc1f3183d841af784635e2312b7
+        - a3e39e67a22fc6e49978ec7a4dc46e91
+        - 213afddafc1fa004ebf3ab2655a13d72
         - 6a7b672c91faa6f47adc90779b26532a
         - 7057876013c70de4abc4ef066be30557
-        - 2f5e1094031e1144bb9940316b710dec
         values:
         - path: Assets
           label: Assets
@@ -1356,7 +1324,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1365,8 +1333,8 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Images
-          label: Images
+        - path: Assets\Audio
+          label: Audio
           level: 1
           isFolder: 1
           isContainer: 0
@@ -1374,7 +1342,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1383,207 +1351,42 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Images\Aliens
-          label: Aliens
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Images\Aliens\Ailment Back.png
-          label: Ailment Back.png
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\Aliens\Ailment Back.png
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-              Back.png
-            projectPath: Assets\Images\Aliens\Ailment Back.png
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Images\Aliens\Ailment Full.png
-          label: Ailment Full.png
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\Aliens\Ailment Full.png
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-              Full.png
-            projectPath: Assets\Images\Aliens\Ailment Full.png
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Images\Aliens\Ailment Head.png
-          label: Ailment Head.png
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\Aliens\Ailment Head.png
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-              Head.png
-            projectPath: Assets\Images\Aliens\Ailment Head.png
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Images\Aliens\Ailment.blend
-          label: Ailment.blend
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\Aliens\Ailment.blend
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend
-            projectPath: Assets\Images\Aliens\Ailment.blend
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Images\Aliens\Ailment.blend1
-          label: Ailment.blend1
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\Aliens\Ailment.blend1
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend1
-            projectPath: Assets\Images\Aliens\Ailment.blend1
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Prefabs
-          label: Prefabs
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Prefabs\Ailment.prefab
-          label: Ailment.prefab
+        - path: Assets\Audio\err.mp3
+          label: err.mp3
           level: 2
           isFolder: 0
-          isContainer: 0
+          isContainer: 1
           isCollapsed: 0
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
-            path: Assets\Prefabs\Ailment.prefab
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Ailment.prefab
-            projectPath: Assets\Prefabs\Ailment.prefab
+            path: Assets\Audio\err.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\err.mp3
+            projectPath: Assets\Audio\err.mp3
             originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Prefabs\Patient.prefab
-          label: Patient.prefab
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Audio\success.mp3
+          label: success.mp3
           level: 2
           isFolder: 0
-          isContainer: 0
+          isContainer: 1
           isCollapsed: 0
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
-            path: Assets\Prefabs\Patient.prefab
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Patient.prefab
-            projectPath: Assets\Prefabs\Patient.prefab
+            path: Assets\Audio\success.mp3
+            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\success.mp3
+            projectPath: Assets\Audio\success.mp3
             originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Scenes
-          label: Scenes
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scenes\Game.unity
-          label: Game.unity
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scenes\Game.unity
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game.unity
-            projectPath: Assets\Scenes\Game.unity
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
+            indexStatus: 1
+            workTreeStatus: 1
         - path: Assets\Scripts
           label: Scripts
           level: 1
@@ -1593,7 +1396,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1611,7 +1414,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: Assets\Scripts\Main.cs
@@ -1620,31 +1423,10 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 3
-        - path: Assets\Scripts\Patient.cs
-          label: Patient.cs
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scripts\Patient.cs
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Patient.cs
-            projectPath: Assets\Scripts\Patient.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
       folders:
         keys:
         - Assets
-        - Assets\Images
-        - Assets\Images\Aliens
-        - Assets\Prefabs
-        - Assets\Scenes
+        - Assets\Audio
         - Assets\Scripts
         values:
         - path: Assets
@@ -1656,7 +1438,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1665,8 +1447,8 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Images
-          label: Images
+        - path: Assets\Audio
+          label: Audio
           level: 1
           isFolder: 1
           isContainer: 0
@@ -1674,61 +1456,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Images\Aliens
-          label: Aliens
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Prefabs
-          label: Prefabs
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scenes
-          label: Scenes
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1746,7 +1474,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1756,299 +1484,8 @@ MonoBehaviour:
             indexStatus: 0
             workTreeStatus: 0
       checkedFileNodes:
-        keys:
-        - Assets\Images\Aliens\Ailment Back.png
-        - Assets\Images\Aliens\Ailment Back.png.meta
-        - Assets\Images\Aliens\Ailment Full.png
-        - Assets\Images\Aliens\Ailment Full.png.meta
-        - Assets\Images\Aliens\Ailment Head.png
-        - Assets\Images\Aliens\Ailment Head.png.meta
-        - Assets\Images\Aliens\Ailment.blend
-        - Assets\Images\Aliens\Ailment.blend.meta
-        - Assets\Images\Aliens\Ailment.blend1
-        - Assets\Images\Aliens\Ailment.blend1.meta
-        - Assets\Prefabs\Ailment.prefab
-        - Assets\Prefabs\Patient.prefab
-        - Assets\Scenes\Game.unity
-        - Assets\Scripts\Main.cs
-        - Assets\Scripts\Patient.cs
-        values:
-        - path: Assets\Images\Aliens\Ailment Back.png
-          label: Ailment Back.png
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\Aliens\Ailment Back.png
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-              Back.png
-            projectPath: Assets\Images\Aliens\Ailment Back.png
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Images\Aliens\Ailment Back.png.meta
-          label: Ailment Back.png.meta
-          level: 4
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\Aliens\Ailment Back.png.meta
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-              Back.png.meta
-            projectPath: Assets\Images\Aliens\Ailment Back.png.meta
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Images\Aliens\Ailment Full.png
-          label: Ailment Full.png
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\Aliens\Ailment Full.png
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-              Full.png
-            projectPath: Assets\Images\Aliens\Ailment Full.png
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Images\Aliens\Ailment Full.png.meta
-          label: Ailment Full.png.meta
-          level: 4
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\Aliens\Ailment Full.png.meta
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-              Full.png.meta
-            projectPath: Assets\Images\Aliens\Ailment Full.png.meta
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Images\Aliens\Ailment Head.png
-          label: Ailment Head.png
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\Aliens\Ailment Head.png
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-              Head.png
-            projectPath: Assets\Images\Aliens\Ailment Head.png
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Images\Aliens\Ailment Head.png.meta
-          label: Ailment Head.png.meta
-          level: 4
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\Aliens\Ailment Head.png.meta
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-              Head.png.meta
-            projectPath: Assets\Images\Aliens\Ailment Head.png.meta
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Images\Aliens\Ailment.blend
-          label: Ailment.blend
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\Aliens\Ailment.blend
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend
-            projectPath: Assets\Images\Aliens\Ailment.blend
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Images\Aliens\Ailment.blend.meta
-          label: Ailment.blend.meta
-          level: 4
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\Aliens\Ailment.blend.meta
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend.meta
-            projectPath: Assets\Images\Aliens\Ailment.blend.meta
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Images\Aliens\Ailment.blend1
-          label: Ailment.blend1
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\Aliens\Ailment.blend1
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend1
-            projectPath: Assets\Images\Aliens\Ailment.blend1
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Images\Aliens\Ailment.blend1.meta
-          label: Ailment.blend1.meta
-          level: 4
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Images\Aliens\Ailment.blend1.meta
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend1.meta
-            projectPath: Assets\Images\Aliens\Ailment.blend1.meta
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Prefabs\Ailment.prefab
-          label: Ailment.prefab
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Prefabs\Ailment.prefab
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Ailment.prefab
-            projectPath: Assets\Prefabs\Ailment.prefab
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Prefabs\Patient.prefab
-          label: Patient.prefab
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Prefabs\Patient.prefab
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Patient.prefab
-            projectPath: Assets\Prefabs\Patient.prefab
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Scenes\Game.unity
-          label: Game.unity
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scenes\Game.unity
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game.unity
-            projectPath: Assets\Scenes\Game.unity
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Scripts\Main.cs
-          label: Main.cs
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scripts\Main.cs
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Main.cs
-            projectPath: Assets\Scripts\Main.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Scripts\Patient.cs
-          label: Patient.cs
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scripts\Patient.cs
-            fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Patient.cs
-            projectPath: Assets\Scripts\Patient.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
+        keys: []
+        values: []
       title: 
       pathSeparator: \
       displayRootNode: 0
@@ -2065,7 +1502,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -2083,7 +1520,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -2092,8 +1529,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Images
-        label: Images
+      - path: Assets\Audio
+        label: Audio
         level: 1
         isFolder: 1
         isContainer: 0
@@ -2101,7 +1538,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -2110,300 +1547,78 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Images\Aliens
-        label: Aliens
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Images\Aliens\Ailment Back.png
-        label: Ailment Back.png
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Images\Aliens\Ailment Back.png
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-            Back.png
-          projectPath: Assets\Images\Aliens\Ailment Back.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Images\Aliens\Ailment Back.png.meta
-        label: Ailment Back.png.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Images\Aliens\Ailment Back.png.meta
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-            Back.png.meta
-          projectPath: Assets\Images\Aliens\Ailment Back.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Images\Aliens\Ailment Full.png
-        label: Ailment Full.png
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Images\Aliens\Ailment Full.png
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-            Full.png
-          projectPath: Assets\Images\Aliens\Ailment Full.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Images\Aliens\Ailment Full.png.meta
-        label: Ailment Full.png.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Images\Aliens\Ailment Full.png.meta
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-            Full.png.meta
-          projectPath: Assets\Images\Aliens\Ailment Full.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Images\Aliens\Ailment Head.png
-        label: Ailment Head.png
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Images\Aliens\Ailment Head.png
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-            Head.png
-          projectPath: Assets\Images\Aliens\Ailment Head.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Images\Aliens\Ailment Head.png.meta
-        label: Ailment Head.png.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Images\Aliens\Ailment Head.png.meta
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-            Head.png.meta
-          projectPath: Assets\Images\Aliens\Ailment Head.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Images\Aliens\Ailment.blend
-        label: Ailment.blend
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Images\Aliens\Ailment.blend
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend
-          projectPath: Assets\Images\Aliens\Ailment.blend
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Images\Aliens\Ailment.blend.meta
-        label: Ailment.blend.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Images\Aliens\Ailment.blend.meta
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend.meta
-          projectPath: Assets\Images\Aliens\Ailment.blend.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Images\Aliens\Ailment.blend1
-        label: Ailment.blend1
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Images\Aliens\Ailment.blend1
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend1
-          projectPath: Assets\Images\Aliens\Ailment.blend1
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Images\Aliens\Ailment.blend1.meta
-        label: Ailment.blend1.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Images\Aliens\Ailment.blend1.meta
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend1.meta
-          projectPath: Assets\Images\Aliens\Ailment.blend1.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Prefabs
-        label: Prefabs
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Prefabs\Ailment.prefab
-        label: Ailment.prefab
+      - path: Assets\Audio\err.mp3
+        label: err.mp3
         level: 2
         isFolder: 0
-        isContainer: 0
+        isContainer: 1
         isCollapsed: 0
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Prefabs\Ailment.prefab
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Ailment.prefab
-          projectPath: Assets\Prefabs\Ailment.prefab
+          path: Assets\Audio\err.mp3
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\err.mp3
+          projectPath: Assets\Audio\err.mp3
           originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Prefabs\Patient.prefab
-        label: Patient.prefab
-        level: 2
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\err.mp3.meta
+        label: err.mp3.meta
+        level: 3
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Prefabs\Patient.prefab
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Patient.prefab
-          projectPath: Assets\Prefabs\Patient.prefab
+          path: Assets\Audio\err.mp3.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\err.mp3.meta
+          projectPath: Assets\Audio\err.mp3.meta
           originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Scenes
-        label: Scenes
-        level: 1
-        isFolder: 1
-        isContainer: 0
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\success.mp3
+        label: success.mp3
+        level: 2
+        isFolder: 0
+        isContainer: 1
         isCollapsed: 0
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
+          path: Assets\Audio\success.mp3
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\success.mp3
+          projectPath: Assets\Audio\success.mp3
           originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Scenes\Game.unity
-        label: Game.unity
-        level: 2
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Audio\success.mp3.meta
+        label: success.mp3.meta
+        level: 3
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Scenes\Game.unity
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game.unity
-          projectPath: Assets\Scenes\Game.unity
+          path: Assets\Audio\success.mp3.meta
+          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\success.mp3.meta
+          projectPath: Assets\Audio\success.mp3.meta
           originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
+          indexStatus: 1
+          workTreeStatus: 1
       - path: Assets\Scripts
         label: Scripts
         level: 1
@@ -2413,7 +1628,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -2431,7 +1646,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: Assets\Scripts\Main.cs
@@ -2440,142 +1655,57 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 3
-      - path: Assets\Scripts\Patient.cs
-        label: Patient.cs
-        level: 2
+      selectedNode:
+        path: 
+        label: 
+        level: 0
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
         isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
+        treeIsCheckable: 0
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Scripts\Patient.cs
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Patient.cs
-          projectPath: Assets\Scripts\Patient.cs
+          path: 
+          fullPath: 
+          projectPath: 
           originalPath: 
           indexStatus: 0
-          workTreeStatus: 3
-      selectedNode:
-        path: Assets\Images\Aliens\Ailment Head.png
-        label: Ailment Head.png
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Images\Aliens\Ailment Head.png
-          fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-            Head.png
-          projectPath: Assets\Images\Aliens\Ailment Head.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
+          workTreeStatus: 0
     gitStatusEntries:
-    - path: Assets\Images\Aliens\Ailment Back.png
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-        Back.png
-      projectPath: Assets\Images\Aliens\Ailment Back.png
+    - path: Assets\Audio\err.mp3
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\err.mp3
+      projectPath: Assets\Audio\err.mp3
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Images\Aliens\Ailment Back.png.meta
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-        Back.png.meta
-      projectPath: Assets\Images\Aliens\Ailment Back.png.meta
+    - path: Assets\Audio\err.mp3.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\err.mp3.meta
+      projectPath: Assets\Audio\err.mp3.meta
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Images\Aliens\Ailment Full.png
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-        Full.png
-      projectPath: Assets\Images\Aliens\Ailment Full.png
+    - path: Assets\Audio\success.mp3
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\success.mp3
+      projectPath: Assets\Audio\success.mp3
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Images\Aliens\Ailment Full.png.meta
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-        Full.png.meta
-      projectPath: Assets\Images\Aliens\Ailment Full.png.meta
+    - path: Assets\Audio\success.mp3.meta
+      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Audio\success.mp3.meta
+      projectPath: Assets\Audio\success.mp3.meta
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Images\Aliens\Ailment Head.png
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-        Head.png
-      projectPath: Assets\Images\Aliens\Ailment Head.png
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Images\Aliens\Ailment Head.png.meta
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment
-        Head.png.meta
-      projectPath: Assets\Images\Aliens\Ailment Head.png.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Images\Aliens\Ailment.blend
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend
-      projectPath: Assets\Images\Aliens\Ailment.blend
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Images\Aliens\Ailment.blend.meta
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend.meta
-      projectPath: Assets\Images\Aliens\Ailment.blend.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Images\Aliens\Ailment.blend1
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend1
-      projectPath: Assets\Images\Aliens\Ailment.blend1
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Images\Aliens\Ailment.blend1.meta
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Images\Aliens\Ailment.blend1.meta
-      projectPath: Assets\Images\Aliens\Ailment.blend1.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Prefabs\Ailment.prefab
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Ailment.prefab
-      projectPath: Assets\Prefabs\Ailment.prefab
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Prefabs\Patient.prefab
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Prefabs\Patient.prefab
-      projectPath: Assets\Prefabs\Patient.prefab
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Scenes\Game.unity
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scenes\Game.unity
-      projectPath: Assets\Scenes\Game.unity
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
     - path: Assets\Scripts\Main.cs
       fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Main.cs
       projectPath: Assets\Scripts\Main.cs
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    - path: Assets\Scripts\Patient.cs
-      fullPath: C:\Users\jioje\Projects\Unity\Alien Operation - GMTK '26\Assets\Scripts\Patient.cs
-      projectPath: Assets\Scripts\Patient.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    changedFilesText: 15 changed files
+    changedFilesText: 5 changed files
     lastCurrentBranchChangedEvent:
       updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 1
@@ -11459,7 +10589,7 @@ MonoBehaviour:
   currentRemoteName: origin
   currentBranch: master
   currentRemoteUrl: https://github.com/AmaliJD/Alien-Operation.git
-  statusAhead: 1
+  statusAhead: 3
   statusBehind: 0
   hasItemsToCommit: 1
   isTrackingRemoteBranch: 1
@@ -11477,10 +10607,10 @@ MonoBehaviour:
     updatedTimeString: 2026-07-24T21:25:21.745-04:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 0001-01-01T00:00:00.000+00:00
+    updatedTimeString: 2026-07-25T21:19:19.004-04:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 0001-01-01T00:00:00.000+00:00
+    updatedTimeString: 2026-07-25T21:19:18.994-04:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -11985,9 +11115,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 24
+    y: 79.200005
     width: 851.8
-    height: 630
+    height: 482
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -12034,7 +11164,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -12044,22 +11174,22 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 851.8
-      height: 609
-    m_Scale: {x: 0.5286458, y: 0.5286458}
-    m_Translation: {x: 425.9, y: 304.5}
+      height: 461
+    m_Scale: {x: 0.4001736, y: 0.4001736}
+    m_Translation: {x: 425.9, y: 230.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -805.6434
+      x: -1064.2881
       y: -576
-      width: 1611.2867
+      width: 2128.5762
       height: 1152
     m_MinimalGUI: 1
-  m_defaultScale: 0.5286458
-  m_LastWindowPixelSize: {x: 851.8, y: 630}
+  m_defaultScale: 0.4001736
+  m_LastWindowPixelSize: {x: 851.8, y: 482}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -12088,9 +11218,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 79.200005
+    y: 24
     width: 851.8
-    height: 630
+    height: 482
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -12675,9 +11805,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0.8920467, y: 7.8886523, z: -0.07834649}
+    m_Target: {x: 799.3682, y: 897.404, z: -6.779992}
     speed: 2
-    m_Value: {x: 0.8920467, y: 7.8886523, z: -0.07834649}
+    m_Value: {x: 799.3682, y: 897.404, z: -6.779992}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -12727,9 +11857,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 17.820011
+    m_Target: 687.9955
     speed: 2
-    m_Value: 17.820011
+    m_Value: 687.9955
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -12785,9 +11915,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 680
+    y: 532
     width: 851.8
-    height: 82.79999
+    height: 230.79999
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -12942,7 +12072,13 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
+      - m_Data: -57134
+      - m_Data: -55088
+      - m_Data: -40528
+      - m_Data: -4104
       - m_Data: -1358
+      - m_Data: 51668
+      - m_Data: 51736
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -13017,7 +12153,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Images/Aliens
+    - Assets/Audio
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -13039,20 +12175,19 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 50582
-    - m_Data: 52298
-    - m_Data: 52300
-    - m_Data: 52302
-    - m_Data: 52304
-    - m_Data: 52306
-    - m_Data: 52308
-    - m_Data: 52310
-    - m_Data: 52312
-    - m_Data: 52314
-    - m_Data: 52316
-    - m_Data: 52318
-    - m_Data: 52320
-    - m_Data: 52322
+    - m_Data: 50586
+    - m_Data: 52454
+    - m_Data: 52456
+    - m_Data: 52458
+    - m_Data: 52460
+    - m_Data: 52462
+    - m_Data: 52464
+    - m_Data: 52466
+    - m_Data: 52468
+    - m_Data: 52470
+    - m_Data: 52472
+    - m_Data: 52474
+    - m_Data: 52476
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -13079,27 +12214,26 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 360}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
     - m_Data: 51800
     m_LastClickedID:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 50582
-    - m_Data: 52298
-    - m_Data: 52300
-    - m_Data: 52302
-    - m_Data: 52304
-    - m_Data: 52306
-    - m_Data: 52308
-    - m_Data: 52310
-    - m_Data: 52312
-    - m_Data: 52314
-    - m_Data: 52316
-    - m_Data: 52318
-    - m_Data: 52320
-    - m_Data: 52322
+    - m_Data: 50586
+    - m_Data: 52454
+    - m_Data: 52456
+    - m_Data: 52458
+    - m_Data: 52460
+    - m_Data: 52462
+    - m_Data: 52464
+    - m_Data: 52466
+    - m_Data: 52468
+    - m_Data: 52470
+    - m_Data: 52472
+    - m_Data: 52474
+    - m_Data: 52476
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
