@@ -447,9 +447,9 @@ public class Main : MonoBehaviour
 
         Sequence.Create()
             .Group(Tween.PositionY(go.transform, endValue: -10, duration: .5f, ease: Ease.InCubic).OnComplete(() => Destroy(go)))
-            .Group(Tween.Scale(ui_title, endValue: Vector2.one, duration: .5f, ease: Ease.OutBack, startDelay: .2f))
-            .Group(Tween.UIAnchoredPositionY(ui_icons, endValue: -800, duration: .5f, ease: Ease.InBack, startDelay: .2f))
-            .Group(Tween.UIAnchoredPositionY(ui_x, endValue: -800, duration: .5f, ease: Ease.InBack, startDelay: .2f))
+            .Group(Tween.Scale(ui_title, endValue: Vector2.one, duration: .5f, ease: Ease.OutBack, startDelay: .4f))
+            .Group(Tween.UIAnchoredPositionY(ui_icons, endValue: -800, duration: .25f, ease: Ease.InBack))//, startDelay: .2f))
+            .Group(Tween.UIAnchoredPositionY(ui_x, endValue: -800, duration: .25f, ease: Ease.InBack))//, startDelay: .2f))
             .OnComplete(() => Init());
     }
 
