@@ -195,6 +195,12 @@ public class Main : MonoBehaviour
                 LoadWin();
             }
         }
+        #if PLATFORM_STANDALONE_WIN
+        if (Keyboard.current.escapeKey.wasPressedThisFrame && patientIndex == -1)
+        {
+            Application.Quit();
+        }
+        #endif
         if (Keyboard.current.escapeKey.wasPressedThisFrame && patientIndex >= 0)
         {
             Esc();
